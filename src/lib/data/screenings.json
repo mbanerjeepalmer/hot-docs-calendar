@@ -1,52 +1,2112 @@
 [
 	{
-		"id": "placeholder-001",
-		"title": "[PLACEHOLDER] Opening Night Film",
+		"id": "antidiva-the-carole-pope-confessions-2026-04-23-1900-0",
+		"title": "ANTIDIVA: THE CAROLE POPE CONFESSIONS",
 		"start": "2026-04-23T19:00:00-04:00",
-		"end": "2026-04-23T21:00:00-04:00",
+		"end": "2026-04-23T20:29:00-04:00",
 		"venue": "Hot Docs Ted Rogers Cinema",
 		"address": "506 Bloor St W, Toronto, ON",
-		"description": "Replace this file with the real Hot Docs 2026 schedule. See README.md.",
-		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+		"description": "D: Michelle Mama\nCanada · 89 min\nSinger-songwriter Carole Pope shattered taboos with raw, unapologetic music and defiant sexuality. Antidiva tells the story of a queer rock icon reclaiming her rightful place in music history, with insights from k.d. lang, Peaches, Jann Arden and Rufus Wainwright.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=ANTIDIVA%3A%20THE%20CAROLE%20POPE%20CONFESSIONS"
 	},
 	{
-		"id": "placeholder-002",
-		"title": "[PLACEHOLDER] Friday Matinee",
-		"start": "2026-04-24T13:30:00-04:00",
-		"end": "2026-04-24T15:00:00-04:00",
-		"venue": "TIFF Lightbox",
+		"id": "let-our-mountains-live-2026-04-24-1500-0",
+		"title": "LET OUR MOUNTAINS LIVE",
+		"start": "2026-04-24T15:00:00-04:00",
+		"end": "2026-04-24T16:40:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
 		"address": "350 King St W, Toronto, ON",
-		"description": "Placeholder entry.",
-		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+		"description": "D: Håvard Bustnes\nNorway, Finland · 100 min\nShould renewable energy come at the cost of Indigenous rights? In Norway’s mountainous Fosen region, Sámi reindeer herders and youth activists win a Supreme Court victory against a large wind farm but face a bigger battle when economic interests stall political action.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=LET%20OUR%20MOUNTAINS%20LIVE"
 	},
 	{
-		"id": "placeholder-003",
-		"title": "[PLACEHOLDER] Friday Evening",
-		"start": "2026-04-24T18:45:00-04:00",
-		"end": "2026-04-24T20:30:00-04:00",
-		"venue": "Scotiabank Theatre",
-		"address": "259 Richmond St W, Toronto, ON",
-		"description": "Placeholder entry.",
-		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+		"id": "a-distant-call-2026-04-24-1730-0",
+		"title": "A DISTANT CALL",
+		"start": "2026-04-24T17:30:00-04:00",
+		"end": "2026-04-24T19:09:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Andrea Suwito\nIndonesia, UK, France · 99 min\nIn a remote Indonesian community with ancient traditions, a former spiritual leader faces a difficult choice between their unique gender identity and the expectations of an Islamic pilgrimage to Mecca. This vivid film captures a rare, meditative struggle between local tradition and modern faith.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20DISTANT%20CALL"
 	},
 	{
-		"id": "placeholder-004",
-		"title": "[PLACEHOLDER] Saturday Premiere",
-		"start": "2026-04-25T20:00:00-04:00",
-		"end": "2026-04-25T21:45:00-04:00",
-		"venue": "Isabel Bader Theatre",
-		"address": "93 Charles St W, Toronto, ON",
-		"description": "Placeholder entry.",
-		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
-	},
-	{
-		"id": "placeholder-005",
-		"title": "[PLACEHOLDER] Sunday Double Bill",
-		"start": "2026-04-26T15:00:00-04:00",
-		"end": "2026-04-26T17:30:00-04:00",
+		"id": "nekai-walks-2026-04-24-1800-0",
+		"title": "NEKAI WALKS",
+		"start": "2026-04-24T18:00:00-04:00",
+		"end": "2026-04-24T19:30:00-04:00",
 		"venue": "Hot Docs Ted Rogers Cinema",
 		"address": "506 Bloor St W, Toronto, ON",
-		"description": "Placeholder entry.",
-		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+		"description": "D: Rico King\nCanada · 90 min\nAt 16, Nekai Foster was shot while walking home in Toronto’s Jane and Finch neighbourhood. His journey of survival and recovery—defying all medical odds as he relearns to walk—exposes how gun violence shapes bodies, families and communities.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=NEKAI%20WALKS"
+	},
+	{
+		"id": "the-last-days-of-april-2026-04-24-2030-0",
+		"title": "THE LAST DAYS OF APRIL",
+		"start": "2026-04-24T20:30:00-04:00",
+		"end": "2026-04-24T21:45:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Ree Wright, Meaghan Wright\nCanada · 75 min\nThe courageous journey of a determined disabled advocate living with a tethered spinal cord and chronic pain, balancing love, legacy and the fight for bodily autonomy as she chooses how she wants to leave the world: on her own terms.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20LAST%20DAYS%20OF%20APRIL"
+	},
+	{
+		"id": "parasisi-2026-04-24-2100-0",
+		"title": "PARASISI",
+		"start": "2026-04-24T21:00:00-04:00",
+		"end": "2026-04-24T22:01:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Zaïde Bil, Sébastien Segers\nBelgium · 61 min\nAlong the Lawa River, Wayana families live with the quiet aftershocks of intrusion. In luminous black-and-white, this lyrical film traces how mining, missionaries and medicine ripple through daily life, revealing colonial histories etched into lands and bodies. L’MINA D: Randa Maroufi | Morocco, France, Italy, Qatar | 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=PARASISI"
+	},
+	{
+		"id": "l-mina-2026-04-24-2100-0",
+		"title": "L’MINA",
+		"start": "2026-04-24T21:00:00-04:00",
+		"end": "2026-04-24T21:26:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Randa Maroufi\nMorocco, France, Italy, Qatar · 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=L%E2%80%99MINA"
+	},
+	{
+		"id": "black-zombie-2026-04-24-2115-0",
+		"title": "BLACK ZOMBIE",
+		"start": "2026-04-24T21:15:00-04:00",
+		"end": "2026-04-24T22:45:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Maya Annik Bedward\nCanada · 90 min\nFrom colonial Haiti’s haunted cane fields to the flickering screens of Hollywood horror, the living dead’s buried origins are unearthed and reclaimed as a symbol of survival and spiritual resistance.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BLACK%20ZOMBIE"
+	},
+	{
+		"id": "the-last-days-of-april-2026-04-25-1045-1",
+		"title": "THE LAST DAYS OF APRIL",
+		"start": "2026-04-25T10:45:00-04:00",
+		"end": "2026-04-25T12:00:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Ree Wright, Meaghan Wright\nCanada · 75 min\nThe courageous journey of a determined disabled advocate living with a tethered spinal cord and chronic pain, balancing love, legacy and the fight for bodily autonomy as she chooses how she wants to leave the world: on her own terms.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20LAST%20DAYS%20OF%20APRIL"
+	},
+	{
+		"id": "nekai-walks-2026-04-25-1045-1",
+		"title": "NEKAI WALKS",
+		"start": "2026-04-25T10:45:00-04:00",
+		"end": "2026-04-25T12:15:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Rico King\nCanada · 90 min\nAt 16, Nekai Foster was shot while walking home in Toronto’s Jane and Finch neighbourhood. His journey of survival and recovery—defying all medical odds as he relearns to walk—exposes how gun violence shapes bodies, families and communities.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=NEKAI%20WALKS"
+	},
+	{
+		"id": "black-zombie-2026-04-25-1100-1",
+		"title": "BLACK ZOMBIE",
+		"start": "2026-04-25T11:00:00-04:00",
+		"end": "2026-04-25T12:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Maya Annik Bedward\nCanada · 90 min\nFrom colonial Haiti’s haunted cane fields to the flickering screens of Hollywood horror, the living dead’s buried origins are unearthed and reclaimed as a symbol of survival and spiritual resistance.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BLACK%20ZOMBIE"
+	},
+	{
+		"id": "0004ngel-2026-04-25-1115-0",
+		"title": "0004NGEL",
+		"start": "2026-04-25T11:15:00-04:00",
+		"end": "2026-04-25T11:27:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Eli Jean Tahchi\nCanada · 12 min\nELEPHANT FAMILIES D: Elena Escalante | UK, Spain | 15 min MY BODY GOES TO WORK D: Fernanda Molina | Canada | 12 min THE BAKER’S HOTLINE D: Emily Schuman, David Schuman | USA | 13 min MANDZARSOA D: Germain Le Carpentier | France, Mayotte | 15 min OH WHALE D: Winslow Crane-Murdoch | USA | 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=0004NGEL"
+	},
+	{
+		"id": "elephant-families-2026-04-25-1115-0",
+		"title": "ELEPHANT FAMILIES",
+		"start": "2026-04-25T11:15:00-04:00",
+		"end": "2026-04-25T11:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Elena Escalante\nUK, Spain · 15 min\nMY BODY GOES TO WORK D: Fernanda Molina | Canada | 12 min THE BAKER’S HOTLINE D: Emily Schuman, David Schuman | USA | 13 min MANDZARSOA D: Germain Le Carpentier | France, Mayotte | 15 min OH WHALE D: Winslow Crane-Murdoch | USA | 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=ELEPHANT%20FAMILIES"
+	},
+	{
+		"id": "my-body-goes-to-work-2026-04-25-1115-0",
+		"title": "MY BODY GOES TO WORK",
+		"start": "2026-04-25T11:15:00-04:00",
+		"end": "2026-04-25T11:27:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Fernanda Molina\nCanada · 12 min\nTHE BAKER’S HOTLINE D: Emily Schuman, David Schuman | USA | 13 min MANDZARSOA D: Germain Le Carpentier | France, Mayotte | 15 min OH WHALE D: Winslow Crane-Murdoch | USA | 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MY%20BODY%20GOES%20TO%20WORK"
+	},
+	{
+		"id": "the-baker-s-hotline-2026-04-25-1115-0",
+		"title": "THE BAKER’S HOTLINE",
+		"start": "2026-04-25T11:15:00-04:00",
+		"end": "2026-04-25T11:28:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Emily Schuman, David Schuman\nUSA · 13 min\nMANDZARSOA D: Germain Le Carpentier | France, Mayotte | 15 min OH WHALE D: Winslow Crane-Murdoch | USA | 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20BAKER%E2%80%99S%20HOTLINE"
+	},
+	{
+		"id": "mandzarsoa-2026-04-25-1115-0",
+		"title": "MANDZARSOA",
+		"start": "2026-04-25T11:15:00-04:00",
+		"end": "2026-04-25T11:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Germain Le Carpentier\nFrance, Mayotte · 15 min\nOH WHALE D: Winslow Crane-Murdoch | USA | 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MANDZARSOA"
+	},
+	{
+		"id": "oh-whale-2026-04-25-1115-0",
+		"title": "OH WHALE",
+		"start": "2026-04-25T11:15:00-04:00",
+		"end": "2026-04-25T11:41:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Winslow Crane-Murdoch\nUSA · 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=OH%20WHALE"
+	},
+	{
+		"id": "parasisi-2026-04-25-1130-1",
+		"title": "PARASISI",
+		"start": "2026-04-25T11:30:00-04:00",
+		"end": "2026-04-25T12:31:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Zaïde Bil, Sébastien Segers\nBelgium · 61 min\nAlong the Lawa River, Wayana families live with the quiet aftershocks of intrusion. In luminous black-and-white, this lyrical film traces how mining, missionaries and medicine ripple through daily life, revealing colonial histories etched into lands and bodies. L’MINA D: Randa Maroufi | Morocco, France, Italy, Qatar | 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=PARASISI"
+	},
+	{
+		"id": "l-mina-2026-04-25-1130-1",
+		"title": "L’MINA",
+		"start": "2026-04-25T11:30:00-04:00",
+		"end": "2026-04-25T11:56:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Randa Maroufi\nMorocco, France, Italy, Qatar · 26 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=L%E2%80%99MINA"
+	},
+	{
+		"id": "the-secret-reading-club-of-kabul-2026-04-25-1330-0",
+		"title": "THE SECRET READING CLUB OF KABUL",
+		"start": "2026-04-25T13:30:00-04:00",
+		"end": "2026-04-25T15:00:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Shakiba Adil, Elina Hirvonen\nFinland, Norway · 90 min\nWhen the Taliban bars girls from secondary school, a group of friends form a secret book club. Inspired by the story of Anne Frank, they film their hidden lives, tracing a path of resistance that leads from Kabul to exile in Tehran and Germany.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20SECRET%20READING%20CLUB%20OF%20KABUL"
+	},
+	{
+		"id": "digital-witnesses-whileblack-2026-04-25-1345-0",
+		"title": "DIGITAL WITNESSES #WHILEBLACK",
+		"start": "2026-04-25T13:45:00-04:00",
+		"end": "2026-04-25T15:05:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Sidney Fussell, Jennifer Holness\nUSA, Canada · 80 min\nHow are acts of witnessing transformed in the digital age when memory, justice and spectacle collide? Centred on Darnella Frazier, who filmed George Floyd’s murder, and many others, this urgent examination exposes the cost of going viral while Black.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=DIGITAL%20WITNESSES%20%23WHILEBLACK"
+	},
+	{
+		"id": "jaripeo-2026-04-25-1400-0",
+		"title": "JARIPEO",
+		"start": "2026-04-25T14:00:00-04:00",
+		"end": "2026-04-25T15:11:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Efraín Mojica, Rebecca Zweig\nMexico, USA, France · 71 min\nAgainst the immersive backdrop of the annual Christmas jaripeo—a Mexican rodeo- style festival—the notion of cowboys and hypermasculinity is put under a lens, revealing intimate memories and desires in a celebration of queer self-expression and belonging.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=JARIPEO"
+	},
+	{
+		"id": "my-benjamin-2026-04-25-1415-0",
+		"title": "MY BENJAMIN",
+		"start": "2026-04-25T14:15:00-04:00",
+		"end": "2026-04-25T15:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Victoria Clay Mendoza\nMexico, France · 75 min\nAs a danseur étoile at the Paris Opera Ballet, Benjamin Pech has built his life around dance. But a hip injury and mandatory retirement age of 42 mean coming to terms with the end of an illustrious career.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MY%20BENJAMIN"
+	},
+	{
+		"id": "better-go-mad-in-the-wild-2026-04-25-1430-0",
+		"title": "BETTER GO MAD IN THE WILD",
+		"start": "2026-04-25T14:30:00-04:00",
+		"end": "2026-04-25T15:53:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Miro Remo\nCzech Republic, Slovakia · 83 min\nA talking cow narrates the lives of twin brothers living alone on a remote Czech farm. Surreal, cinematic and darkly funny, this wildly original film presents a portrait of unconventional familial love inside a world that feels half real, half dream.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BETTER%20GO%20MAD%20IN%20THE%20WILD"
+	},
+	{
+		"id": "public-access-2026-04-25-1615-0",
+		"title": "PUBLIC ACCESS",
+		"start": "2026-04-25T16:15:00-04:00",
+		"end": "2026-04-25T18:03:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: David Shadrack Smith\nUSA · 108 min\nThe revolutionary rise of a New York City public- access station, featuring provocative shows and early performances from musicians like Debbie Harry and Bob Marley, reveals how boundary- pushing programming reshaped free expression long before the internet.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=PUBLIC%20ACCESS"
+	},
+	{
+		"id": "it-s-dorothy-2026-04-25-1645-0",
+		"title": "IT’S DOROTHY!",
+		"start": "2026-04-25T16:45:00-04:00",
+		"end": "2026-04-25T18:22:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jeffrey McHale\nUSA · 97 min\nDorothy’s journey to Oz continues to inspire audiences united by their search for belonging. This vibrant, imaginative portrait celebrates her cultural legacy and the diverse communities who claim her as their own, reminding us that no matter how hard things get, we must never stop looking somewhere over the rainbow.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=IT%E2%80%99S%20DOROTHY!"
+	},
+	{
+		"id": "landstone-2026-04-25-1700-0",
+		"title": "LANDSTONE",
+		"start": "2026-04-25T17:00:00-04:00",
+		"end": "2026-04-25T18:04:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Faraz Fadaian\nIran, Switzerland · 64 min\nIn the Iranian desert, an elderly man and his wife face mortality and fading bonds. Seeking solace in a handmade cave, the man struggles to reconnect with his past in this lyrical and visually striking study of a vanishing way of life. SOME KIND OF REFUGE D: Alexandra Kern | USA | 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=LANDSTONE"
+	},
+	{
+		"id": "some-kind-of-refuge-2026-04-25-1700-0",
+		"title": "SOME KIND OF REFUGE",
+		"start": "2026-04-25T17:00:00-04:00",
+		"end": "2026-04-25T17:16:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Alexandra Kern\nUSA · 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SOME%20KIND%20OF%20REFUGE"
+	},
+	{
+		"id": "constant-battles-2026-04-25-1715-0",
+		"title": "CONSTANT BATTLES",
+		"start": "2026-04-25T17:15:00-04:00",
+		"end": "2026-04-25T17:53:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Mackenzie Stannard\nCanada · 38 min\nDetermined to become the first Iranian-born female Olympic boxer, a young Canadian woman must confront her own anxiety and her mother’s past trauma. Together they learn that true strength isn’t about winning but letting go of the need to be perfect. THAT NIGHT D: Hoda Sobhani | USA | 11 min MÚSICAS D: Lila Áviles | Mexico | 33 min AEROBIC CORRIDOR D: Jennifer Law-Smith | Canada | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=CONSTANT%20BATTLES"
+	},
+	{
+		"id": "that-night-2026-04-25-1715-0",
+		"title": "THAT NIGHT",
+		"start": "2026-04-25T17:15:00-04:00",
+		"end": "2026-04-25T17:26:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hoda Sobhani\nUSA · 11 min\nMÚSICAS D: Lila Áviles | Mexico | 33 min AEROBIC CORRIDOR D: Jennifer Law-Smith | Canada | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THAT%20NIGHT"
+	},
+	{
+		"id": "musicas-2026-04-25-1715-0",
+		"title": "MÚSICAS",
+		"start": "2026-04-25T17:15:00-04:00",
+		"end": "2026-04-25T17:48:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Lila Áviles\nMexico · 33 min\nAEROBIC CORRIDOR D: Jennifer Law-Smith | Canada | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=M%C3%9ASICAS"
+	},
+	{
+		"id": "aerobic-corridor-2026-04-25-1715-0",
+		"title": "AEROBIC CORRIDOR",
+		"start": "2026-04-25T17:15:00-04:00",
+		"end": "2026-04-25T17:35:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jennifer Law-Smith\nCanada · 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AEROBIC%20CORRIDOR"
+	},
+	{
+		"id": "love-apptually-2026-04-25-1800-0",
+		"title": "LOVE APPTUALLY",
+		"start": "2026-04-25T18:00:00-04:00",
+		"end": "2026-04-25T19:21:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Shalini Kantayya\nUSA, Australia · 81 min\nTired of swiping without results? Follow one journalist’s quest to unpack the dating app algorithms shaping modern romance as she reveals how, in an already lonely world, technology, bias and profit are increasingly influencing who we meet and why.\nIncludes Q&A or special programming.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=LOVE%20APPTUALLY"
+	},
+	{
+		"id": "gimme-truth-2026-04-25-1930-0",
+		"title": "GIMME TRUTH",
+		"start": "2026-04-25T19:30:00-04:00",
+		"end": "2026-04-25T20:59:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Simon Ennis, Brad Abrahams\nCanada · 89 min\nEvil aliens. False flags. Fake pandemics. Chemtrails. For a number of truth seekers, the pull of conspiracies has given them purpose and validated their skepticism of the systems that have let them down. But what is the cost when the search for truth becomes your identity?",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=GIMME%20TRUTH"
+	},
+	{
+		"id": "the-sandbox-2026-04-25-2000-0",
+		"title": "THE SANDBOX",
+		"start": "2026-04-25T20:00:00-04:00",
+		"end": "2026-04-25T21:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Kenya-Jade Pinto\nCanada · 90 min\nA rare and cinematic investigation into the global black box of migration surveillance, control and the caretakers fighting to keep these worlds in check.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20SANDBOX"
+	},
+	{
+		"id": "let-our-mountains-live-2026-04-25-2015-1",
+		"title": "LET OUR MOUNTAINS LIVE",
+		"start": "2026-04-25T20:15:00-04:00",
+		"end": "2026-04-25T21:55:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Håvard Bustnes\nNorway, Finland · 100 min\nShould renewable energy come at the cost of Indigenous rights? In Norway’s mountainous Fosen region, Sámi reindeer herders and youth activists win a Supreme Court victory against a large wind farm but face a bigger battle when economic interests stall political action.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=LET%20OUR%20MOUNTAINS%20LIVE"
+	},
+	{
+		"id": "the-woman-who-poked-the-leopard-2026-04-25-2030-0",
+		"title": "THE WOMAN WHO POKED THE LEOPARD",
+		"start": "2026-04-25T20:30:00-04:00",
+		"end": "2026-04-25T22:18:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Patience Nitumwesiga\nUganda, South Africa, Germany, USA · 108 min\nOutspoken and unapologetic, Ugandan dissident Stella Nyanzi confronts authority using insults, nudity and fearless protest. Beyond her activism, this intimate portrait explores the emotional toll of resistance, revealing a complex woman negotiating public struggles alongside the expectations of family life.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20WOMAN%20WHO%20POKED%20THE%20LEOPARD"
+	},
+	{
+		"id": "barbara-forever-2026-04-25-2115-0",
+		"title": "BARBARA FOREVER",
+		"start": "2026-04-25T21:15:00-04:00",
+		"end": "2026-04-25T22:57:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Brydie O’Connor\nUSA · 102 min\nWith unprecedented access to pioneering feminist experimental filmmaker Barbara Hammer and her extraordinary archive, this powerfully crafted portrait lets Hammer claim authorship of her own legacy, honouring and celebrating her as a trailblazer who transformed lesbian cinema.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BARBARA%20FOREVER"
+	},
+	{
+		"id": "landstone-2026-04-26-1000-1",
+		"title": "LANDSTONE",
+		"start": "2026-04-26T10:00:00-04:00",
+		"end": "2026-04-26T11:04:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Faraz Fadaian\nIran, Switzerland · 64 min\nIn the Iranian desert, an elderly man and his wife face mortality and fading bonds. Seeking solace in a handmade cave, the man struggles to reconnect with his past in this lyrical and visually striking study of a vanishing way of life. SOME KIND OF REFUGE D: Alexandra Kern | USA | 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=LANDSTONE"
+	},
+	{
+		"id": "some-kind-of-refuge-2026-04-26-1000-1",
+		"title": "SOME KIND OF REFUGE",
+		"start": "2026-04-26T10:00:00-04:00",
+		"end": "2026-04-26T10:16:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Alexandra Kern\nUSA · 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SOME%20KIND%20OF%20REFUGE"
+	},
+	{
+		"id": "public-access-2026-04-26-1030-1",
+		"title": "PUBLIC ACCESS",
+		"start": "2026-04-26T10:30:00-04:00",
+		"end": "2026-04-26T12:18:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: David Shadrack Smith\nUSA · 108 min\nThe revolutionary rise of a New York City public- access station, featuring provocative shows and early performances from musicians like Debbie Harry and Bob Marley, reveals how boundary- pushing programming reshaped free expression long before the internet.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=PUBLIC%20ACCESS"
+	},
+	{
+		"id": "constant-battles-2026-04-26-1045-1",
+		"title": "CONSTANT BATTLES",
+		"start": "2026-04-26T10:45:00-04:00",
+		"end": "2026-04-26T11:23:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Mackenzie Stannard\nCanada · 38 min\nDetermined to become the first Iranian-born female Olympic boxer, a young Canadian woman must confront her own anxiety and her mother’s past trauma. Together they learn that true strength isn’t about winning but letting go of the need to be perfect. THAT NIGHT D: Hoda Sobhani | USA | 11 min MÚSICAS D: Lila Áviles | Mexico | 33 min AEROBIC CORRIDOR D: Jennifer Law-Smith | Canada | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=CONSTANT%20BATTLES"
+	},
+	{
+		"id": "that-night-2026-04-26-1045-1",
+		"title": "THAT NIGHT",
+		"start": "2026-04-26T10:45:00-04:00",
+		"end": "2026-04-26T10:56:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hoda Sobhani\nUSA · 11 min\nMÚSICAS D: Lila Áviles | Mexico | 33 min AEROBIC CORRIDOR D: Jennifer Law-Smith | Canada | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THAT%20NIGHT"
+	},
+	{
+		"id": "musicas-2026-04-26-1045-1",
+		"title": "MÚSICAS",
+		"start": "2026-04-26T10:45:00-04:00",
+		"end": "2026-04-26T11:18:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Lila Áviles\nMexico · 33 min\nAEROBIC CORRIDOR D: Jennifer Law-Smith | Canada | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=M%C3%9ASICAS"
+	},
+	{
+		"id": "aerobic-corridor-2026-04-26-1045-1",
+		"title": "AEROBIC CORRIDOR",
+		"start": "2026-04-26T10:45:00-04:00",
+		"end": "2026-04-26T11:05:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jennifer Law-Smith\nCanada · 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AEROBIC%20CORRIDOR"
+	},
+	{
+		"id": "love-apptually-2026-04-26-1045-1",
+		"title": "LOVE APPTUALLY",
+		"start": "2026-04-26T10:45:00-04:00",
+		"end": "2026-04-26T12:06:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Shalini Kantayya\nUSA, Australia · 81 min\nTired of swiping without results? Follow one journalist’s quest to unpack the dating app algorithms shaping modern romance as she reveals how, in an already lonely world, technology, bias and profit are increasingly influencing who we meet and why.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=LOVE%20APPTUALLY"
+	},
+	{
+		"id": "the-woman-who-poked-the-leopard-2026-04-26-1115-1",
+		"title": "THE WOMAN WHO POKED THE LEOPARD",
+		"start": "2026-04-26T11:15:00-04:00",
+		"end": "2026-04-26T13:03:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Patience Nitumwesiga\nUganda, South Africa, Germany, USA · 108 min\nOutspoken and unapologetic, Ugandan dissident Stella Nyanzi confronts authority using insults, nudity and fearless protest. Beyond her activism, this intimate portrait explores the emotional toll of resistance, revealing a complex woman negotiating public struggles alongside the expectations of family life.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20WOMAN%20WHO%20POKED%20THE%20LEOPARD"
+	},
+	{
+		"id": "better-go-mad-in-the-wild-2026-04-26-1300-1",
+		"title": "BETTER GO MAD IN THE WILD",
+		"start": "2026-04-26T13:00:00-04:00",
+		"end": "2026-04-26T14:23:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Miro Remo\nCzech Republic, Slovakia · 83 min\nA talking cow narrates the lives of twin brothers living alone on a remote Czech farm. Surreal, cinematic and darkly funny, this wildly original film presents a portrait of unconventional familial love inside a world that feels half real, half dream.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BETTER%20GO%20MAD%20IN%20THE%20WILD"
+	},
+	{
+		"id": "antidiva-the-carole-pope-confessions-2026-04-26-1330-1",
+		"title": "ANTIDIVA: THE CAROLE POPE CONFESSIONS",
+		"start": "2026-04-26T13:30:00-04:00",
+		"end": "2026-04-26T14:59:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Michelle Mama\nCanada · 89 min\nSinger-songwriter Carole Pope shattered taboos with raw, unapologetic music and defiant sexuality. Antidiva tells the story of a queer rock icon reclaiming her rightful place in music history, with insights from k.d. lang, Peaches, Jann Arden and Rufus Wainwright.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=ANTIDIVA%3A%20THE%20CAROLE%20POPE%20CONFESSIONS"
+	},
+	{
+		"id": "barbara-forever-2026-04-26-1345-1",
+		"title": "BARBARA FOREVER",
+		"start": "2026-04-26T13:45:00-04:00",
+		"end": "2026-04-26T15:27:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Brydie O’Connor\nUSA · 102 min\nWith unprecedented access to pioneering feminist experimental filmmaker Barbara Hammer and her extraordinary archive, this powerfully crafted portrait lets Hammer claim authorship of her own legacy, honouring and celebrating her as a trailblazer who transformed lesbian cinema.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BARBARA%20FOREVER"
+	},
+	{
+		"id": "my-benjamin-2026-04-26-1400-1",
+		"title": "MY BENJAMIN",
+		"start": "2026-04-26T14:00:00-04:00",
+		"end": "2026-04-26T15:15:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Victoria Clay Mendoza\nMexico, France · 75 min\nAs a danseur étoile at the Paris Opera Ballet, Benjamin Pech has built his life around dance. But a hip injury and mandatory retirement age of 42 mean coming to terms with the end of an illustrious career.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MY%20BENJAMIN"
+	},
+	{
+		"id": "gimme-truth-2026-04-26-1430-1",
+		"title": "GIMME TRUTH",
+		"start": "2026-04-26T14:30:00-04:00",
+		"end": "2026-04-26T15:59:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Simon Ennis, Brad Abrahams\nCanada · 89 min\nEvil aliens. False flags. Fake pandemics. Chemtrails. For a number of truth seekers, the pull of conspiracies has given them purpose and validated their skepticism of the systems that have let them down. But what is the cost when the search for truth becomes your identity?",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=GIMME%20TRUTH"
+	},
+	{
+		"id": "paikar-2026-04-26-1600-0",
+		"title": "PAIKAR",
+		"start": "2026-04-26T16:00:00-04:00",
+		"end": "2026-04-26T17:37:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Dawood Hilmandi\nNetherlands · 97 min\nFrom exile in Amsterdam, filmmaker Dawood Hilmandi reflects on his family nickname, Paikar, the Persian word for warrior. Returning to Iran to reconcile with his authoritarian father, their journey to Afghanistan during a pandemic transforms a lifetime of displacement into a story of survival.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=PAIKAR"
+	},
+	{
+		"id": "in-tyee-country-2026-04-26-1645-0",
+		"title": "IN TYEE COUNTRY",
+		"start": "2026-04-26T16:45:00-04:00",
+		"end": "2026-04-26T17:56:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jevan Crittenden, Nate Slaco\nCanada · 71 min\nA century-old fishing club on Canada’s west coast faces an existential crisis as salmon populations dwindle and members wrestle with their legacy, realizing that their biggest catches might be a thing of the past. SANYI THE ROOSTER D: Lotte Salomons | Netherlands | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=IN%20TYEE%20COUNTRY"
+	},
+	{
+		"id": "sanyi-the-rooster-2026-04-26-1645-0",
+		"title": "SANYI THE ROOSTER",
+		"start": "2026-04-26T16:45:00-04:00",
+		"end": "2026-04-26T17:05:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Lotte Salomons\nNetherlands · 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SANYI%20THE%20ROOSTER"
+	},
+	{
+		"id": "digital-witnesses-whileblack-2026-04-26-1715-1",
+		"title": "DIGITAL WITNESSES #WHILEBLACK",
+		"start": "2026-04-26T17:15:00-04:00",
+		"end": "2026-04-26T18:35:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Sidney Fussell, Jennifer Holness\nUSA, Canada · 80 min\nHow are acts of witnessing transformed in the digital age when memory, justice and spectacle collide? Centred on Darnella Frazier, who filmed George Floyd’s murder, and many others, this urgent examination exposes the cost of going viral while Black.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=DIGITAL%20WITNESSES%20%23WHILEBLACK"
+	},
+	{
+		"id": "whispers-in-may-2026-04-26-1730-0",
+		"title": "WHISPERS IN MAY",
+		"start": "2026-04-26T17:30:00-04:00",
+		"end": "2026-04-26T19:05:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Dongnan Chen\nHong Kong, Netherlands, Sweden, South Korea · 95 min\nIn the rural Liangshan Mountains, 14-year-old Qihuo and her friends embark on a road trip to find a skirt for her traditional menarche rite of passage. This poetic film blends documentary and fiction to capture a fleeting, final moment of childhood innocence.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHISPERS%20IN%20MAY"
+	},
+	{
+		"id": "a-war-on-women-2026-04-26-1800-0",
+		"title": "A WAR ON WOMEN",
+		"start": "2026-04-26T18:00:00-04:00",
+		"end": "2026-04-26T19:42:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Raha Shirazi\nItaly · 102 min\nLong before the world chanted “Woman, Life, Freedom,” Iranian women have been rising up. Intimate interviews and archival footage trace 40 years of feminist resistance against the Islamic Republic, culminating in a revolution led by the very women the regime tried to silence.\nIncludes Q&A or special programming.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20WAR%20ON%20WOMEN"
+	},
+	{
+		"id": "the-secret-reading-club-of-kabul-2026-04-26-1915-1",
+		"title": "THE SECRET READING CLUB OF KABUL",
+		"start": "2026-04-26T19:15:00-04:00",
+		"end": "2026-04-26T20:45:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Shakiba Adil, Elina Hirvonen\nFinland, Norway · 90 min\nWhen the Taliban bars girls from secondary school, a group of friends form a secret book club. Inspired by the story of Anne Frank, they film their hidden lives, tracing a path of resistance that leads from Kabul to exile in Tehran and Germany.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20SECRET%20READING%20CLUB%20OF%20KABUL"
+	},
+	{
+		"id": "on-my-own-terms-2026-04-26-1945-0",
+		"title": "ON MY OWN TERMS",
+		"start": "2026-04-26T19:45:00-04:00",
+		"end": "2026-04-26T20:52:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Tadeusz Chudy\nPoland · 67 min\nIn an orphanage, two half-siblings dream of living on their own after one achieves success as a boxer and the other inherits her own apartment. But the road to adulthood grows thorny as the teenagers quickly learn the price of independence. A QUIET STORM D: Benjamin Nicolas | Japan, Canada | 29 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=ON%20MY%20OWN%20TERMS"
+	},
+	{
+		"id": "a-quiet-storm-2026-04-26-1945-0",
+		"title": "A QUIET STORM",
+		"start": "2026-04-26T19:45:00-04:00",
+		"end": "2026-04-26T20:14:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Benjamin Nicolas\nJapan, Canada · 29 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20QUIET%20STORM"
+	},
+	{
+		"id": "code-of-misconduct-2026-04-26-2000-0",
+		"title": "CODE OF MISCONDUCT",
+		"start": "2026-04-26T20:00:00-04:00",
+		"end": "2026-04-26T21:28:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Sébastien Trahan\nCanada · 88 min\nAn investigative journalist’s duty to follow the facts leads to the trial of five Canadian professional hockey players charged with sexual assault, unravelling our national pastime and questioning the institutions that hold the sport accountable.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=CODE%20OF%20MISCONDUCT"
+	},
+	{
+		"id": "baby-jackfruit-baby-guava-2026-04-26-2030-0",
+		"title": "BABY JACKFRUIT BABY GUAVA",
+		"start": "2026-04-26T20:30:00-04:00",
+		"end": "2026-04-26T22:15:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Nhật Quang Nông\nVietnam, South Korea, Switzerland · 105 min\nA queer filmmaker creates an intimate time capsule for his unborn nephew as his sister, who lives with schizophrenia, unexpectedly becomes pregnant. Spanning five years of home archives, the film documents a Vietnamese family’s journey to overcome traditional expectations and heal old wounds.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BABY%20JACKFRUIT%20BABY%20GUAVA"
+	},
+	{
+		"id": "the-ballad-of-judas-priest-2026-04-26-2130-0",
+		"title": "THE BALLAD OF JUDAS PRIEST",
+		"start": "2026-04-26T21:30:00-04:00",
+		"end": "2026-04-26T23:08:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Sam Dunn, Tom Morello\nCanada, USA · 98 min\nFrom working-class origins in Birmingham to the Rock & Roll Hall of Fame, the genre-defining heavy metal band’s five-decade journey is chronicled through exclusive interviews with Judas Priest, previously unpublished personal archives and appearances by Ozzy Osbourne, Jack Black, Metallica and more.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20BALLAD%20OF%20JUDAS%20PRIEST"
+	},
+	{
+		"id": "it-s-dorothy-2026-04-27-1330-1",
+		"title": "IT’S DOROTHY!",
+		"start": "2026-04-27T13:30:00-04:00",
+		"end": "2026-04-27T15:07:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jeffrey McHale\nUSA · 97 min\nDorothy’s journey to Oz continues to inspire audiences united by their search for belonging. This vibrant, imaginative portrait celebrates her cultural legacy and the diverse communities who claim her as their own, reminding us that no matter how hard things get, we must never stop looking somewhere over the rainbow.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=IT%E2%80%99S%20DOROTHY!"
+	},
+	{
+		"id": "baby-jackfruit-baby-guava-2026-04-27-1345-1",
+		"title": "BABY JACKFRUIT BABY GUAVA",
+		"start": "2026-04-27T13:45:00-04:00",
+		"end": "2026-04-27T15:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Nhật Quang Nông\nVietnam, South Korea, Switzerland · 105 min\nA queer filmmaker creates an intimate time capsule for his unborn nephew as his sister, who lives with schizophrenia, unexpectedly becomes pregnant. Spanning five years of home archives, the film documents a Vietnamese family’s journey to overcome traditional expectations and heal old wounds.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BABY%20JACKFRUIT%20BABY%20GUAVA"
+	},
+	{
+		"id": "on-my-own-terms-2026-04-27-1415-1",
+		"title": "ON MY OWN TERMS",
+		"start": "2026-04-27T14:15:00-04:00",
+		"end": "2026-04-27T15:22:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Tadeusz Chudy\nPoland · 67 min\nIn an orphanage, two half-siblings dream of living on their own after one achieves success as a boxer and the other inherits her own apartment. But the road to adulthood grows thorny as the teenagers quickly learn the price of independence. A QUIET STORM D: Benjamin Nicolas | Japan, Canada | 29 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=ON%20MY%20OWN%20TERMS"
+	},
+	{
+		"id": "a-quiet-storm-2026-04-27-1415-1",
+		"title": "A QUIET STORM",
+		"start": "2026-04-27T14:15:00-04:00",
+		"end": "2026-04-27T14:44:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Benjamin Nicolas\nJapan, Canada · 29 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20QUIET%20STORM"
+	},
+	{
+		"id": "code-of-misconduct-2026-04-27-1430-1",
+		"title": "CODE OF MISCONDUCT",
+		"start": "2026-04-27T14:30:00-04:00",
+		"end": "2026-04-27T15:58:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Sébastien Trahan\nCanada · 88 min\nAn investigative journalist’s duty to follow the facts leads to the trial of five Canadian professional hockey players charged with sexual assault, unravelling our national pastime and questioning the institutions that hold the sport accountable.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=CODE%20OF%20MISCONDUCT"
+	},
+	{
+		"id": "tcb-the-toni-cade-bambara-school-of-organizing-2026-04-27-1630-0",
+		"title": "TCB – THE TONI CADE BAMBARA SCHOOL OF ORGANIZING",
+		"start": "2026-04-27T16:30:00-04:00",
+		"end": "2026-04-27T18:15:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Louis Massiah, Monica Henriquez\nUSA, UK, Canada, France, Senegal · 105 min\nThis dynamic portrait of Toni Cade Bambara, the visionary Black feminist writer, filmmaker and activist, celebrates her life with power and urgency. Through rare archives and intimate reflections from those she inspired, we learn lessons in agency, community resilience and the transformative impact of cultural organizing.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TCB%20%E2%80%93%20THE%20TONI%20CADE%20BAMBARA%20SCHOOL%20OF%20ORGANIZING"
+	},
+	{
+		"id": "apolo-2026-04-27-1700-0",
+		"title": "APOLO",
+		"start": "2026-04-27T17:00:00-04:00",
+		"end": "2026-04-27T18:17:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Tainá Müller, Isis Broken\nBrazil · 77 min\nIn Brazil, a trans couple go on an emotional pregnancy journey after conceiving naturally. Intimate moments and dreamlike sequences reveal a relationship sustained by tenderness, care and trust, despite institutions around them challenging their right to respectful medical care.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=APOLO"
+	},
+	{
+		"id": "in-tyee-country-2026-04-27-1715-1",
+		"title": "IN TYEE COUNTRY",
+		"start": "2026-04-27T17:15:00-04:00",
+		"end": "2026-04-27T18:26:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jevan Crittenden, Nate Slaco\nCanada · 71 min\nA century-old fishing club on Canada’s west coast faces an existential crisis as salmon populations dwindle and members wrestle with their legacy, realizing that their biggest catches might be a thing of the past. SANYI THE ROOSTER D: Lotte Salomons | Netherlands | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=IN%20TYEE%20COUNTRY"
+	},
+	{
+		"id": "sanyi-the-rooster-2026-04-27-1715-1",
+		"title": "SANYI THE ROOSTER",
+		"start": "2026-04-27T17:15:00-04:00",
+		"end": "2026-04-27T17:35:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Lotte Salomons\nNetherlands · 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SANYI%20THE%20ROOSTER"
+	},
+	{
+		"id": "vanishing-tracks-2026-04-27-1730-0",
+		"title": "VANISHING TRACKS",
+		"start": "2026-04-27T17:30:00-04:00",
+		"end": "2026-04-27T19:03:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hamed Zolfaghari\nIran, France, Norway, South Korea, Qatar · 93 min\nIn Iran’s remote nomadic landscape, a family navigates their traditional existence in a modern world. When their sheep vanish overnight, tensions rise between the three sons and their parents. Surreal and dreamlike, this richly textured portrait captures a disappearing way of life.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=VANISHING%20TRACKS"
+	},
+	{
+		"id": "myspace-2026-04-27-1830-0",
+		"title": "MYSPACE",
+		"start": "2026-04-27T18:30:00-04:00",
+		"end": "2026-04-27T20:06:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Tommy Avallone\nUSA · 96 min\nWhat is the legacy of Myspace? Pulling at the heartstrings of millennials and curious newcomers alike, this nostalgic portrait traces how this pioneering social networking platform shaped the digital world we now inhabit, from online fame to social media overload.\nIncludes Q&A or special programming.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MYSPACE"
+	},
+	{
+		"id": "dona-onete-this-tiny-piece-of-my-heart-2026-04-27-1930-0",
+		"title": "DONA ONETE – THIS TINY PIECE OF MY HEART",
+		"start": "2026-04-27T19:30:00-04:00",
+		"end": "2026-04-27T21:00:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Mini Kerti\nBrazil · 90 min\nEmerging as Brazil’s “Queen of Carimbó” in her seventies, singer and composer Dona Onete brings humour, sensuality and contagious joy to every performance. A colour-filled and spirit-lifting portrait of an artist whose music carries a lifetime of lived culture, inspiring a new generation.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=DONA%20ONETE%20%E2%80%93%20THIS%20TINY%20PIECE%20OF%20MY%20HEART"
+	},
+	{
+		"id": "this-above-all-the-theatrical-life-of-antoni-cimolino-2026-04-27-1945-0",
+		"title": "THIS ABOVE ALL: THE THEATRICAL LIFE OF ANTONI CIMOLINO",
+		"start": "2026-04-27T19:45:00-04:00",
+		"end": "2026-04-27T21:03:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Barry Avrich\nCanada · 78 min\nAs his final season approaches, the longest serving Artistic Director of the iconic Stratford Festival, Antoni Cimolino, prepares for his exit while reflecting on the 40 years he’s devoted to the theatrical repertory company.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THIS%20ABOVE%20ALL%3A%20THE%20THEATRICAL%20LIFE%20OF%20ANTONI%20CIMOLINO"
+	},
+	{
+		"id": "paikar-2026-04-27-2015-1",
+		"title": "PAIKAR",
+		"start": "2026-04-27T20:15:00-04:00",
+		"end": "2026-04-27T21:52:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Dawood Hilmandi\nNetherlands · 97 min\nFrom exile in Amsterdam, filmmaker Dawood Hilmandi reflects on his family nickname, Paikar, the Persian word for warrior. Returning to Iran to reconcile with his authoritarian father, their journey to Afghanistan during a pandemic transforms a lifetime of displacement into a story of survival.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=PAIKAR"
+	},
+	{
+		"id": "a-fire-there-2026-04-27-2030-0",
+		"title": "A FIRE THERE",
+		"start": "2026-04-27T20:30:00-04:00",
+		"end": "2026-04-27T22:05:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Marlene Edoyan\nCanada · 95 min\nIn a remote Georgian village bordering Armenia, three friends struggle with the tension between inherited destiny and the desire to forge one’s own path, torn between obligation and desire, tradition and change, the world they know and the one they dream of.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20FIRE%20THERE"
+	},
+	{
+		"id": "kenny-loggins-conviction-of-the-heart-2026-04-27-2145-0",
+		"title": "KENNY LOGGINS: CONVICTION OF THE HEART",
+		"start": "2026-04-27T21:45:00-04:00",
+		"end": "2026-04-27T23:21:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Dori Berinstein\nUSA · 96 min\nEverybody cut footloose! From chart-topping anthems to movie soundtracks, multi-award- winning singer songwriter Kenny Loggins reflects on a career that defined a generation, tracing his life on and off stage across decades of reinvention.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=KENNY%20LOGGINS%3A%20CONVICTION%20OF%20THE%20HEART"
+	},
+	{
+		"id": "this-above-all-the-theatrical-life-of-antoni-cimolino-2026-04-28-1115-1",
+		"title": "THIS ABOVE ALL: THE THEATRICAL LIFE OF ANTONI CIMOLINO",
+		"start": "2026-04-28T11:15:00-04:00",
+		"end": "2026-04-28T12:33:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Barry Avrich\nCanada · 78 min\nAs his final season approaches, the longest serving Artistic Director of the iconic Stratford Festival, Antoni Cimolino, prepares for his exit while reflecting on the 40 years he’s devoted to the theatrical repertory company.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THIS%20ABOVE%20ALL%3A%20THE%20THEATRICAL%20LIFE%20OF%20ANTONI%20CIMOLINO"
+	},
+	{
+		"id": "vanishing-tracks-2026-04-28-1330-1",
+		"title": "VANISHING TRACKS",
+		"start": "2026-04-28T13:30:00-04:00",
+		"end": "2026-04-28T15:03:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hamed Zolfaghari\nIran, France, Norway, South Korea, Qatar · 93 min\nIn Iran’s remote nomadic landscape, a family navigates their traditional existence in a modern world. When their sheep vanish overnight, tensions rise between the three sons and their parents. Surreal and dreamlike, this richly textured portrait captures a disappearing way of life.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=VANISHING%20TRACKS"
+	},
+	{
+		"id": "a-fire-there-2026-04-28-1345-1",
+		"title": "A FIRE THERE",
+		"start": "2026-04-28T13:45:00-04:00",
+		"end": "2026-04-28T15:20:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Marlene Edoyan\nCanada · 95 min\nIn a remote Georgian village bordering Armenia, three friends struggle with the tension between inherited destiny and the desire to forge one’s own path, torn between obligation and desire, tradition and change, the world they know and the one they dream of.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20FIRE%20THERE"
+	},
+	{
+		"id": "tcb-the-toni-cade-bambara-school-of-organizing-2026-04-28-1400-1",
+		"title": "TCB – THE TONI CADE BAMBARA SCHOOL OF ORGANIZING",
+		"start": "2026-04-28T14:00:00-04:00",
+		"end": "2026-04-28T15:45:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Louis Massiah, Monica Henriquez\nUSA, UK, Canada, France, Senegal · 105 min\nThis dynamic portrait of Toni Cade Bambara, the visionary Black feminist writer, filmmaker and activist, celebrates her life with power and urgency. Through rare archives and intimate reflections from those she inspired, we learn lessons in agency, community resilience and the transformative impact of cultural organizing.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TCB%20%E2%80%93%20THE%20TONI%20CADE%20BAMBARA%20SCHOOL%20OF%20ORGANIZING"
+	},
+	{
+		"id": "apolo-2026-04-28-1445-1",
+		"title": "APOLO",
+		"start": "2026-04-28T14:45:00-04:00",
+		"end": "2026-04-28T16:02:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Tainá Müller, Isis Broken\nBrazil · 77 min\nIn Brazil, a trans couple go on an emotional pregnancy journey after conceiving naturally. Intimate moments and dreamlike sequences reveal a relationship sustained by tenderness, care and trust, despite institutions around them challenging their right to respectful medical care.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=APOLO"
+	},
+	{
+		"id": "kindergarten-2026-04-28-1630-0",
+		"title": "KINDERGARTEN",
+		"start": "2026-04-28T16:30:00-04:00",
+		"end": "2026-04-28T17:54:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jean-François Caissy\nCanada · 84 min\nEnter a world of adorable toddlers, where the wee ones are forming their first social relationships outside their homes, with this charming and honest slice-of-life look at daycare through the eyes of children.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=KINDERGARTEN"
+	},
+	{
+		"id": "concrete-turned-to-sand-2026-04-28-1645-0",
+		"title": "CONCRETE TURNED TO SAND",
+		"start": "2026-04-28T16:45:00-04:00",
+		"end": "2026-04-28T17:58:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Ryan Ermacora, Jessica Johnson\nCanada · 73 min\n“To see a World in a Grain of Sand / And a Heaven in a Wild Flower.” William Blake’s poetry comes to life in Cortes Island, B.C., as local oyster farmers ply their trade amidst a rapidly changing environment in this spellbinding photo essay. TUKTUIT : CARIBOU D: Lindsay McIntyre | Canada | 15 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=CONCRETE%20TURNED%20TO%20SAND"
+	},
+	{
+		"id": "tuktuit-caribou-2026-04-28-1645-0",
+		"title": "TUKTUIT : CARIBOU",
+		"start": "2026-04-28T16:45:00-04:00",
+		"end": "2026-04-28T17:00:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Lindsay McIntyre\nCanada · 15 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TUKTUIT%20%3A%20CARIBOU"
+	},
+	{
+		"id": "american-doctor-2026-04-28-1715-0",
+		"title": "AMERICAN DOCTOR",
+		"start": "2026-04-28T17:15:00-04:00",
+		"end": "2026-04-28T18:48:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Poh Si Teng\nUSA, Palestine, Denmark, Malaysia, Qatar · 93 min\nThree American physicians—Palestinian, Jewish and Zoroastrian—risk everything to save lives in besieged Gaza and expose political truths while navigating a collapsing medical infrastructure and global indifference.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AMERICAN%20DOCTOR"
+	},
+	{
+		"id": "the-49th-year-2026-04-28-1730-0",
+		"title": "THE 49TH YEAR",
+		"start": "2026-04-28T17:30:00-04:00",
+		"end": "2026-04-28T18:58:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Heidrun Holzfeind\nAustria, Germany, Japan · 88 min\nThrough thoughtful letters from prison, an anarchist incarcerated since 1980 reflects on his radical past. This meditative portrait pairs humane narration with contemporary Japanese landscapes, exploring the quiet tensions between aging, political militancy and time itself.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%2049TH%20YEAR"
+	},
+	{
+		"id": "steal-this-story-please-2026-04-28-1830-0",
+		"title": "STEAL THIS STORY, PLEASE!",
+		"start": "2026-04-28T18:30:00-04:00",
+		"end": "2026-04-28T20:12:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Carl Deal, Tia Lessin\nUSA · 102 min\nFiercely independent journalist Amy Goodman has spent three decades holding the powerful to account, reporting from conflict zones and the Democracy Now! newsroom as an essential voice highlighting global issues and pursuing truth in an era of “alternative” facts.\nIncludes Q&A or special programming.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=STEAL%20THIS%20STORY%2C%20PLEASE!"
+	},
+	{
+		"id": "searching-for-drug-peace-2026-04-28-1930-0",
+		"title": "SEARCHING FOR DRUG PEACE",
+		"start": "2026-04-28T19:30:00-04:00",
+		"end": "2026-04-28T20:59:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Alisher Balfanbayev\nCanada · 89 min\nAmidst a deadly overdose crisis in Vancouver, a daring activist funds a non-profit drug testing centre by operating the illicit Coca Leaf Café and Medicinal Mushroom Dispensary, risking everything to provide life-saving harm reduction and advocate for drug reform.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SEARCHING%20FOR%20DRUG%20PEACE"
+	},
+	{
+		"id": "maintenance-artist-2026-04-28-1945-0",
+		"title": "MAINTENANCE ARTIST",
+		"start": "2026-04-28T19:45:00-04:00",
+		"end": "2026-04-28T21:20:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Toby Perl Freilich\nUSA · 95 min\nMeet Mierle Laderman Ukeles—an artist whose name should be better known. Her groundbreaking performance art and manifesto on maintenance art led her to become NYC’s Department of Sanitation’s first artist-in- residence. Through exclusive access and rare archival materials, celebrate her radical artistic vision that brings attention to the invisible.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MAINTENANCE%20ARTIST"
+	},
+	{
+		"id": "kenny-loggins-conviction-of-the-heart-2026-04-28-2015-1",
+		"title": "KENNY LOGGINS: CONVICTION OF THE HEART",
+		"start": "2026-04-28T20:15:00-04:00",
+		"end": "2026-04-28T21:51:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Dori Berinstein\nUSA · 96 min\nEverybody cut footloose! From chart-topping anthems to movie soundtracks, multi-award- winning singer songwriter Kenny Loggins reflects on a career that defined a generation, tracing his life on and off stage across decades of reinvention.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=KENNY%20LOGGINS%3A%20CONVICTION%20OF%20THE%20HEART"
+	},
+	{
+		"id": "solar-shadow-2026-04-28-2030-0",
+		"title": "SOLAR SHADOW",
+		"start": "2026-04-28T20:30:00-04:00",
+		"end": "2026-04-28T21:45:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hugo Haddad, Isadora Canela\nBrazil · 75 min\nHow do we read the sky—and who taught us? This beautiful exploration of ancestral Indigenous astronomy in Brazil weaves lectures, conversations and community memory into a poetic meditation on knowledge, loss and the many ways humans understand the cosmos.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SOLAR%20SHADOW"
+	},
+	{
+		"id": "myspace-2026-04-28-2145-1",
+		"title": "MYSPACE",
+		"start": "2026-04-28T21:45:00-04:00",
+		"end": "2026-04-28T23:21:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Tommy Avallone\nUSA · 96 min\nWhat is the legacy of Myspace? Pulling at the heartstrings of millennials and curious newcomers alike, this nostalgic portrait traces how this pioneering social networking platform shaped the digital world we now inhabit, from online fame to social media overload.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MYSPACE"
+	},
+	{
+		"id": "american-doctor-2026-04-29-1130-1",
+		"title": "AMERICAN DOCTOR",
+		"start": "2026-04-29T11:30:00-04:00",
+		"end": "2026-04-29T13:03:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Poh Si Teng\nUSA, Palestine, Denmark, Malaysia, Qatar · 93 min\nThree American physicians—Palestinian, Jewish and Zoroastrian—risk everything to save lives in besieged Gaza and expose political truths while navigating a collapsing medical infrastructure and global indifference.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AMERICAN%20DOCTOR"
+	},
+	{
+		"id": "concrete-turned-to-sand-2026-04-29-1345-1",
+		"title": "CONCRETE TURNED TO SAND",
+		"start": "2026-04-29T13:45:00-04:00",
+		"end": "2026-04-29T14:58:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Ryan Ermacora, Jessica Johnson\nCanada · 73 min\n“To see a World in a Grain of Sand / And a Heaven in a Wild Flower.” William Blake’s poetry comes to life in Cortes Island, B.C., as local oyster farmers ply their trade amidst a rapidly changing environment in this spellbinding photo essay. TUKTUIT : CARIBOU D: Lindsay McIntyre | Canada | 15 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=CONCRETE%20TURNED%20TO%20SAND"
+	},
+	{
+		"id": "tuktuit-caribou-2026-04-29-1345-1",
+		"title": "TUKTUIT : CARIBOU",
+		"start": "2026-04-29T13:45:00-04:00",
+		"end": "2026-04-29T14:00:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Lindsay McIntyre\nCanada · 15 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TUKTUIT%20%3A%20CARIBOU"
+	},
+	{
+		"id": "solar-shadow-2026-04-29-1400-1",
+		"title": "SOLAR SHADOW",
+		"start": "2026-04-29T14:00:00-04:00",
+		"end": "2026-04-29T15:15:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hugo Haddad, Isadora Canela\nBrazil · 75 min\nHow do we read the sky—and who taught us? This beautiful exploration of ancestral Indigenous astronomy in Brazil weaves lectures, conversations and community memory into a poetic meditation on knowledge, loss and the many ways humans understand the cosmos.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SOLAR%20SHADOW"
+	},
+	{
+		"id": "kindergarten-2026-04-29-1415-1",
+		"title": "KINDERGARTEN",
+		"start": "2026-04-29T14:15:00-04:00",
+		"end": "2026-04-29T15:39:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jean-François Caissy\nCanada · 84 min\nEnter a world of adorable toddlers, where the wee ones are forming their first social relationships outside their homes, with this charming and honest slice-of-life look at daycare through the eyes of children.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=KINDERGARTEN"
+	},
+	{
+		"id": "maintenance-artist-2026-04-29-1430-1",
+		"title": "MAINTENANCE ARTIST",
+		"start": "2026-04-29T14:30:00-04:00",
+		"end": "2026-04-29T16:05:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Toby Perl Freilich\nUSA · 95 min\nMeet Mierle Laderman Ukeles—an artist whose name should be better known. Her groundbreaking performance art and manifesto on maintenance art led her to become NYC’s Department of Sanitation’s first artist-in- residence. Through exclusive access and rare archival materials, celebrate her radical artistic vision that brings attention to the invisible.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MAINTENANCE%20ARTIST"
+	},
+	{
+		"id": "searching-for-drug-peace-2026-04-29-1645-1",
+		"title": "SEARCHING FOR DRUG PEACE",
+		"start": "2026-04-29T16:45:00-04:00",
+		"end": "2026-04-29T18:14:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Alisher Balfanbayev\nCanada · 89 min\nAmidst a deadly overdose crisis in Vancouver, a daring activist funds a non-profit drug testing centre by operating the illicit Coca Leaf Café and Medicinal Mushroom Dispensary, risking everything to provide life-saving harm reduction and advocate for drug reform.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SEARCHING%20FOR%20DRUG%20PEACE"
+	},
+	{
+		"id": "t-m-k-a-nan-namesake-2026-04-29-1700-0",
+		"title": "təm kʷaθ nan NAMESAKE",
+		"start": "2026-04-29T17:00:00-04:00",
+		"end": "2026-04-29T18:16:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Evan Adams, Eileen Francis\nCanada · 76 min\nWhen the Tla’amin Nation requests a name change for the city of Powell River, B.C.— named for Israel Wood Powell, a key figure in the creation of the Indian residential school system—it ignites a heated debate about whose history is told and respected. REPLIKKA D: Piratá Waurá, Heloisa Passos | Brazil, USA, UK | 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=t%C9%99m%20k%CA%B7a%CE%B8%20nan%20NAMESAKE"
+	},
+	{
+		"id": "replikka-2026-04-29-1700-0",
+		"title": "REPLIKKA",
+		"start": "2026-04-29T17:00:00-04:00",
+		"end": "2026-04-29T17:16:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Piratá Waurá, Heloisa Passos\nBrazil, USA, UK · 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=REPLIKKA"
+	},
+	{
+		"id": "the-49th-year-2026-04-29-1715-1",
+		"title": "THE 49TH YEAR",
+		"start": "2026-04-29T17:15:00-04:00",
+		"end": "2026-04-29T18:43:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Heidrun Holzfeind\nAustria, Germany, Japan · 88 min\nThrough thoughtful letters from prison, an anarchist incarcerated since 1980 reflects on his radical past. This meditative portrait pairs humane narration with contemporary Japanese landscapes, exploring the quiet tensions between aging, political militancy and time itself.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%2049TH%20YEAR"
+	},
+	{
+		"id": "birds-of-war-2026-04-29-1730-0",
+		"title": "BIRDS OF WAR",
+		"start": "2026-04-29T17:30:00-04:00",
+		"end": "2026-04-29T18:55:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Janay Boulos, Abd Alkader Habak\nUK, Syria, Lebanon · 85 min\nA love story blossoms between a London-based Lebanese journalist and her on-the-ground contact, a Syrian-based cameraman, through 13 years of war, revolutions and exile. But can two people from such disparate worlds make a life together?",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BIRDS%20OF%20WAR"
+	},
+	{
+		"id": "when-a-witness-recants-2026-04-29-1745-0",
+		"title": "WHEN A WITNESS RECANTS",
+		"start": "2026-04-29T17:45:00-04:00",
+		"end": "2026-04-29T19:42:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Dawn Porter\nUSA · 117 min\nAuthor, journalist and activist Ta-Nehisi Coates investigates the case of a young student who was murdered in Baltimore, uncovering layers of false accusations, wrongful convictions and how the justice system can fail those caught in the crossfire.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHEN%20A%20WITNESS%20RECANTS"
+	},
+	{
+		"id": "stories-for-sandro-2026-04-29-1945-0",
+		"title": "STORIES FOR SANDRO",
+		"start": "2026-04-29T19:45:00-04:00",
+		"end": "2026-04-29T21:06:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Giacomo Boeri\nItaly · 81 min\nAfter being diagnosed with Alzheimer’s, Sandro begins writing down his memories—incredible tales previously unknown to his family. His son, the filmmaker, delves deeper, bringing to life colourful and carefully crafted episodes filled with irony, drama and comedy.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=STORIES%20FOR%20SANDRO"
+	},
+	{
+		"id": "silent-flood-2026-04-29-2000-0",
+		"title": "SILENT FLOOD",
+		"start": "2026-04-29T20:00:00-04:00",
+		"end": "2026-04-29T21:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Dmytro Sukholytkyy-Sobchuk\nUkraine, Germany · 90 min\nAlong the Dniester River, a pacifist farming community maintains a centuries-old way of life. As the Russian invasion nears, these traditional isolationists must find their own way to support the front, bridging the gap between their peaceful faith and a nation at war.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SILENT%20FLOOD"
+	},
+	{
+		"id": "my-foreign-land-2026-04-29-2015-0",
+		"title": "MY FOREIGN LAND",
+		"start": "2026-04-29T20:15:00-04:00",
+		"end": "2026-04-29T21:54:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Lakapoy Collective, Louise Botkay, João Moreira Salles\nBrazil · 99 min\nIn the lead up to Brazil’s pivotal 2022 election, an Indigenous tribal leader runs for office while his activist daughter fights from beyond their rainforest territory. This collaborative, multi- perspective film reveals the hope and heartbreak of a family navigating politics, legacy and the future of their homeland.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MY%20FOREIGN%20LAND"
+	},
+	{
+		"id": "saigon-story-two-shootings-in-the-forest-kingdom-2026-04-29-2030-0",
+		"title": "SAIGON STORY: TWO SHOOTINGS IN THE FOREST KINGDOM",
+		"start": "2026-04-29T20:30:00-04:00",
+		"end": "2026-04-29T22:01:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Kim Nguyen\nCanada · 91 min\nOscar-nominated director Kim Nguyen reveals the elusive connection between two families and photojournalist Eddie Adams’s iconic photo, Saigon Execution, confronting family secrets left in the wake of the Vietnam War, exposing the resilience of survivors and the blurred legacy of wartime memory.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SAIGON%20STORY%3A%20TWO%20SHOOTINGS%20IN%20THE%20FOREST%20KINGDOM"
+	},
+	{
+		"id": "steal-this-story-please-2026-04-29-2115-1",
+		"title": "STEAL THIS STORY, PLEASE!",
+		"start": "2026-04-29T21:15:00-04:00",
+		"end": "2026-04-29T22:57:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Carl Deal, Tia Lessin\nUSA · 102 min\nFiercely independent journalist Amy Goodman has spent three decades holding the powerful to account, reporting from conflict zones and the Democracy Now! newsroom as an essential voice highlighting global issues and pursuing truth in an era of “alternative” facts.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=STEAL%20THIS%20STORY%2C%20PLEASE!"
+	},
+	{
+		"id": "dona-onete-this-tiny-piece-of-my-heart-2026-04-30-1045-1",
+		"title": "DONA ONETE – THIS TINY PIECE OF MY HEART",
+		"start": "2026-04-30T10:45:00-04:00",
+		"end": "2026-04-30T12:15:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Mini Kerti\nBrazil · 90 min\nEmerging as Brazil’s “Queen of Carimbó” in her seventies, singer and composer Dona Onete brings humour, sensuality and contagious joy to every performance. A colour-filled and spirit-lifting portrait of an artist whose music carries a lifetime of lived culture, inspiring a new generation.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=DONA%20ONETE%20%E2%80%93%20THIS%20TINY%20PIECE%20OF%20MY%20HEART"
+	},
+	{
+		"id": "silent-flood-2026-04-30-1100-1",
+		"title": "SILENT FLOOD",
+		"start": "2026-04-30T11:00:00-04:00",
+		"end": "2026-04-30T12:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Dmytro Sukholytkyy-Sobchuk\nUkraine, Germany · 90 min\nAlong the Dniester River, a pacifist farming community maintains a centuries-old way of life. As the Russian invasion nears, these traditional isolationists must find their own way to support the front, bridging the gap between their peaceful faith and a nation at war.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SILENT%20FLOOD"
+	},
+	{
+		"id": "saigon-story-two-shootings-in-the-forest-kingdom-2026-04-30-1115-1",
+		"title": "SAIGON STORY: TWO SHOOTINGS IN THE FOREST KINGDOM",
+		"start": "2026-04-30T11:15:00-04:00",
+		"end": "2026-04-30T12:46:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Kim Nguyen\nCanada · 91 min\nOscar-nominated director Kim Nguyen reveals the elusive connection between two families and photojournalist Eddie Adams’s iconic photo, Saigon Execution, confronting family secrets left in the wake of the Vietnam War, exposing the resilience of survivors and the blurred legacy of wartime memory.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SAIGON%20STORY%3A%20TWO%20SHOOTINGS%20IN%20THE%20FOREST%20KINGDOM"
+	},
+	{
+		"id": "this-is-your-captain-speaking-2026-04-30-1145-0",
+		"title": "THIS IS YOUR CAPTAIN SPEAKING",
+		"start": "2026-04-30T11:45:00-04:00",
+		"end": "2026-04-30T12:00:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Nienke Deutz, Digna Van der Put\nNetherlands, Belgium · 15 min\nSTILL PLAYING D: Mohamed Mesbah | France | 37 min PAPER HOUSES AND HORSES D: An Chu | Taiwan | 19 min THE THIRD CHILD D: Serna Amini | Iran | 25 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THIS%20IS%20YOUR%20CAPTAIN%20SPEAKING"
+	},
+	{
+		"id": "still-playing-2026-04-30-1145-0",
+		"title": "STILL PLAYING",
+		"start": "2026-04-30T11:45:00-04:00",
+		"end": "2026-04-30T12:22:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Mohamed Mesbah\nFrance · 37 min\nPAPER HOUSES AND HORSES D: An Chu | Taiwan | 19 min THE THIRD CHILD D: Serna Amini | Iran | 25 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=STILL%20PLAYING"
+	},
+	{
+		"id": "paper-houses-and-horses-2026-04-30-1145-0",
+		"title": "PAPER HOUSES AND HORSES",
+		"start": "2026-04-30T11:45:00-04:00",
+		"end": "2026-04-30T12:04:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: An Chu\nTaiwan · 19 min\nTHE THIRD CHILD D: Serna Amini | Iran | 25 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=PAPER%20HOUSES%20AND%20HORSES"
+	},
+	{
+		"id": "the-third-child-2026-04-30-1145-0",
+		"title": "THE THIRD CHILD",
+		"start": "2026-04-30T11:45:00-04:00",
+		"end": "2026-04-30T12:10:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Serna Amini\nIran · 25 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20THIRD%20CHILD"
+	},
+	{
+		"id": "stories-for-sandro-2026-04-30-1345-1",
+		"title": "STORIES FOR SANDRO",
+		"start": "2026-04-30T13:45:00-04:00",
+		"end": "2026-04-30T15:06:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Giacomo Boeri\nItaly · 81 min\nAfter being diagnosed with Alzheimer’s, Sandro begins writing down his memories—incredible tales previously unknown to his family. His son, the filmmaker, delves deeper, bringing to life colourful and carefully crafted episodes filled with irony, drama and comedy.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=STORIES%20FOR%20SANDRO"
+	},
+	{
+		"id": "t-m-k-a-nan-namesake-2026-04-30-1400-1",
+		"title": "təm kʷaθ nan NAMESAKE",
+		"start": "2026-04-30T14:00:00-04:00",
+		"end": "2026-04-30T15:16:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Evan Adams, Eileen Francis\nCanada · 76 min\nWhen the Tla’amin Nation requests a name change for the city of Powell River, B.C.— named for Israel Wood Powell, a key figure in the creation of the Indian residential school system—it ignites a heated debate about whose history is told and respected. REPLIKKA D: Piratá Waurá, Heloisa Passos | Brazil, USA, UK | 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=t%C9%99m%20k%CA%B7a%CE%B8%20nan%20NAMESAKE"
+	},
+	{
+		"id": "replikka-2026-04-30-1400-1",
+		"title": "REPLIKKA",
+		"start": "2026-04-30T14:00:00-04:00",
+		"end": "2026-04-30T14:16:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Piratá Waurá, Heloisa Passos\nBrazil, USA, UK · 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=REPLIKKA"
+	},
+	{
+		"id": "birds-of-war-2026-04-30-1430-1",
+		"title": "BIRDS OF WAR",
+		"start": "2026-04-30T14:30:00-04:00",
+		"end": "2026-04-30T15:55:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Janay Boulos, Abd Alkader Habak\nUK, Syria, Lebanon · 85 min\nA love story blossoms between a London-based Lebanese journalist and her on-the-ground contact, a Syrian-based cameraman, through 13 years of war, revolutions and exile. But can two people from such disparate worlds make a life together?",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BIRDS%20OF%20WAR"
+	},
+	{
+		"id": "my-foreign-land-2026-04-30-1445-1",
+		"title": "MY FOREIGN LAND",
+		"start": "2026-04-30T14:45:00-04:00",
+		"end": "2026-04-30T16:24:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Lakapoy Collective, Louise Botkay, João Moreira Salles\nBrazil · 99 min\nIn the lead up to Brazil’s pivotal 2022 election, an Indigenous tribal leader runs for office while his activist daughter fights from beyond their rainforest territory. This collaborative, multi- perspective film reveals the hope and heartbreak of a family navigating politics, legacy and the future of their homeland.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MY%20FOREIGN%20LAND"
+	},
+	{
+		"id": "indivisum-legacies-adrift-2026-04-30-1645-0",
+		"title": "INDIVISUM: LEGACIES ADRIFT",
+		"start": "2026-04-30T16:45:00-04:00",
+		"end": "2026-04-30T18:00:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Katia Café-Fébrissy\nCanada · 75 min\nIn a brave effort to reconnect with her family, a Canadian filmmaker returns to her ancestral home of Guadeloupe to discover families torn apart over land inheritance—a relic of French colonial legacy that continues to fracture Guadeloupean families today. IN THE MORNING SUN D: Serville Poblete | Canada | 21 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=INDIVISUM%3A%20LEGACIES%20ADRIFT"
+	},
+	{
+		"id": "in-the-morning-sun-2026-04-30-1645-0",
+		"title": "IN THE MORNING SUN",
+		"start": "2026-04-30T16:45:00-04:00",
+		"end": "2026-04-30T17:06:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Serville Poblete\nCanada · 21 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=IN%20THE%20MORNING%20SUN"
+	},
+	{
+		"id": "vegapolis-2026-04-30-1700-0",
+		"title": "VEGAPOLIS",
+		"start": "2026-04-30T17:00:00-04:00",
+		"end": "2026-04-30T18:11:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Micha Barban Dangerfield\nFrance · 71 min\nLaser lights, thumping bass and blades on ice. Inside a Montpellier rink, teens gather each week, forging friendships, dissecting crushes and dreaming. With big life changes on the horizon, this kaleidoscopic coming-of-age portrait captures the joy, intensity and fragile magic of youth. THE BIRDS ARE SILENT D: Leo Dzhyshyashvili | Germany, Ukraine | 8 min AT THE STAGE WHEN D: Hao Zhou | USA, China | 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=VEGAPOLIS"
+	},
+	{
+		"id": "the-birds-are-silent-2026-04-30-1700-0",
+		"title": "THE BIRDS ARE SILENT",
+		"start": "2026-04-30T17:00:00-04:00",
+		"end": "2026-04-30T17:08:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Leo Dzhyshyashvili\nGermany, Ukraine · 8 min\nAT THE STAGE WHEN D: Hao Zhou | USA, China | 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20BIRDS%20ARE%20SILENT"
+	},
+	{
+		"id": "at-the-stage-when-2026-04-30-1700-0",
+		"title": "AT THE STAGE WHEN",
+		"start": "2026-04-30T17:00:00-04:00",
+		"end": "2026-04-30T17:16:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hao Zhou\nUSA, China · 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AT%20THE%20STAGE%20WHEN"
+	},
+	{
+		"id": "ceremony-2026-04-30-1730-0",
+		"title": "CEREMONY",
+		"start": "2026-04-30T17:30:00-04:00",
+		"end": "2026-04-30T18:54:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Banchi Hanuse\nCanada · 84 min\nAt Nuxalk Radio, a ramshackled station on the edge of the world, an inquiry into the vanished ooligan fish uncovers a chilling history rooted in the attempted erasure of the Nuxalk people and their enduring resilience.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=CEREMONY"
+	},
+	{
+		"id": "a-war-on-women-2026-04-30-1745-1",
+		"title": "A WAR ON WOMEN",
+		"start": "2026-04-30T17:45:00-04:00",
+		"end": "2026-04-30T19:27:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Raha Shirazi\nItaly · 102 min\nLong before the world chanted “Woman, Life, Freedom,” Iranian women have been rising up. Intimate interviews and archival footage trace 40 years of feminist resistance against the Islamic Republic, culminating in a revolution led by the very women the regime tried to silence.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20WAR%20ON%20WOMEN"
+	},
+	{
+		"id": "the-delivery-line-2026-04-30-1745-0",
+		"title": "THE DELIVERY LINE",
+		"start": "2026-04-30T17:45:00-04:00",
+		"end": "2026-04-30T19:12:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Nance Ackerman\nCanada · 87 min\nIn all corners of the world, on the front lines of war, amidst climate catastrophes and on perilous migratory journeys, women are still giving birth. As fearless midwives risk everything to help mothers in dangerous circumstances, the gravity of their extraordinary and lifesaving work comes into sharp focus.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20DELIVERY%20LINE"
+	},
+	{
+		"id": "a-fox-under-a-pink-moon-2026-04-30-1945-0",
+		"title": "A FOX UNDER A PINK MOON",
+		"start": "2026-04-30T19:45:00-04:00",
+		"end": "2026-04-30T21:02:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Mehrdad Oskouei, Soraya Akhalaghi\nIran, Denmark, France · 77 min\nFilmed entirely on her phone over five years, 16-year-old Soraya documents her harrowing attempts to flee Iran for Austria. Through surreal animations and sculptures, the young Afghan artist transforms her experiences of domestic violence and displacement into a powerful, self-narrated testament to survival.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20FOX%20UNDER%20A%20PINK%20MOON"
+	},
+	{
+		"id": "where-the-waves-took-her-2026-04-30-2000-0",
+		"title": "WHERE THE WAVES TOOK HER",
+		"start": "2026-04-30T20:00:00-04:00",
+		"end": "2026-04-30T21:23:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jana Stallein\nGermany · 83 min\nInterspersed with recollections of multiple migrant women, this chronicle of a humanitarian crisis is told through the journey of a remarkable German midwife, who joins a rescue ship to provide care to women and children fleeing to Europe across the Mediterranean.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHERE%20THE%20WAVES%20TOOK%20HER"
+	},
+	{
+		"id": "house-of-hope-2026-04-30-2030-0",
+		"title": "HOUSE OF HOPE",
+		"start": "2026-04-30T20:30:00-04:00",
+		"end": "2026-04-30T22:01:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Marjolein Busstra\nNetherlands, Palestine · 91 min\nIn the West Bank lies an elementary school organized and run by a couple set on teaching their young Palestinian students non-violent resistance, offering a refuge from the escalating uncertainty that surrounds them.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=HOUSE%20OF%20HOPE"
+	},
+	{
+		"id": "jaripeo-2026-04-30-2045-1",
+		"title": "JARIPEO",
+		"start": "2026-04-30T20:45:00-04:00",
+		"end": "2026-04-30T21:56:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Efraín Mojica, Rebecca Zweig\nMexico, USA, France · 71 min\nAgainst the immersive backdrop of the annual Christmas jaripeo—a Mexican rodeo- style festival—the notion of cowboys and hypermasculinity is put under a lens, revealing intimate memories and desires in a celebration of queer self-expression and belonging.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=JARIPEO"
+	},
+	{
+		"id": "ghost-in-the-machine-2026-04-30-2100-0",
+		"title": "GHOST IN THE MACHINE",
+		"start": "2026-04-30T21:00:00-04:00",
+		"end": "2026-04-30T22:50:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Valerie Veatch\nUSA · 110 min\nThis is not a film about machines. It is a film about power. An interrogation of who builds AI, who benefits from it and who bears the cost of a technology that continues to surround us, shaping the way we see the world.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=GHOST%20IN%20THE%20MACHINE"
+	},
+	{
+		"id": "house-of-hope-2026-05-01-1030-1",
+		"title": "HOUSE OF HOPE",
+		"start": "2026-05-01T10:30:00-04:00",
+		"end": "2026-05-01T12:01:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Marjolein Busstra\nNetherlands, Palestine · 91 min\nIn the West Bank lies an elementary school organized and run by a couple set on teaching their young Palestinian students non-violent resistance, offering a refuge from the escalating uncertainty that surrounds them.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=HOUSE%20OF%20HOPE"
+	},
+	{
+		"id": "where-the-waves-took-her-2026-05-01-1100-1",
+		"title": "WHERE THE WAVES TOOK HER",
+		"start": "2026-05-01T11:00:00-04:00",
+		"end": "2026-05-01T12:23:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jana Stallein\nGermany · 83 min\nInterspersed with recollections of multiple migrant women, this chronicle of a humanitarian crisis is told through the journey of a remarkable German midwife, who joins a rescue ship to provide care to women and children fleeing to Europe across the Mediterranean.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHERE%20THE%20WAVES%20TOOK%20HER"
+	},
+	{
+		"id": "ceremony-2026-05-01-1130-1",
+		"title": "CEREMONY",
+		"start": "2026-05-01T11:30:00-04:00",
+		"end": "2026-05-01T12:54:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Banchi Hanuse\nCanada · 84 min\nAt Nuxalk Radio, a ramshackled station on the edge of the world, an inquiry into the vanished ooligan fish uncovers a chilling history rooted in the attempted erasure of the Nuxalk people and their enduring resilience.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=CEREMONY"
+	},
+	{
+		"id": "the-delivery-line-2026-05-01-1145-1",
+		"title": "THE DELIVERY LINE",
+		"start": "2026-05-01T11:45:00-04:00",
+		"end": "2026-05-01T13:12:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Nance Ackerman\nCanada · 87 min\nIn all corners of the world, on the front lines of war, amidst climate catastrophes and on perilous migratory journeys, women are still giving birth. As fearless midwives risk everything to help mothers in dangerous circumstances, the gravity of their extraordinary and lifesaving work comes into sharp focus.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20DELIVERY%20LINE"
+	},
+	{
+		"id": "ghost-in-the-machine-2026-05-01-1330-1",
+		"title": "GHOST IN THE MACHINE",
+		"start": "2026-05-01T13:30:00-04:00",
+		"end": "2026-05-01T15:20:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Valerie Veatch\nUSA · 110 min\nThis is not a film about machines. It is a film about power. An interrogation of who builds AI, who benefits from it and who bears the cost of a technology that continues to surround us, shaping the way we see the world.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=GHOST%20IN%20THE%20MACHINE"
+	},
+	{
+		"id": "vegapolis-2026-05-01-1345-1",
+		"title": "VEGAPOLIS",
+		"start": "2026-05-01T13:45:00-04:00",
+		"end": "2026-05-01T14:56:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Micha Barban Dangerfield\nFrance · 71 min\nLaser lights, thumping bass and blades on ice. Inside a Montpellier rink, teens gather each week, forging friendships, dissecting crushes and dreaming. With big life changes on the horizon, this kaleidoscopic coming-of-age portrait captures the joy, intensity and fragile magic of youth. THE BIRDS ARE SILENT D: Leo Dzhyshyashvili | Germany, Ukraine | 8 min AT THE STAGE WHEN D: Hao Zhou | USA, China | 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=VEGAPOLIS"
+	},
+	{
+		"id": "the-birds-are-silent-2026-05-01-1345-1",
+		"title": "THE BIRDS ARE SILENT",
+		"start": "2026-05-01T13:45:00-04:00",
+		"end": "2026-05-01T13:53:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Leo Dzhyshyashvili\nGermany, Ukraine · 8 min\nAT THE STAGE WHEN D: Hao Zhou | USA, China | 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20BIRDS%20ARE%20SILENT"
+	},
+	{
+		"id": "at-the-stage-when-2026-05-01-1345-1",
+		"title": "AT THE STAGE WHEN",
+		"start": "2026-05-01T13:45:00-04:00",
+		"end": "2026-05-01T14:01:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hao Zhou\nUSA, China · 16 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AT%20THE%20STAGE%20WHEN"
+	},
+	{
+		"id": "the-ballad-of-judas-priest-2026-05-01-1400-1",
+		"title": "THE BALLAD OF JUDAS PRIEST",
+		"start": "2026-05-01T14:00:00-04:00",
+		"end": "2026-05-01T15:38:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Sam Dunn, Tom Morello\nCanada, USA · 98 min\nFrom working-class origins in Birmingham to the Rock & Roll Hall of Fame, the genre-defining heavy metal band’s five-decade journey is chronicled through exclusive interviews with Judas Priest, previously unpublished personal archives and appearances by Ozzy Osbourne, Jack Black, Metallica and more.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20BALLAD%20OF%20JUDAS%20PRIEST"
+	},
+	{
+		"id": "fatna-a-woman-named-rachid-2026-05-01-1430-0",
+		"title": "FATNA, A WOMAN NAMED RACHID",
+		"start": "2026-05-01T14:30:00-04:00",
+		"end": "2026-05-01T16:03:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hélène Harder\nMorocco, France, Belgium · 93 min\nForcibly disappeared as a student in 1970s Morocco, activist Fatna El Bouih examines her life thus far, the work still left to do and her dream of change.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=FATNA%2C%20A%20WOMAN%20NAMED%20RACHID"
+	},
+	{
+		"id": "a-fox-under-a-pink-moon-2026-05-01-1500-1",
+		"title": "A FOX UNDER A PINK MOON",
+		"start": "2026-05-01T15:00:00-04:00",
+		"end": "2026-05-01T16:17:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Mehrdad Oskouei, Soraya Akhalaghi\nIran, Denmark, France · 77 min\nFilmed entirely on her phone over five years, 16-year-old Soraya documents her harrowing attempts to flee Iran for Austria. Through surreal animations and sculptures, the young Afghan artist transforms her experiences of domestic violence and displacement into a powerful, self-narrated testament to survival.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20FOX%20UNDER%20A%20PINK%20MOON"
+	},
+	{
+		"id": "replica-2026-05-01-1645-0",
+		"title": "REPLICA",
+		"start": "2026-05-01T16:45:00-04:00",
+		"end": "2026-05-01T18:17:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Chouwa Liang\nAustralia, France · 92 min\nLove in the modern world can be tricky. For three Chinese women, AI companions bring the comfort and love they need, but are these artificial relationships preventing them from connecting in the real world?",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=REPLICA"
+	},
+	{
+		"id": "elephants-squirrels-2026-05-01-1700-0",
+		"title": "ELEPHANTS & SQUIRRELS",
+		"start": "2026-05-01T17:00:00-04:00",
+		"end": "2026-05-01T18:54:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Gregor Brändli\nSwitzerland · 114 min\nWhen Sri Lankan artist Deneth Piumakshi Veda Arachchige discovers her ancestors’ stolen remains tucked away in Swiss museum cabinets, she investigates the dark legacy of colonial explorers. With the aid of Indigenous leaders, she demands the return of these sacred artifacts, challenging the ethics of modern collections.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=ELEPHANTS%20%26%20SQUIRRELS"
+	},
+	{
+		"id": "sentient-2026-05-01-1715-0",
+		"title": "SENTIENT",
+		"start": "2026-05-01T17:15:00-04:00",
+		"end": "2026-05-01T19:00:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Tony Jones\nAustralia · 105 min\nThis investigative look at the highly controversial practice of animal testing—centred on the story of primate scientist turned animal rights activist Dr. Lisa Jones-Engel—questions if the harm to animals and the human scientists who care for them is justified by the pursuit of scientific advancement.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SENTIENT"
+	},
+	{
+		"id": "indivisum-legacies-adrift-2026-05-01-1730-1",
+		"title": "INDIVISUM: LEGACIES ADRIFT",
+		"start": "2026-05-01T17:30:00-04:00",
+		"end": "2026-05-01T18:45:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Katia Café-Fébrissy\nCanada · 75 min\nIn a brave effort to reconnect with her family, a Canadian filmmaker returns to her ancestral home of Guadeloupe to discover families torn apart over land inheritance—a relic of French colonial legacy that continues to fracture Guadeloupean families today. IN THE MORNING SUN D: Serville Poblete | Canada | 21 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=INDIVISUM%3A%20LEGACIES%20ADRIFT"
+	},
+	{
+		"id": "in-the-morning-sun-2026-05-01-1730-1",
+		"title": "IN THE MORNING SUN",
+		"start": "2026-05-01T17:30:00-04:00",
+		"end": "2026-05-01T17:51:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Serville Poblete\nCanada · 21 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=IN%20THE%20MORNING%20SUN"
+	},
+	{
+		"id": "truck-mama-2026-05-01-1745-0",
+		"title": "TRUCK MAMA",
+		"start": "2026-05-01T17:45:00-04:00",
+		"end": "2026-05-01T19:10:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Zippy Nyaruri\nKenya, South Africa, Saudi Arabia, Netherlands · 85 min\nWildly charismatic and determined to seize her own economic independence, Kenyan truck driver Eva drives long-haul routes across East Africa—even through pregnancy and early single motherhood. This moving road story follows a life lived between border crossings and phone calls home, mile after mile.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TRUCK%20MAMA"
+	},
+	{
+		"id": "aanikoobijigan-ancestor-great-grandparent-great-grandchild-2026-05-01-1945-0",
+		"title": "AANIKOOBIJIGAN [ANCESTOR/ GREAT-GRANDPARENT/GREAT- GRANDCHILD]",
+		"start": "2026-05-01T19:45:00-04:00",
+		"end": "2026-05-01T21:06:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Adam Khalil, Zachary Khalil\nUSA, Denmark · 81 min\nAncestors trapped in museum archives demand a reckoning, and it’s time we listen. Guided by defiant Indigenous voices—past, present and future—and shaped with a bold artistic vision, this urgent film confronts entrenched practices and calls for the rightful return of Indigenous human remains to their community.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AANIKOOBIJIGAN%20%5BANCESTOR%2F%20GREAT-GRANDPARENT%2FGREAT-%20GRANDCHILD%5D"
+	},
+	{
+		"id": "my-father-and-qaddafi-2026-05-01-2015-0",
+		"title": "MY FATHER AND QADDAFI",
+		"start": "2026-05-01T20:15:00-04:00",
+		"end": "2026-05-01T21:43:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jihan K\nLibya, USA · 88 min\nA daughter traces the disappearance of her beloved father—Libyan Foreign Minister and peaceful opposition leader to dictator Muammar Qaddafi—intimately exploring how authoritarian power has reverberated through her family and country amidst a two-decade-long search.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MY%20FATHER%20AND%20QADDAFI"
+	},
+	{
+		"id": "the-tower-that-built-a-city-2026-05-01-2030-0",
+		"title": "THE TOWER THAT BUILT A CITY",
+		"start": "2026-05-01T20:30:00-04:00",
+		"end": "2026-05-01T22:02:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Mark Myers\nCanada · 92 min\nToronto’s skyline-defining CN Tower launched a five-decade transformation of the Big Smoke into the 6ix. Celebrate its 50th anniversary as it continues to symbolize a city that’s become a world-class cultural force in sports, music and global identity.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20TOWER%20THAT%20BUILT%20A%20CITY"
+	},
+	{
+		"id": "traces-2026-05-01-2030-0",
+		"title": "TRACES",
+		"start": "2026-05-01T20:30:00-04:00",
+		"end": "2026-05-01T21:52:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Alisa Kovalenko, Marysia Nikitiuk\nUkraine, Poland · 82 min\nActivist Iryna Dovhan documents the testimonies of Ukrainian women who survived conflict-related violence following the Russian invasion. By gathering survivors into a “circle of courage,” the film portrays a defiant collective, transforming their shared trauma into a powerful force for truth and justice.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TRACES"
+	},
+	{
+		"id": "32-meters-2026-05-01-2045-0",
+		"title": "32 METERS",
+		"start": "2026-05-01T20:45:00-04:00",
+		"end": "2026-05-01T22:08:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Morteza Atabaki\nTurkey, Iran, Qatar · 83 min\nGrowing up in rural Turkey, Halime is a woman who has always defied tradition. Now, she rallies friends to stage a women’s shooting competition, igniting lively debates and unexpected alliances in this funny and quietly subversive film about claiming space on your own terms.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=32%20METERS"
+	},
+	{
+		"id": "aanikoobijigan-ancestor-great-grandparent-great-grandchild-2026-05-02-1030-1",
+		"title": "AANIKOOBIJIGAN [ANCESTOR/ GREAT-GRANDPARENT/GREAT- GRANDCHILD]",
+		"start": "2026-05-02T10:30:00-04:00",
+		"end": "2026-05-02T11:51:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Adam Khalil, Zachary Khalil\nUSA, Denmark · 81 min\nAncestors trapped in museum archives demand a reckoning, and it’s time we listen. Guided by defiant Indigenous voices—past, present and future—and shaped with a bold artistic vision, this urgent film confronts entrenched practices and calls for the rightful return of Indigenous human remains to their community.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AANIKOOBIJIGAN%20%5BANCESTOR%2F%20GREAT-GRANDPARENT%2FGREAT-%20GRANDCHILD%5D"
+	},
+	{
+		"id": "fatna-a-woman-named-rachid-2026-05-02-1100-1",
+		"title": "FATNA, A WOMAN NAMED RACHID",
+		"start": "2026-05-02T11:00:00-04:00",
+		"end": "2026-05-02T12:33:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Hélène Harder\nMorocco, France, Belgium · 93 min\nForcibly disappeared as a student in 1970s Morocco, activist Fatna El Bouih examines her life thus far, the work still left to do and her dream of change.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=FATNA%2C%20A%20WOMAN%20NAMED%20RACHID"
+	},
+	{
+		"id": "the-sandbox-2026-05-02-1100-1",
+		"title": "THE SANDBOX",
+		"start": "2026-05-02T11:00:00-04:00",
+		"end": "2026-05-02T12:30:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Kenya-Jade Pinto\nCanada · 90 min\nA rare and cinematic investigation into the global black box of migration surveillance, control and the caretakers fighting to keep these worlds in check.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20SANDBOX"
+	},
+	{
+		"id": "truck-mama-2026-05-02-1115-1",
+		"title": "TRUCK MAMA",
+		"start": "2026-05-02T11:15:00-04:00",
+		"end": "2026-05-02T12:40:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Zippy Nyaruri\nKenya, South Africa, Saudi Arabia, Netherlands · 85 min\nWildly charismatic and determined to seize her own economic independence, Kenyan truck driver Eva drives long-haul routes across East Africa—even through pregnancy and early single motherhood. This moving road story follows a life lived between border crossings and phone calls home, mile after mile.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TRUCK%20MAMA"
+	},
+	{
+		"id": "my-father-and-qaddafi-2026-05-02-1145-1",
+		"title": "MY FATHER AND QADDAFI",
+		"start": "2026-05-02T11:45:00-04:00",
+		"end": "2026-05-02T13:13:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jihan K\nLibya, USA · 88 min\nA daughter traces the disappearance of her beloved father—Libyan Foreign Minister and peaceful opposition leader to dictator Muammar Qaddafi—intimately exploring how authoritarian power has reverberated through her family and country amidst a two-decade-long search.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=MY%20FATHER%20AND%20QADDAFI"
+	},
+	{
+		"id": "traces-2026-05-02-1330-1",
+		"title": "TRACES",
+		"start": "2026-05-02T13:30:00-04:00",
+		"end": "2026-05-02T14:52:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Alisa Kovalenko, Marysia Nikitiuk\nUkraine, Poland · 82 min\nActivist Iryna Dovhan documents the testimonies of Ukrainian women who survived conflict-related violence following the Russian invasion. By gathering survivors into a “circle of courage,” the film portrays a defiant collective, transforming their shared trauma into a powerful force for truth and justice.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TRACES"
+	},
+	{
+		"id": "sentient-2026-05-02-1400-1",
+		"title": "SENTIENT",
+		"start": "2026-05-02T14:00:00-04:00",
+		"end": "2026-05-02T15:45:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Tony Jones\nAustralia · 105 min\nThis investigative look at the highly controversial practice of animal testing—centred on the story of primate scientist turned animal rights activist Dr. Lisa Jones-Engel—questions if the harm to animals and the human scientists who care for them is justified by the pursuit of scientific advancement.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SENTIENT"
+	},
+	{
+		"id": "elephants-squirrels-2026-05-02-1400-1",
+		"title": "ELEPHANTS & SQUIRRELS",
+		"start": "2026-05-02T14:00:00-04:00",
+		"end": "2026-05-02T15:54:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Gregor Brändli\nSwitzerland · 114 min\nWhen Sri Lankan artist Deneth Piumakshi Veda Arachchige discovers her ancestors’ stolen remains tucked away in Swiss museum cabinets, she investigates the dark legacy of colonial explorers. With the aid of Indigenous leaders, she demands the return of these sacred artifacts, challenging the ethics of modern collections.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=ELEPHANTS%20%26%20SQUIRRELS"
+	},
+	{
+		"id": "time-of-plenty-2026-05-02-1415-0",
+		"title": "TIME OF PLENTY",
+		"start": "2026-05-02T14:15:00-04:00",
+		"end": "2026-05-02T14:34:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Robin Jensen\nNorway · 19 min\nTHE CONTINUOUS MACHINE D: Ruben Gagliardini | Italy | 20 min I SEE MYSELF IN YOU D: Amreen Kullar | Canada | 9 min THE PARK (DANCING ON THE RUBBLE OF EMPIRE) D: Arwa Aburawa, Turab Shah | UK | 34 min ANOTHER DAY SHALL COME D: Aida Kaadan | Palestine, Qatar, Lebanon, France | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TIME%20OF%20PLENTY"
+	},
+	{
+		"id": "the-continuous-machine-2026-05-02-1415-0",
+		"title": "THE CONTINUOUS MACHINE",
+		"start": "2026-05-02T14:15:00-04:00",
+		"end": "2026-05-02T14:35:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Ruben Gagliardini\nItaly · 20 min\nI SEE MYSELF IN YOU D: Amreen Kullar | Canada | 9 min THE PARK (DANCING ON THE RUBBLE OF EMPIRE) D: Arwa Aburawa, Turab Shah | UK | 34 min ANOTHER DAY SHALL COME D: Aida Kaadan | Palestine, Qatar, Lebanon, France | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20CONTINUOUS%20MACHINE"
+	},
+	{
+		"id": "i-see-myself-in-you-2026-05-02-1415-0",
+		"title": "I SEE MYSELF IN YOU",
+		"start": "2026-05-02T14:15:00-04:00",
+		"end": "2026-05-02T14:24:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Amreen Kullar\nCanada · 9 min\nTHE PARK (DANCING ON THE RUBBLE OF EMPIRE) D: Arwa Aburawa, Turab Shah | UK | 34 min ANOTHER DAY SHALL COME D: Aida Kaadan | Palestine, Qatar, Lebanon, France | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=I%20SEE%20MYSELF%20IN%20YOU"
+	},
+	{
+		"id": "the-park-dancing-on-the-rubble-of-empire-2026-05-02-1415-0",
+		"title": "THE PARK (DANCING ON THE RUBBLE OF EMPIRE)",
+		"start": "2026-05-02T14:15:00-04:00",
+		"end": "2026-05-02T14:49:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Arwa Aburawa, Turab Shah\nUK · 34 min\nANOTHER DAY SHALL COME D: Aida Kaadan | Palestine, Qatar, Lebanon, France | 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20PARK%20(DANCING%20ON%20THE%20RUBBLE%20OF%20EMPIRE)"
+	},
+	{
+		"id": "another-day-shall-come-2026-05-02-1415-0",
+		"title": "ANOTHER DAY SHALL COME",
+		"start": "2026-05-02T14:15:00-04:00",
+		"end": "2026-05-02T14:35:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Aida Kaadan\nPalestine, Qatar, Lebanon, France · 20 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=ANOTHER%20DAY%20SHALL%20COME"
+	},
+	{
+		"id": "gealtra-2026-05-02-1445-0",
+		"title": "GEALTRA",
+		"start": "2026-05-02T14:45:00-04:00",
+		"end": "2026-05-02T15:55:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Brendan Canty\nIreland · 70 min\nThe Kabin Studio on the north side of Cork gives teenagers the mic and the confidence to use it. Writing and performing infectious Irish- language rap, they grow from shy beginners into viral sensations—their lyrics pulsing with pride, heritage and the joy of being heard. FLETCHER STREET D: Jannat Gargi, David Darg | USA | 35 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=GEALTRA"
+	},
+	{
+		"id": "fletcher-street-2026-05-02-1445-0",
+		"title": "FLETCHER STREET",
+		"start": "2026-05-02T14:45:00-04:00",
+		"end": "2026-05-02T15:20:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jannat Gargi, David Darg\nUSA · 35 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=FLETCHER%20STREET"
+	},
+	{
+		"id": "who-is-still-alive-2026-05-02-1630-0",
+		"title": "WHO IS STILL ALIVE",
+		"start": "2026-05-02T16:30:00-04:00",
+		"end": "2026-05-02T18:25:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Nicolas Wadimoff\nSwitzerland, France, Palestine · 115 min\nNine Palestinians revisit the events that forced them to flee Gaza in 2024. With white chalk on a black stage, they map towns, camps and neighbourhoods, while recounting the painful losses of war and powerful memories of their lives before.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHO%20IS%20STILL%20ALIVE"
+	},
+	{
+		"id": "time-and-water-2026-05-02-1715-0",
+		"title": "TIME AND WATER",
+		"start": "2026-05-02T17:15:00-04:00",
+		"end": "2026-05-02T18:45:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Sara Dosa\nUSA, Iceland · 90 min\nFollowing the loss of his beloved grandparents and facing the death of his country’s glaciers, renowned Icelandic writer Andri Snær Magnason constructs a cinematic time capsule in this beautifully crafted meditation on family, memory and epochal change from Academy Award nominee Sara Dosa (Fire of Love).",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TIME%20AND%20WATER"
+	},
+	{
+		"id": "to-hold-a-mountain-2026-05-02-1715-0",
+		"title": "TO HOLD A MOUNTAIN",
+		"start": "2026-05-02T17:15:00-04:00",
+		"end": "2026-05-02T19:00:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Biljana Tutorov, Petar Glomazic\nSerbia, France, Slovenia, Montenegro, Croatia · 105 min\nIn the quiet mountain lands of Montenegro, a mother and daughter strive to protect their ancestral home from the threat of becoming a NATO military training facility, awakening memories of the violence that shattered their family.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TO%20HOLD%20A%20MOUNTAIN"
+	},
+	{
+		"id": "scarlet-girls-2026-05-02-1730-0",
+		"title": "SCARLET GIRLS",
+		"start": "2026-05-02T17:30:00-04:00",
+		"end": "2026-05-02T18:40:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Paula Cury\nDominican Republic, Germany, Mexico · 70 min\nWhat does it mean to exist as a woman in a country where abortion is illegal without exception? Through intimate narration and evocative cinematography, women across the Dominican Republic reflect on their experiences with forced motherhood and clandestine abortion.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SCARLET%20GIRLS"
+	},
+	{
+		"id": "what-comes-from-sitting-in-silence-2026-05-02-1800-0",
+		"title": "WHAT COMES FROM SITTING IN SILENCE?",
+		"start": "2026-05-02T18:00:00-04:00",
+		"end": "2026-05-02T19:16:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Sophie Schrago\nFrance, South Korea · 76 min\nFrom a cramped Mumbai storefront, Khatoon leads the city’s first women-led Islamic court. Amidst heated arguments and raw testimony, these female judges settle cases of domestic conflict, reclaiming religious law from male dominance to offer a new path toward grassroots justice.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHAT%20COMES%20FROM%20SITTING%20IN%20SILENCE%3F"
+	},
+	{
+		"id": "hex-2026-05-02-1945-0",
+		"title": "HEX",
+		"start": "2026-05-02T19:45:00-04:00",
+		"end": "2026-05-02T21:18:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Maja Holand\nNorway · 93 min\nIn the heart of Norway’s black metal music scene, a new force emerges. Three young women enter a pact to start screaming, devoting their entire lives to awakening the world, each other and themselves as witches.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=HEX"
+	},
+	{
+		"id": "les-habitants-2026-05-02-2000-0",
+		"title": "LES HABITANTS",
+		"start": "2026-05-02T20:00:00-04:00",
+		"end": "2026-05-02T20:42:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Maureen Fazendeiro\nPortugal, France · 42 min\nOn the outskirts of Paris, a collective of women assists a travelling group of Roma against the wishes of their neighbours. A beautifully contemplative film that considers the day-to-day lives of migrants without a safe place to live. AIMÉE & SAMIR D: Catherine van Campen | Netherlands | 30 min 4937 KILOWATTS A YEAR D: Ellie Delvaux, Madeleine Faburel-Dumail | Belgium, Morocco | 23 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=LES%20HABITANTS"
+	},
+	{
+		"id": "aimee-samir-2026-05-02-2000-0",
+		"title": "AIMÉE & SAMIR",
+		"start": "2026-05-02T20:00:00-04:00",
+		"end": "2026-05-02T20:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Catherine van Campen\nNetherlands · 30 min\n4937 KILOWATTS A YEAR D: Ellie Delvaux, Madeleine Faburel-Dumail | Belgium, Morocco | 23 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AIM%C3%89E%20%26%20SAMIR"
+	},
+	{
+		"id": "4937-kilowatts-a-year-2026-05-02-2000-0",
+		"title": "4937 KILOWATTS A YEAR",
+		"start": "2026-05-02T20:00:00-04:00",
+		"end": "2026-05-02T20:23:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Ellie Delvaux, Madeleine Faburel-Dumail\nBelgium, Morocco · 23 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=4937%20KILOWATTS%20A%20YEAR"
+	},
+	{
+		"id": "the-oldest-person-in-the-world-2026-05-02-2015-0",
+		"title": "THE OLDEST PERSON IN THE WORLD",
+		"start": "2026-05-02T20:15:00-04:00",
+		"end": "2026-05-02T21:42:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Sam Green\nUSA · 87 min\nFor over a decade, filmmaker Sam Green has chronicled the ever-changing Guinness World Record holder of “Oldest Person in the World.” Weaving together his personal experiences of fatherhood, ageing and loss, Green offers a poignant meditation on family, mortality and the meaning of life.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20OLDEST%20PERSON%20IN%20THE%20WORLD"
+	},
+	{
+		"id": "virtual-girlfriends-2026-05-02-2030-0",
+		"title": "VIRTUAL GIRLFRIENDS",
+		"start": "2026-05-02T20:30:00-04:00",
+		"end": "2026-05-02T22:00:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Barbora Chalupová\nCzech Republic, Bulgaria, Slovakia · 90 min\nAs three women navigate careers as sexual- content creators on OnlyFans, they reveal the tantalizing, transactional and ultimately fragile dynamics of digital intimacy. Raw and unflinching, this fly-on-the-wall film investigates self-worth, validation and the human cost of the gig economy.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=VIRTUAL%20GIRLFRIENDS"
+	},
+	{
+		"id": "the-seoul-guardians-2026-05-02-2045-0",
+		"title": "THE SEOUL GUARDIANS",
+		"start": "2026-05-02T20:45:00-04:00",
+		"end": "2026-05-02T21:56:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Chul Young Cho, Shin Wan Kim, Jong Woo Kim\nSouth Korea · 71 min\nWhen martial law was shockingly declared in 2024, the people of Seoul took to the streets to protect their democracy. Driven by memories of past dictatorships, this urgent reportage-style film captures a night of chaos and powerful, collective citizen resistance.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20SEOUL%20GUARDIANS"
+	},
+	{
+		"id": "to-hold-a-mountain-2026-05-03-1000-1",
+		"title": "TO HOLD A MOUNTAIN",
+		"start": "2026-05-03T10:00:00-04:00",
+		"end": "2026-05-03T11:45:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Biljana Tutorov, Petar Glomazic\nSerbia, France, Slovenia, Montenegro, Croatia · 105 min\nIn the quiet mountain lands of Montenegro, a mother and daughter strive to protect their ancestral home from the threat of becoming a NATO military training facility, awakening memories of the violence that shattered their family.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TO%20HOLD%20A%20MOUNTAIN"
+	},
+	{
+		"id": "32-meters-2026-05-03-1030-1",
+		"title": "32 METERS",
+		"start": "2026-05-03T10:30:00-04:00",
+		"end": "2026-05-03T11:53:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Morteza Atabaki\nTurkey, Iran, Qatar · 83 min\nGrowing up in rural Turkey, Halime is a woman who has always defied tradition. Now, she rallies friends to stage a women’s shooting competition, igniting lively debates and unexpected alliances in this funny and quietly subversive film about claiming space on your own terms.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=32%20METERS"
+	},
+	{
+		"id": "les-habitants-2026-05-03-1100-1",
+		"title": "LES HABITANTS",
+		"start": "2026-05-03T11:00:00-04:00",
+		"end": "2026-05-03T11:42:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Maureen Fazendeiro\nPortugal, France · 42 min\nOn the outskirts of Paris, a collective of women assists a travelling group of Roma against the wishes of their neighbours. A beautifully contemplative film that considers the day-to-day lives of migrants without a safe place to live. AIMÉE & SAMIR D: Catherine van Campen | Netherlands | 30 min 4937 KILOWATTS A YEAR D: Ellie Delvaux, Madeleine Faburel-Dumail | Belgium, Morocco | 23 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=LES%20HABITANTS"
+	},
+	{
+		"id": "aimee-samir-2026-05-03-1100-1",
+		"title": "AIMÉE & SAMIR",
+		"start": "2026-05-03T11:00:00-04:00",
+		"end": "2026-05-03T11:30:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Catherine van Campen\nNetherlands · 30 min\n4937 KILOWATTS A YEAR D: Ellie Delvaux, Madeleine Faburel-Dumail | Belgium, Morocco | 23 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=AIM%C3%89E%20%26%20SAMIR"
+	},
+	{
+		"id": "4937-kilowatts-a-year-2026-05-03-1100-1",
+		"title": "4937 KILOWATTS A YEAR",
+		"start": "2026-05-03T11:00:00-04:00",
+		"end": "2026-05-03T11:23:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Ellie Delvaux, Madeleine Faburel-Dumail\nBelgium, Morocco · 23 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=4937%20KILOWATTS%20A%20YEAR"
+	},
+	{
+		"id": "whispers-in-may-2026-05-03-1145-1",
+		"title": "WHISPERS IN MAY",
+		"start": "2026-05-03T11:45:00-04:00",
+		"end": "2026-05-03T13:20:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Dongnan Chen\nHong Kong, Netherlands, Sweden, South Korea · 95 min\nIn the rural Liangshan Mountains, 14-year-old Qihuo and her friends embark on a road trip to find a skirt for her traditional menarche rite of passage. This poetic film blends documentary and fiction to capture a fleeting, final moment of childhood innocence.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHISPERS%20IN%20MAY"
+	},
+	{
+		"id": "the-oldest-person-in-the-world-2026-05-03-1300-1",
+		"title": "THE OLDEST PERSON IN THE WORLD",
+		"start": "2026-05-03T13:00:00-04:00",
+		"end": "2026-05-03T14:27:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Sam Green\nUSA · 87 min\nFor over a decade, filmmaker Sam Green has chronicled the ever-changing Guinness World Record holder of “Oldest Person in the World.” Weaving together his personal experiences of fatherhood, ageing and loss, Green offers a poignant meditation on family, mortality and the meaning of life.\nIncludes Q&A or special programming.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20OLDEST%20PERSON%20IN%20THE%20WORLD"
+	},
+	{
+		"id": "time-and-water-2026-05-03-1315-1",
+		"title": "TIME AND WATER",
+		"start": "2026-05-03T13:15:00-04:00",
+		"end": "2026-05-03T14:45:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Sara Dosa\nUSA, Iceland · 90 min\nFollowing the loss of his beloved grandparents and facing the death of his country’s glaciers, renowned Icelandic writer Andri Snær Magnason constructs a cinematic time capsule in this beautifully crafted meditation on family, memory and epochal change from Academy Award nominee Sara Dosa (Fire of Love).",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=TIME%20AND%20WATER"
+	},
+	{
+		"id": "who-is-still-alive-2026-05-03-1330-1",
+		"title": "WHO IS STILL ALIVE",
+		"start": "2026-05-03T13:30:00-04:00",
+		"end": "2026-05-03T15:25:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Nicolas Wadimoff\nSwitzerland, France, Palestine · 115 min\nNine Palestinians revisit the events that forced them to flee Gaza in 2024. With white chalk on a black stage, they map towns, camps and neighbourhoods, while recounting the painful losses of war and powerful memories of their lives before.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHO%20IS%20STILL%20ALIVE"
+	},
+	{
+		"id": "scarlet-girls-2026-05-03-1400-1",
+		"title": "SCARLET GIRLS",
+		"start": "2026-05-03T14:00:00-04:00",
+		"end": "2026-05-03T15:10:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Paula Cury\nDominican Republic, Germany, Mexico · 70 min\nWhat does it mean to exist as a woman in a country where abortion is illegal without exception? Through intimate narration and evocative cinematography, women across the Dominican Republic reflect on their experiences with forced motherhood and clandestine abortion.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SCARLET%20GIRLS"
+	},
+	{
+		"id": "replica-2026-05-03-1445-1",
+		"title": "REPLICA",
+		"start": "2026-05-03T14:45:00-04:00",
+		"end": "2026-05-03T16:17:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Chouwa Liang\nAustralia, France · 92 min\nLove in the modern world can be tricky. For three Chinese women, AI companions bring the comfort and love they need, but are these artificial relationships preventing them from connecting in the real world?",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=REPLICA"
+	},
+	{
+		"id": "the-tower-that-built-a-city-2026-05-03-1600-1",
+		"title": "THE TOWER THAT BUILT A CITY",
+		"start": "2026-05-03T16:00:00-04:00",
+		"end": "2026-05-03T17:32:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "D: Mark Myers\nCanada · 92 min\nToronto’s skyline-defining CN Tower launched a five-decade transformation of the Big Smoke into the 6ix. Celebrate its 50th anniversary as it continues to symbolize a city that’s become a world-class cultural force in sports, music and global identity.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20TOWER%20THAT%20BUILT%20A%20CITY"
+	},
+	{
+		"id": "when-a-witness-recants-2026-05-03-1615-1",
+		"title": "WHEN A WITNESS RECANTS",
+		"start": "2026-05-03T16:15:00-04:00",
+		"end": "2026-05-03T18:12:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Dawn Porter\nUSA · 117 min\nAuthor, journalist and activist Ta-Nehisi Coates investigates the case of a young student who was murdered in Baltimore, uncovering layers of false accusations, wrongful convictions and how the justice system can fail those caught in the crossfire.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHEN%20A%20WITNESS%20RECANTS"
+	},
+	{
+		"id": "baea-2026-05-03-1630-0",
+		"title": "BAEA",
+		"start": "2026-05-03T16:30:00-04:00",
+		"end": "2026-05-03T16:48:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Terra Long\nUSA · 18 min\nTHE GLACIER WEDDING D: Amin Muhammad, Thomas Sawano | USA | 26 min A WOLF IN THE SUBURBS D: Amélie Hardy | Canada | 18 min SCENES FROM THE DIVIDE D: Alison Klayman | USA | 32 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=BAEA"
+	},
+	{
+		"id": "the-glacier-wedding-2026-05-03-1630-0",
+		"title": "THE GLACIER WEDDING",
+		"start": "2026-05-03T16:30:00-04:00",
+		"end": "2026-05-03T16:56:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Amin Muhammad, Thomas Sawano\nUSA · 26 min\nA WOLF IN THE SUBURBS D: Amélie Hardy | Canada | 18 min SCENES FROM THE DIVIDE D: Alison Klayman | USA | 32 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20GLACIER%20WEDDING"
+	},
+	{
+		"id": "a-wolf-in-the-suburbs-2026-05-03-1630-0",
+		"title": "A WOLF IN THE SUBURBS",
+		"start": "2026-05-03T16:30:00-04:00",
+		"end": "2026-05-03T16:48:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Amélie Hardy\nCanada · 18 min\nSCENES FROM THE DIVIDE D: Alison Klayman | USA | 32 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20WOLF%20IN%20THE%20SUBURBS"
+	},
+	{
+		"id": "scenes-from-the-divide-2026-05-03-1630-0",
+		"title": "SCENES FROM THE DIVIDE",
+		"start": "2026-05-03T16:30:00-04:00",
+		"end": "2026-05-03T17:02:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Alison Klayman\nUSA · 32 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=SCENES%20FROM%20THE%20DIVIDE"
+	},
+	{
+		"id": "gealtra-2026-05-03-1700-1",
+		"title": "GEALTRA",
+		"start": "2026-05-03T17:00:00-04:00",
+		"end": "2026-05-03T18:10:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Brendan Canty\nIreland · 70 min\nThe Kabin Studio on the north side of Cork gives teenagers the mic and the confidence to use it. Writing and performing infectious Irish- language rap, they grow from shy beginners into viral sensations—their lyrics pulsing with pride, heritage and the joy of being heard. FLETCHER STREET D: Jannat Gargi, David Darg | USA | 35 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=GEALTRA"
+	},
+	{
+		"id": "fletcher-street-2026-05-03-1700-1",
+		"title": "FLETCHER STREET",
+		"start": "2026-05-03T17:00:00-04:00",
+		"end": "2026-05-03T17:35:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Jannat Gargi, David Darg\nUSA · 35 min",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=FLETCHER%20STREET"
+	},
+	{
+		"id": "what-comes-from-sitting-in-silence-2026-05-03-1745-1",
+		"title": "WHAT COMES FROM SITTING IN SILENCE?",
+		"start": "2026-05-03T17:45:00-04:00",
+		"end": "2026-05-03T19:01:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Sophie Schrago\nFrance, South Korea · 76 min\nFrom a cramped Mumbai storefront, Khatoon leads the city’s first women-led Islamic court. Amidst heated arguments and raw testimony, these female judges settle cases of domestic conflict, reclaiming religious law from male dominance to offer a new path toward grassroots justice.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=WHAT%20COMES%20FROM%20SITTING%20IN%20SILENCE%3F"
+	},
+	{
+		"id": "hex-2026-05-03-1930-1",
+		"title": "HEX",
+		"start": "2026-05-03T19:30:00-04:00",
+		"end": "2026-05-03T21:03:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 4",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Maja Holand\nNorway · 93 min\nIn the heart of Norway’s black metal music scene, a new force emerges. Three young women enter a pact to start screaming, devoting their entire lives to awakening the world, each other and themselves as witches.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=HEX"
+	},
+	{
+		"id": "a-distant-call-2026-05-03-1945-1",
+		"title": "A DISTANT CALL",
+		"start": "2026-05-03T19:45:00-04:00",
+		"end": "2026-05-03T21:24:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 1",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Andrea Suwito\nIndonesia, UK, France · 99 min\nIn a remote Indonesian community with ancient traditions, a former spiritual leader faces a difficult choice between their unique gender identity and the expectations of an Islamic pilgrimage to Mecca. This vivid film captures a rare, meditative struggle between local tradition and modern faith.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=A%20DISTANT%20CALL"
+	},
+	{
+		"id": "virtual-girlfriends-2026-05-03-2015-1",
+		"title": "VIRTUAL GIRLFRIENDS",
+		"start": "2026-05-03T20:15:00-04:00",
+		"end": "2026-05-03T21:45:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 2",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Barbora Chalupová\nCzech Republic, Bulgaria, Slovakia · 90 min\nAs three women navigate careers as sexual- content creators on OnlyFans, they reveal the tantalizing, transactional and ultimately fragile dynamics of digital intimacy. Raw and unflinching, this fly-on-the-wall film investigates self-worth, validation and the human cost of the gig economy.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=VIRTUAL%20GIRLFRIENDS"
+	},
+	{
+		"id": "the-seoul-guardians-2026-05-03-2030-1",
+		"title": "THE SEOUL GUARDIANS",
+		"start": "2026-05-03T20:30:00-04:00",
+		"end": "2026-05-03T21:41:00-04:00",
+		"venue": "TIFF Lightbox – Cinema 3",
+		"address": "350 King St W, Toronto, ON",
+		"description": "D: Chul Young Cho, Shin Wan Kim, Jong Woo Kim\nSouth Korea · 71 min\nWhen martial law was shockingly declared in 2024, the people of Seoul took to the streets to protect their democracy. Driven by memories of past dictatorships, this urgent reportage-style film captures a night of chaos and powerful, collective citizen resistance.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b&search=THE%20SEOUL%20GUARDIANS"
 	}
 ]

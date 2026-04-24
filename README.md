@@ -54,36 +54,25 @@ type Screening = {
 };
 ```
 
-### Fetching the raw sources
+### Refreshing the schedule
 
-The repository ships with **placeholder** screenings because the sandbox the
-scaffold was generated in could not reach `hotdocs.ca` or `s3.amazonaws.com`.
-Run this on a machine that _can_ reach them:
+`src/lib/data/screenings.json` is generated from the official Hot Docs PDF
+schedule. To refresh:
 
 ```sh
 npm install
-npm run fetch:sources
+npm run fetch:sources    # downloads the PDF + captures the box office page
+npm run parse:pdf        # pdftotext + parser → src/lib/data/screenings.json
 ```
 
-The script will auto-install chromium the first time if it isn't already
-cached.
+`fetch:sources` writes:
+- `scripts/data/HD26_Screening-Schedule.pdf` — the raw schedule PDF
+- `scripts/data/list.html` — fully-rendered box office listing (post-JS)
+- `scripts/data/list.png` — full-page screenshot
+- `scripts/data/xhr/*.json` — every JSON payload the listing page fetched
+- `scripts/data/xhr-log.json` — index of XHR/fetch responses
 
-That writes the following into `scripts/data/`:
-
-- `HD26_Screening-Schedule.pdf` — the raw schedule PDF
-- `list.html` — the fully-rendered box office listing (post-JS)
-- `list.png` — a full-page screenshot for visual verification
-- `xhr/*.json` — every JSON payload the listing page fetched
-- `xhr-log.json` — an index of all XHR/fetch responses
-
-Commit and push those files so the parser step can consume them.
-
-### Populating the screening list
-
-Once the raw sources are committed, `src/lib/data/screenings.json` needs to be
-generated from them. Each entry follows the `Screening` type above, with all
-datetimes in **Toronto time** (`-04:00` during DST). The UI shows an amber
-banner as long as any entry in that file still contains `[PLACEHOLDER]`.
+`parse:pdf` requires `pdftotext` (poppler-utils) on the path.
 
 ## Project structure
 

@@ -12,7 +12,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:e2e": "playwright test",
 		"test": "npm run test:e2e",
-		"fetch:sources": "node scripts/fetch-sources.mjs"
+		"fetch:sources": "node scripts/fetch-sources.mjs",
+		"parse:pdf": "pdftotext -raw scripts/data/HD26_Screening-Schedule.pdf scripts/data/HD26_Screening-Schedule.raw.txt && node scripts/parse-pdf.mjs"
 	},
 	"devDependencies": {
 		"@playwright/test": "1.56.0",
