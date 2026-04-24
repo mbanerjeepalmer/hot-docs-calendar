@@ -9,7 +9,7 @@
 
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { chromium } from 'playwright';
+import { chromium } from '@playwright/test';
 
 const OUT = new URL('./data/', import.meta.url);
 const OUT_DIR = OUT.pathname;
@@ -38,10 +38,14 @@ async function captureBoxOffice() {
 	try {
 		browser = await chromium.launch();
 	} catch (err) {
-		console.error(
-			'\nCould not launch chromium. Run `npx playwright install chromium` and try again.\n'
-		);
-		throw err;
+		if (/Executable doesn't exist|install/i.test(String(err))) {
+			console.log('  chromium not installed, running `playwright install chromium`…');
+			const { execSync } = await import('node:child_process');
+			execSync('npx playwright install chromium', { stdio: 'inherit' });
+			browser = await chromium.launch();
+		} else {
+			throw err;
+		}
 	}
 	const context = await browser.newContext({
 		userAgent:

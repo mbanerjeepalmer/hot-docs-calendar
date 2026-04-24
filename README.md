@@ -61,9 +61,12 @@ scaffold was generated in could not reach `hotdocs.ca` or `s3.amazonaws.com`.
 Run this on a machine that _can_ reach them:
 
 ```sh
-npx playwright install chromium   # first time only
+npm install
 npm run fetch:sources
 ```
+
+The script will auto-install chromium the first time if it isn't already
+cached.
 
 That writes the following into `scripts/data/`:
 
