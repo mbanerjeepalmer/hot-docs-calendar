@@ -54,22 +54,33 @@ type Screening = {
 };
 ```
 
-### Placeholder data
+### Fetching the raw sources
 
-The repository currently ships with **placeholder** screenings because the
-sandbox this app was scaffolded in could not reach `hotdocs.ca` or
-`s3.amazonaws.com`. To populate real data:
+The repository ships with **placeholder** screenings because the sandbox the
+scaffold was generated in could not reach `hotdocs.ca` or `s3.amazonaws.com`.
+Run this on a machine that _can_ reach them:
 
-1. Open the [PDF schedule](https://s3.amazonaws.com/assets.hotdocs.ca/doc/HD26_Screening-Schedule.pdf)
-   or the [box office listings](https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b).
-2. Overwrite `src/lib/data/screenings.json` with the full schedule using the
-   shape above. All datetimes must be in **Toronto time** with the `-04:00`
-   offset during DST.
-3. Run `npm run test:e2e` — the existing tests check structure, not specific
-   titles, so they continue to pass against real data.
+```sh
+npx playwright install chromium   # first time only
+npm run fetch:sources
+```
 
-The UI shows a banner while any entry containing `[PLACEHOLDER]` in its title is
-still in the data file.
+That writes the following into `scripts/data/`:
+
+- `HD26_Screening-Schedule.pdf` — the raw schedule PDF
+- `list.html` — the fully-rendered box office listing (post-JS)
+- `list.png` — a full-page screenshot for visual verification
+- `xhr/*.json` — every JSON payload the listing page fetched
+- `xhr-log.json` — an index of all XHR/fetch responses
+
+Commit and push those files so the parser step can consume them.
+
+### Populating the screening list
+
+Once the raw sources are committed, `src/lib/data/screenings.json` needs to be
+generated from them. Each entry follows the `Screening` type above, with all
+datetimes in **Toronto time** (`-04:00` during DST). The UI shows an amber
+banner as long as any entry in that file still contains `[PLACEHOLDER]`.
 
 ## Project structure
 
