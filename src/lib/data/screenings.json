@@ -1,0 +1,52 @@
+[
+	{
+		"id": "placeholder-001",
+		"title": "[PLACEHOLDER] Opening Night Film",
+		"start": "2026-04-23T19:00:00-04:00",
+		"end": "2026-04-23T21:00:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "Replace this file with the real Hot Docs 2026 schedule. See README.md.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+	},
+	{
+		"id": "placeholder-002",
+		"title": "[PLACEHOLDER] Friday Matinee",
+		"start": "2026-04-24T13:30:00-04:00",
+		"end": "2026-04-24T15:00:00-04:00",
+		"venue": "TIFF Lightbox",
+		"address": "350 King St W, Toronto, ON",
+		"description": "Placeholder entry.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+	},
+	{
+		"id": "placeholder-003",
+		"title": "[PLACEHOLDER] Friday Evening",
+		"start": "2026-04-24T18:45:00-04:00",
+		"end": "2026-04-24T20:30:00-04:00",
+		"venue": "Scotiabank Theatre",
+		"address": "259 Richmond St W, Toronto, ON",
+		"description": "Placeholder entry.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+	},
+	{
+		"id": "placeholder-004",
+		"title": "[PLACEHOLDER] Saturday Premiere",
+		"start": "2026-04-25T20:00:00-04:00",
+		"end": "2026-04-25T21:45:00-04:00",
+		"venue": "Isabel Bader Theatre",
+		"address": "93 Charles St W, Toronto, ON",
+		"description": "Placeholder entry.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+	},
+	{
+		"id": "placeholder-005",
+		"title": "[PLACEHOLDER] Sunday Double Bill",
+		"start": "2026-04-26T15:00:00-04:00",
+		"end": "2026-04-26T17:30:00-04:00",
+		"venue": "Hot Docs Ted Rogers Cinema",
+		"address": "506 Bloor St W, Toronto, ON",
+		"description": "Placeholder entry.",
+		"ticketUrl": "https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+	}
+]
