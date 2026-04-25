@@ -7,6 +7,20 @@
 	let query = $state('');
 	let venueFilter = $state('');
 
+	// The cid= and webcal:// links must point at the deployed origin so that
+	// Google (or any other calendar app) can fetch the ICS feed. During SSR/
+	// prerender the origin is a placeholder; we patch it client-side to the
+	// real window.location.origin on hydration.
+	let origin = $state('https://hot-docs-calendar.vercel.app');
+	$effect(() => {
+		if (typeof window !== 'undefined') origin = window.location.origin;
+	});
+	const icsUrl = $derived(`${origin}/calendar.ics`);
+	const googleSubscribeUrl = $derived(
+		`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(icsUrl)}`
+	);
+	const webcalUrl = $derived(icsUrl.replace(/^https?:/, 'webcal:'));
+
 	const venues = $derived(
 		Array.from(new Set(data.screenings.map((s) => s.venue))).sort()
 	);
@@ -49,7 +63,8 @@
 	<header class="mb-8">
 		<h1 class="text-4xl font-bold tracking-tight">Hot Docs 2026 — Remote Calendar</h1>
 		<p class="mt-2 text-neutral-600 dark:text-neutral-300">
-			Browse every screening. Add any to your Google Calendar in one click.
+			Subscribe to the full festival, or add any single screening to your
+			Google Calendar.
 		</p>
 		<p class="mt-1 text-sm text-neutral-500">
 			Official festival:
@@ -68,6 +83,47 @@
 			>
 		</p>
 	</header>
+
+	<section
+		class="mb-8 rounded-lg border border-neutral-200 bg-neutral-50 p-4"
+		aria-labelledby="subscribe-heading"
+	>
+		<h2 id="subscribe-heading" class="text-base font-semibold">
+			Subscribe to all {data.screenings.length} screenings
+		</h2>
+		<p class="mt-1 text-sm text-neutral-600">
+			One-click subscription keeps your calendar in sync with the festival
+			schedule.
+		</p>
+		<div class="mt-3 flex flex-wrap gap-2">
+			<a
+				class="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white hover:bg-neutral-700"
+				href={googleSubscribeUrl}
+				target="_blank"
+				rel="noopener noreferrer"
+				data-testid="subscribe-google"
+			>
+				Subscribe in Google Calendar
+			</a>
+			<a
+				class="inline-flex items-center gap-2 rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100"
+				href={webcalUrl}
+				data-testid="subscribe-webcal"
+			>
+				Subscribe in another calendar app
+			</a>
+			<a
+				class="inline-flex items-center gap-2 rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100"
+				href={icsUrl}
+				data-testid="subscribe-ics"
+			>
+				Download .ics
+			</a>
+		</div>
+		<p class="mt-2 text-xs text-neutral-500">
+			Subscription URL: <code class="font-mono">{icsUrl}</code>
+		</p>
+	</section>
 
 	{#if hasPlaceholders}
 		<div
