@@ -120,7 +120,7 @@
 		</p>
 		<div class="mt-3 flex flex-wrap gap-2">
 			<a
-				class="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white hover:bg-neutral-700"
+				class="inline-flex min-h-11 items-center gap-2 rounded-md bg-neutral-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-neutral-700"
 				href={googleSubscribeUrl}
 				target="_blank"
 				rel="noopener noreferrer"
@@ -129,14 +129,14 @@
 				Subscribe in Google Calendar
 			</a>
 			<a
-				class="inline-flex items-center gap-2 rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100"
+				class="inline-flex min-h-11 items-center gap-2 rounded-md border border-neutral-300 bg-white px-4 py-2.5 text-sm font-medium text-neutral-900 hover:bg-neutral-100"
 				href={webcalUrl}
 				data-testid="subscribe-webcal"
 			>
-				Subscribe in another calendar app
+				Subscribe in Apple Calendar / Outlook
 			</a>
 			<a
-				class="inline-flex items-center gap-2 rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-100"
+				class="inline-flex min-h-11 items-center gap-2 rounded-md border border-neutral-300 bg-white px-4 py-2.5 text-sm font-medium text-neutral-900 hover:bg-neutral-100"
 				href={icsUrl}
 				data-testid="subscribe-ics"
 			>
@@ -251,7 +251,7 @@
 								{/if}
 							</div>
 							<a
-								class="inline-flex shrink-0 items-center gap-2 rounded-md bg-neutral-900 px-3 py-2 text-sm font-medium text-white hover:bg-neutral-700"
+								class="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-md bg-neutral-900 px-4 py-2.5 text-sm font-medium text-white hover:bg-neutral-700"
 								href={buildGoogleCalendarUrl(s)}
 								target="_blank"
 								rel="noopener noreferrer"

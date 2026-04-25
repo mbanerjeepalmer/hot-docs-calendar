@@ -7,7 +7,10 @@ export default defineConfig({
 	use: {
 		baseURL: 'http://localhost:4173'
 	},
-	projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
+	projects: [
+		{ name: 'chromium', use: { ...devices['Desktop Chrome'] } },
+		{ name: 'mobile', use: { ...devices['Pixel 5'] } }
+	],
 	webServer: {
 		command: 'npm run build && npm run preview',
 		port: 4173,
