@@ -28,7 +28,10 @@ export function formatDayHeading(day: string): string {
 }
 
 export function formatTime(iso: string): string {
-	return new Date(iso).toLocaleTimeString('en-CA', {
+	// en-US gives "7:00 PM" (uppercase, no periods); en-CA gives "7:00 p.m."
+	// which wraps mid-token in narrow time columns. We keep the readable AM/PM
+	// form rather than 24h since most North American calendar UIs use it.
+	return new Date(iso).toLocaleTimeString('en-US', {
 		hour: 'numeric',
 		minute: '2-digit',
 		timeZone: 'America/Toronto'
