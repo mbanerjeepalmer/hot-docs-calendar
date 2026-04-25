@@ -16,10 +16,33 @@
 		if (typeof window !== 'undefined') origin = window.location.origin;
 	});
 	const icsUrl = $derived(`${origin}/calendar.ics`);
-	const googleSubscribeUrl = $derived(
-		`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(icsUrl)}`
-	);
 	const webcalUrl = $derived(icsUrl.replace(/^https?:/, 'webcal:'));
+	// Google's cid= parameter rejects https:// URLs ("Unable to subscribe in
+	// Google Calendar, check the URL"); the webcal:// variant is what works.
+	const googleSubscribeUrl = $derived(
+		`https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcalUrl)}`
+	);
+
+	let copied = $state(false);
+	async function copyIcsUrl() {
+		try {
+			await navigator.clipboard.writeText(icsUrl);
+			copied = true;
+			setTimeout(() => (copied = false), 2000);
+		} catch {
+			// Clipboard write can fail in non-secure contexts; fall back to selection.
+			const r = document.createRange();
+			const node = document.createTextNode(icsUrl);
+			document.body.appendChild(node);
+			r.selectNode(node);
+			window.getSelection()?.removeAllRanges();
+			window.getSelection()?.addRange(r);
+			document.execCommand('copy');
+			document.body.removeChild(node);
+			copied = true;
+			setTimeout(() => (copied = false), 2000);
+		}
+	}
 
 	const venues = $derived(
 		Array.from(new Set(data.screenings.map((s) => s.venue))).sort()
@@ -120,9 +143,34 @@
 				Download .ics
 			</a>
 		</div>
-		<p class="mt-2 text-xs text-neutral-500">
-			Subscription URL: <code class="font-mono">{icsUrl}</code>
-		</p>
+		<div class="mt-3 flex flex-wrap items-center gap-2 text-xs text-neutral-500">
+			<span>Subscription URL:</span>
+			<code class="rounded bg-white px-2 py-1 font-mono text-neutral-700 ring-1 ring-neutral-200"
+				>{icsUrl}</code
+			>
+			<button
+				type="button"
+				onclick={copyIcsUrl}
+				class="rounded border border-neutral-300 bg-white px-2 py-1 text-xs font-medium text-neutral-700 hover:bg-neutral-100"
+			>
+				{copied ? 'Copied!' : 'Copy URL'}
+			</button>
+		</div>
+		<details class="mt-2 text-xs text-neutral-500">
+			<summary class="cursor-pointer">If "Subscribe in Google Calendar" doesn't work…</summary>
+			<ol class="mt-2 ml-4 list-decimal space-y-1">
+				<li>Copy the subscription URL above.</li>
+				<li>
+					Open <a
+						class="underline"
+						href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl"
+						target="_blank"
+						rel="noopener noreferrer">Google Calendar's "Add by URL" page</a
+					>.
+				</li>
+				<li>Paste the URL and click <em>Add calendar</em>.</li>
+			</ol>
+		</details>
 	</section>
 
 	{#if hasPlaceholders}

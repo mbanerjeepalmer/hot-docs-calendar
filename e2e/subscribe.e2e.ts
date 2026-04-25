@@ -22,9 +22,17 @@ test.describe('Subscribe to all screenings', () => {
 		expect(href).toBeTruthy();
 		const url = new URL(href!);
 		expect(url.host).toBe('calendar.google.com');
-		expect(url.searchParams.get('cid')).toBeTruthy();
-		const cid = url.searchParams.get('cid')!;
-		expect(cid).toMatch(/^https?:\/\/.+\/calendar\.ics$/);
+		const cid = url.searchParams.get('cid');
+		expect(cid).toBeTruthy();
+		// Google's cid= for external feeds expects a webcal:// URL, not https://.
+		// Passing https:// shows "Unable to subscribe in Google Calendar".
+		expect(cid).toMatch(/^webcal:\/\/.+\/calendar\.ics$/);
+	});
+
+	test('home page lets you copy the raw ICS URL for manual paste', async ({ page }) => {
+		await page.goto('/');
+		const button = page.getByRole('button', { name: /copy.*url/i });
+		await expect(button).toBeVisible();
 	});
 
 	test('home page shows a webcal:// subscribe link for any calendar app', async ({ page }) => {
