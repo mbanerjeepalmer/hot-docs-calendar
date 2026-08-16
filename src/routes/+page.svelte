@@ -1,19 +1,20 @@
 <script lang="ts">
 	import { buildGoogleCalendarUrl } from '$lib/googleCalendar.js';
 	import { formatDayHeading, formatTime } from '$lib/screenings.js';
-	import { FavoritesState } from '$lib/favorites.svelte.js';
-	import { lists, listOf, addTo, removeFrom, LIST_NAMES, LIST_LABELS, type ListName } from '$lib/savedList.svelte.js';
+	import { ReactionsState, type Reaction, type ReactionKind } from '$lib/reactions.svelte.js';
 
 	let { data } = $props();
 
 	let query = $state('');
 	let venueFilter = $state('');
-	let favoritesOnly = $state(false);
+	let programmeFilter = $state('');
+	let reactionFilter = $state<'' | 'mine' | ReactionKind>('');
+	let headerHeight = $state(0);
 	let filterBarHeight = $state(0);
 
-	const favorites = new FavoritesState();
+	const reactions = new ReactionsState();
 	$effect(() => {
-		if (typeof window !== 'undefined') favorites.init();
+		if (typeof window !== 'undefined') reactions.init();
 	});
 
 	let usernameInput = $state('');
@@ -21,17 +22,31 @@
 	async function saveUsername() {
 		const name = usernameInput.trim();
 		if (!name) return;
-		if (await favorites.setUsername(name)) {
+		if (await reactions.setUsername(name)) {
 			usernameInput = '';
 			usernameFormOpen = false;
 		}
 	}
 
-	const savedCount = $derived(lists.tickets.length + lists.shortlist.length + lists.longlist.length);
+	const myReactionCount = $derived(
+		data.screenings.filter((s) => reactions.myReaction(s.id)).length
+	);
 
-	function onSaveChange(id: string, value: string) {
-		if (value === '') removeFrom(id);
-		else addTo(id, value as ListName);
+	function onReactionChange(screeningId: string, value: string) {
+		if (value === '') reactions.clear(screeningId);
+		else if (value === 'tickets') reactions.set(screeningId, 'tickets', reactions.myReaction(screeningId)?.ticketCount ?? 1);
+		else reactions.set(screeningId, value as ReactionKind);
+	}
+
+	function onTicketCountChange(screeningId: string, value: string) {
+		const n = Math.max(1, Math.min(20, Math.round(Number(value)) || 1));
+		reactions.set(screeningId, 'tickets', n);
+	}
+
+	function reactionBadge(r: Reaction): string {
+		if (r.kind === 'mini_star') return '☆';
+		if (r.kind === 'mega_star') return '★';
+		return `🎟×${r.ticketCount ?? 1}`;
 	}
 
 	// The cid= and webcal:// links must point at the deployed origin so that
@@ -74,6 +89,16 @@
 		Array.from(new Set(data.screenings.map((s) => s.venue))).sort()
 	);
 
+	// A screening's programme field is a comma-joined list of tags (a film can
+	// belong to more than one programme), so split it out for filtering.
+	function programmeList(s: { programme?: string }): string[] {
+		return s.programme ? s.programme.split(', ') : [];
+	}
+
+	const programmes = $derived(
+		Array.from(new Set(data.screenings.flatMap((s) => programmeList(s)))).sort()
+	);
+
 	const filteredDays = $derived(
 		data.days
 			.map(({ day, items }) => ({
@@ -83,10 +108,16 @@
 					const matchesQuery =
 						!q ||
 						s.title.toLowerCase().includes(q) ||
-						s.venue.toLowerCase().includes(q);
+						s.venue.toLowerCase().includes(q) ||
+						(s.programme?.toLowerCase().includes(q) ?? false);
 					const matchesVenue = !venueFilter || s.venue === venueFilter;
-					const matchesFavorites = !favoritesOnly || favorites.isFavorite(s.id);
-					return matchesQuery && matchesVenue && matchesFavorites;
+					const matchesProgramme = !programmeFilter || programmeList(s).includes(programmeFilter);
+					const matchesReaction =
+						!reactionFilter ||
+						(reactionFilter === 'mine'
+							? !!reactions.myReaction(s.id)
+							: reactions.reactionsFor(s.id).some((r) => r.kind === reactionFilter));
+					return matchesQuery && matchesVenue && matchesProgramme && matchesReaction;
 				})
 			}))
 			.filter(({ items }) => items.length > 0)
@@ -124,26 +155,26 @@
 	/>
 </svelte:head>
 
-<div class="min-h-screen overflow-x-hidden bg-white">
+<div class="min-h-screen bg-white">
 	<!-- Top utility bar -->
-	<header class="border-b border-black/10">
+	<header class="sticky top-0 z-30 border-b border-black/10 bg-white" bind:clientHeight={headerHeight}>
 		<div
 			class="mx-auto flex max-w-6xl flex-wrap items-baseline justify-between gap-x-4 gap-y-2 px-6 py-4 text-[11px] font-medium uppercase tracking-[0.25em]"
 		>
 			<span>Sarajevo Film Festival · SFF</span>
 			<div class="flex flex-wrap items-baseline gap-x-6 gap-y-2">
 				<a href="/list" class="hover:text-accent-dark" data-testid="my-list-link">
-					My list{#if savedCount}&nbsp;({savedCount}){/if}
+					Reactions{#if myReactionCount}&nbsp;({myReactionCount}){/if}
 				</a>
 				<span class="hidden sm:inline">Aug 14 – 21, 2026</span>
 				<div class="flex items-baseline gap-2 normal-case tracking-normal text-neutral-600">
-					{#if favorites.username}
-						<span>Hi, {favorites.username}</span>
+					{#if reactions.username}
+						<span>Hi, {reactions.username}</span>
 						<button
 							type="button"
 							class="underline hover:text-accent-dark"
 							onclick={() => {
-								usernameInput = favorites.username ?? '';
+								usernameInput = reactions.username ?? '';
 								usernameFormOpen = true;
 							}}
 						>
@@ -177,15 +208,15 @@
 							class="underline hover:text-accent-dark"
 							onclick={() => (usernameFormOpen = true)}
 						>
-							Set a username to save favorites
+							Set a username to react
 						</button>
 					{/if}
 				</div>
 			</div>
 		</div>
-		{#if favorites.error}
+		{#if reactions.error}
 			<p class="mx-auto max-w-6xl px-6 pb-2 text-xs normal-case tracking-normal text-red-600">
-				{favorites.error}
+				{reactions.error}
 			</p>
 		{/if}
 	</header>
@@ -279,13 +310,14 @@
 		</div>
 	</section>
 
-	<!-- Filter bar (sticky) -->
+	<!-- Filter bar (sticky, stacked below the nav header) -->
 	<section
-		class="sticky top-0 z-20 border-b border-black/10 bg-white/95 backdrop-blur"
+		class="sticky z-20 border-b border-black/10 bg-white/95 backdrop-blur"
+		style={`top: ${headerHeight}px`}
 		bind:clientHeight={filterBarHeight}
 	>
 		<form
-			class="mx-auto grid max-w-6xl items-center gap-3 px-6 py-4 sm:grid-cols-[1fr_auto_auto_auto]"
+			class="mx-auto grid max-w-6xl items-center gap-3 px-6 py-4 sm:grid-cols-[1fr_auto_auto_auto_auto]"
 			role="search"
 		>
 			<label class="sr-only" for="search">Search screenings</label>
@@ -295,7 +327,7 @@
 				placeholder="Search films or venues…"
 				aria-label="Search screenings"
 				bind:value={query}
-				class="w-full rounded-md border border-black/15 bg-white px-4 py-2.5 text-sm placeholder:text-neutral-400 focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
+				class="w-full min-w-0 rounded-md border border-black/15 bg-white px-4 py-2.5 text-sm placeholder:text-neutral-400 focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
 			/>
 
 			<label class="sr-only" for="venue">Filter by venue</label>
@@ -303,7 +335,7 @@
 				id="venue"
 				aria-label="Filter by venue"
 				bind:value={venueFilter}
-				class="rounded-md border border-black/15 bg-white px-3 py-2.5 text-sm focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
+				class="w-full min-w-0 rounded-md border border-black/15 bg-white px-3 py-2.5 text-sm focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
 			>
 				<option value="">All venues</option>
 				{#each venues as v}
@@ -311,14 +343,34 @@
 				{/each}
 			</select>
 
-			<label class="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.15em] text-neutral-600">
-				<input
-					type="checkbox"
-					bind:checked={favoritesOnly}
-					class="h-4 w-4 rounded border-black/25 text-accent-dark focus:ring-accent"
-				/>
-				★ Favorites
-			</label>
+			<label class="sr-only" for="programme">Filter by programme</label>
+			<select
+				id="programme"
+				aria-label="Filter by programme"
+				bind:value={programmeFilter}
+				data-testid="programme-filter"
+				class="w-full min-w-0 rounded-md border border-black/15 bg-white px-3 py-2.5 text-sm focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
+			>
+				<option value="">All programmes</option>
+				{#each programmes as p}
+					<option value={p}>{p}</option>
+				{/each}
+			</select>
+
+			<label class="sr-only" for="reaction-filter">Filter by reaction</label>
+			<select
+				id="reaction-filter"
+				aria-label="Filter by reaction"
+				bind:value={reactionFilter}
+				data-testid="reaction-filter"
+				class="w-full min-w-0 rounded-md border border-black/15 bg-white px-3 py-2.5 text-sm focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
+			>
+				<option value="">All screenings</option>
+				<option value="mine">My reactions</option>
+				<option value="mini_star">☆ Mini star</option>
+				<option value="mega_star">★ Mega star</option>
+				<option value="tickets">🎟 Tickets wanted</option>
+			</select>
 
 			<p
 				class="text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-500"
@@ -335,7 +387,7 @@
 			<section class="border-b border-black py-12 last:border-b-0 sm:py-16">
 				<header
 					class="sticky z-10 -mx-6 grid items-baseline gap-2 border-b border-black/10 bg-white px-6 py-3 sm:grid-cols-[auto_1fr] sm:gap-12"
-					style={`top: ${filterBarHeight}px`}
+					style={`top: ${headerHeight + filterBarHeight}px`}
 				>
 					<h2
 						class="font-display text-3xl font-bold uppercase leading-none tracking-tight sm:text-5xl"
@@ -373,28 +425,12 @@
 									/>
 								{/if}
 								<div class="min-w-0">
-									<div class="flex items-start justify-between gap-3">
-										<h3
-											class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
-											data-testid="screening-title"
-										>
-											{s.title}
-										</h3>
-										<button
-											type="button"
-											onclick={() => favorites.toggle(s.id)}
-											class="shrink-0 text-xl leading-none {favorites.isFavorite(s.id)
-												? 'text-accent-dark'
-												: 'text-neutral-300 hover:text-accent-dark'}"
-											aria-pressed={favorites.isFavorite(s.id)}
-											aria-label={favorites.isFavorite(s.id)
-												? `Remove ${s.title} from favorites`
-												: `Save ${s.title} to favorites`}
-											data-testid="favorite-toggle"
-										>
-											{favorites.isFavorite(s.id) ? '★' : '☆'}
-										</button>
-									</div>
+									<h3
+										class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
+										data-testid="screening-title"
+									>
+										{s.title}
+									</h3>
 									<p class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-600">
 										<span data-testid="screening-venue">{shortVenue(s.venue)}</span>
 										{#if runtime(s.description)}
@@ -406,10 +442,10 @@
 											<span>ends {formatTime(s.end)}</span>
 										{/if}
 										{#if s.programme}
-											<span aria-hidden="true" class="hidden text-neutral-300 group-hover:inline">·</span>
+											<span aria-hidden="true" class="text-neutral-300">·</span>
 											<span
 												data-testid="screening-programme"
-												class="hidden rounded-full bg-black/5 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-neutral-500 group-hover:inline-block"
+												class="rounded-full bg-black/5 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-neutral-500"
 											>
 												{s.programme}
 											</span>
@@ -420,12 +456,24 @@
 											{synopsis(s.description)}
 										</p>
 									{/if}
+									{#if reactions.reactionsFor(s.id).length}
+										<p class="mt-3 flex flex-wrap gap-1.5" data-testid="reaction-badges">
+											{#each reactions.reactionsFor(s.id) as r (r.username + r.kind)}
+												<span
+													class="rounded-full bg-black/5 px-2 py-0.5 text-xs text-neutral-600"
+													data-testid="reaction-badge"
+												>
+													{r.username} {reactionBadge(r)}
+												</span>
+											{/each}
+										</p>
+									{/if}
 								</div>
 							</div>
 
-							<div class="col-span-2 flex gap-2 sm:col-span-1 sm:flex-col sm:self-start">
+							<div class="col-span-2 flex flex-wrap items-center gap-2 sm:col-span-1 sm:flex-col sm:items-stretch sm:self-start">
 								<a
-									class="inline-flex min-h-11 flex-1 shrink-0 items-center justify-center rounded-md bg-black px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white hover:bg-accent hover:text-white sm:flex-none"
+									class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-md bg-black px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white hover:bg-accent hover:text-white"
 									href={buildGoogleCalendarUrl(s)}
 									target="_blank"
 									rel="noopener noreferrer"
@@ -433,19 +481,34 @@
 								>
 									+ Google Calendar
 								</a>
-								<label class="sr-only" for={`save-${s.id}`}>Save {s.title} to a list</label>
-								<select
-									id={`save-${s.id}`}
-									data-testid="save-select"
-									class="min-h-11 rounded-md border border-black/15 bg-white px-2 text-[11px] font-medium uppercase tracking-[0.1em] focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
-									value={listOf(s.id) ?? ''}
-									onchange={(e) => onSaveChange(s.id, e.currentTarget.value)}
-								>
-									<option value="">Save to…</option>
-									{#each LIST_NAMES as name}
-										<option value={name}>{LIST_LABELS[name]}</option>
-									{/each}
-								</select>
+								<div class="flex items-center gap-1.5">
+									<label class="sr-only" for={`reaction-${s.id}`}>Your reaction to {s.title}</label>
+									<select
+										id={`reaction-${s.id}`}
+										data-testid="reaction-select"
+										class="min-h-11 flex-1 rounded-md border border-black/15 bg-white px-2 text-[11px] font-medium uppercase tracking-[0.1em] focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
+										value={reactions.myReaction(s.id)?.kind ?? ''}
+										onchange={(e) => onReactionChange(s.id, e.currentTarget.value)}
+									>
+										<option value="">No reaction</option>
+										<option value="mini_star">☆ Mini star</option>
+										<option value="mega_star">★ Mega star</option>
+										<option value="tickets">🎟 Want tickets</option>
+									</select>
+									{#if reactions.myReaction(s.id)?.kind === 'tickets'}
+										<label class="sr-only" for={`tickets-${s.id}`}>Number of tickets for {s.title}</label>
+										<input
+											id={`tickets-${s.id}`}
+											type="number"
+											min="1"
+											max="20"
+											data-testid="ticket-count-input"
+											value={reactions.myReaction(s.id)?.ticketCount ?? 1}
+											onchange={(e) => onTicketCountChange(s.id, e.currentTarget.value)}
+											class="min-h-11 w-16 rounded-md border border-black/15 bg-white px-2 text-sm focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
+										/>
+									{/if}
+								</div>
 							</div>
 						</li>
 					{/each}

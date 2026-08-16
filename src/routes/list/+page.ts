@@ -1,7 +1,11 @@
-import { getScreenings } from '$lib/screenings.js';
+import { getScreenings, groupByDay } from '$lib/screenings.js';
 
 export const prerender = true;
 
 export function load() {
-	return { screenings: getScreenings() };
+	const screenings = getScreenings();
+	return {
+		screenings,
+		days: groupByDay(screenings)
+	};
 }

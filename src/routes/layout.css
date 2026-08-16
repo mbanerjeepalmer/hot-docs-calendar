@@ -19,6 +19,11 @@ html {
 
 body {
 	color: var(--color-ink);
+	/* Guards against horizontal scrollbars from negative-margin/long-text
+	   elements. Deliberately on body, not a descendant div: overflow other
+	   than visible on any ancestor between a sticky element and the actual
+	   scrolling viewport breaks position: sticky for that element. */
+	overflow-x: hidden;
 }
 
 ::selection {

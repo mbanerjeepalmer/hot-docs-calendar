@@ -12,7 +12,7 @@ Calendar with one click.
 - SvelteKit (scaffolded with `sv create`), deployed as a Cloudflare Worker via
   `@sveltejs/adapter-cloudflare`
 - Tailwind CSS v4 (with `forms` + `typography` plugins)
-- Cloudflare D1 (SQLite) for usernames + favorited screenings
+- Cloudflare D1 (SQLite) for usernames + shared reactions
 - Playwright (e2e + unit-style tests)
 
 ## Develop
@@ -54,6 +54,11 @@ type Screening = {
   address?: string;        // full street address appended to the Google Calendar "location"
   description?: string;    // short synopsis; appended to the Google Calendar "details"
   ticketUrl?: string;      // box office URL; appended to the Google Calendar "details"
+  image?: string;          // poster thumbnail URL
+  programme?: string;      // comma-joined programme tags, e.g. "Competition Programme -
+                            // Documentary Film, Submissions" (the "32nd SFF - " prefix is
+                            // already stripped by cleanProgramme() in parse-sff.mjs); the
+                            // schedule page splits this on ", " into individual filter tags
 };
 ```
 
@@ -84,16 +89,20 @@ All screening times are Sarajevo local time (CEST, UTC+2); the whole festival
 window falls inside the EU's summer-time period, so there's no DST transition
 to handle.
 
-## Favorites (Cloudflare D1)
+## Reactions (Cloudflare D1)
 
 The schedule itself is still static (built into the site), but you can pick a
-username and star screenings — those favorites are stored in a Cloudflare D1
-database, keyed by a random id cookie tied to the username you chose. There's
-no password yet ("phase 1" — see `migrations/0001_init.sql` for the schema);
-a real login can replace this later without changing the favorites table.
-Since there's no password, typing an *existing* username just switches your
-browser's cookie to that identity ("logs you in" as them) — that's how you
-pick your favorites back up on a different device.
+username and react to any screening with one of three, mutually-exclusive
+reactions — mini star, mega star, or a number of tickets wanted. Reactions
+are shared, not private: every screening shows *everyone's* reaction inline
+("alice ☆ · bob 🎟×2"), and the [`/list`](src/routes/list) page rounds up
+every screening anyone has reacted to, across all users, in one place.
+
+There's no password yet ("phase 1" — see `migrations/0001_init.sql` for the
+user schema); a real login can replace this later without changing the
+reactions table. Since there's no password, typing an *existing* username
+just switches your browser's cookie to that identity ("logs you in" as
+them) — that's how you pick your reactions back up on a different device.
 
 ### Local development
 
@@ -123,8 +132,11 @@ without `wrangler.jsonc` configured won't have it.
 
 ```
 users(id TEXT PRIMARY KEY, username TEXT UNIQUE COLLATE NOCASE, created_at)
-favorites(user_id, screening_id, created_at, PRIMARY KEY (user_id, screening_id))
+reactions(user_id, screening_id, kind CHECK IN ('mini_star','mega_star','tickets'),
+          ticket_count, created_at, PRIMARY KEY (user_id, screening_id))
 ```
+
+One row per user per screening — setting a new reaction replaces the old one.
 
 ### API
 
@@ -132,10 +144,13 @@ favorites(user_id, screening_id, created_at, PRIMARY KEY (user_id, screening_id)
 - `POST /api/username` `{ username }` → claims a new username, renames the
   current user, or — if that username already exists — logs into it (sets
   the cookie to that user's id, no password check).
-- `GET /api/favorites` → `{ screeningIds: string[] }`
-- `POST /api/favorites` `{ screeningId }` → star a screening (401 without a
-  username set).
-- `DELETE /api/favorites` `{ screeningId }` → unstar.
+- `GET /api/reactions` → `{ reactions: { screeningId, username, kind, ticketCount }[] }`
+  — everyone's reactions, not scoped to the caller.
+- `POST /api/reactions` `{ screeningId, kind, ticketCount? }` → set/replace
+  the current user's reaction (401 without a username set; `ticketCount`
+  required, 1–20, when `kind` is `"tickets"`).
+- `DELETE /api/reactions` `{ screeningId }` → clear the current user's
+  reaction.
 
 ## Project structure
 
@@ -145,18 +160,21 @@ src/
     data/screenings.json     # the schedule — edit this file
     googleCalendar.ts        # builds calendar.google.com/calendar/render URLs
     screenings.ts            # load, sort, group-by-day, format helpers
-    favorites.svelte.ts      # client-side favorites/username state
+    reactions.svelte.ts      # client-side reactions/username state
     server/db.ts             # platform.env.DB accessor
     server/user.ts           # cookie + username lookups
     types.ts                 # Screening type
   routes/
     +layout.svelte
     +page.ts                 # loads screenings at build time (prerender)
-    +page.svelte             # list UI with search, venue filter, favorites
-    api/username/+server.ts  # claim/rename a username
-    api/favorites/+server.ts # list/add/remove favorited screenings
+    +page.svelte             # list UI with search, venue filter, reactions
+    list/+page.ts             # loads screenings for the aggregate view
+    list/+page.svelte         # every screening anyone has reacted to
+    api/username/+server.ts  # claim/rename/log into a username
+    api/reactions/+server.ts # list/set/clear reactions (shared, all users)
 migrations/
-  0001_init.sql              # D1 schema: users, favorites
+  0001_init.sql              # D1 schema: users
+  0002_reactions.sql         # D1 schema: reactions (drops old favorites table)
 e2e/
   home.e2e.ts                # page-level tests
   googleCalendar.e2e.ts      # URL-builder tests
@@ -170,7 +188,7 @@ npm run preview
 ```
 
 The schedule page is still pre-rendered to static HTML, but `/api/*` routes
-and the D1-backed favorites feature need a Worker at runtime — the build
+and the D1-backed reactions feature need a Worker at runtime — the build
 output is a Cloudflare Worker with static assets (see `wrangler.jsonc`), not
-a plain static site. See [Favorites (Cloudflare D1)](#favorites-cloudflare-d1)
+a plain static site. See [Reactions (Cloudflare D1)](#reactions-cloudflare-d1)
 above for local dev and deploy steps.
