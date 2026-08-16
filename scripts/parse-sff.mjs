@@ -137,7 +137,10 @@ function parse() {
 			description: buildDescription(film),
 			ticketUrl: film ? `${TICKET_BASE_URL}/films/${film.id}` : `${TICKET_BASE_URL}/screenings`,
 			image: imageOf(film),
-			programme: programmeOf(film)
+			programme: programmeOf(film),
+			filmId: film?.id,
+			year: film?.completionYear || undefined,
+			country: film?.countriesCsv || undefined
 		};
 	});
 

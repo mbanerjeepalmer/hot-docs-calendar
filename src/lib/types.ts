@@ -9,4 +9,7 @@ export type Screening = {
 	ticketUrl?: string;
 	image?: string;
 	programme?: string;
+	filmId?: number;
+	year?: number;
+	country?: string;
 };

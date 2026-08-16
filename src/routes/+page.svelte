@@ -1,6 +1,13 @@
 <script lang="ts">
 	import { buildGoogleCalendarUrl } from '$lib/googleCalendar.js';
-	import { formatDayHeading, formatTime } from '$lib/screenings.js';
+	import {
+		formatDayHeading,
+		formatTime,
+		synopsis,
+		runtime,
+		filmKey,
+		groupScreeningsByFilm
+	} from '$lib/screenings.js';
 	import { ReactionsState, type Reaction, type ReactionKind } from '$lib/reactions.svelte.js';
 
 	let { data } = $props();
@@ -161,17 +168,19 @@
 		return v.replace('Cineplexx Sarajevo ', 'Cineplexx ').replace('National Theatre - ', 'National Theatre · ');
 	}
 
-	function synopsis(description?: string): string {
-		if (!description) return '';
-		const lines = description.split('\n');
-		// api3.sff.ba format: "country · NN min · programme", synopsis…
-		return lines.slice(1).join(' ').replace(/\s+/g, ' ').trim();
-	}
+	const screeningsByFilm = $derived(groupScreeningsByFilm(data.screenings));
 
-	function runtime(description?: string): string {
-		if (!description) return '';
-		const m = description.match(/(\d+)\s*min/);
-		return m ? `${m[1]} min` : '';
+	// If I've already reacted to a different screening of the same film,
+	// surface that reaction here instead of leaving this row looking unreacted.
+	function myReactionElsewhere(s: (typeof data.screenings)[number]): Reaction | null {
+		if (reactions.myReaction(s.id)) return null;
+		const siblings = screeningsByFilm.get(filmKey(s)) ?? [];
+		for (const sibling of siblings) {
+			if (sibling.id === s.id) continue;
+			const r = reactions.myReaction(sibling.id);
+			if (r) return r;
+		}
+		return null;
 	}
 </script>
 
@@ -468,7 +477,11 @@
 										class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
 										data-testid="screening-title"
 									>
-										{s.title}
+										{#if s.filmId}
+											<a href={`/films/${s.filmId}`} class="hover:text-accent-dark">{s.title}</a>
+										{:else}
+											{s.title}
+										{/if}
 									</h3>
 									<p class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-600">
 										<span data-testid="screening-venue">{shortVenue(s.venue)}</span>
@@ -505,6 +518,12 @@
 													{r.username} {reactionBadge(r)}
 												</span>
 											{/each}
+										</p>
+									{/if}
+									{#if myReactionElsewhere(s)}
+										{@const other = myReactionElsewhere(s)}
+										<p class="mt-2 text-xs text-accent-dark" data-testid="reacted-elsewhere">
+											You already reacted {reactionBadge(other!)} to this film on another screening.
 										</p>
 									{/if}
 								</div>

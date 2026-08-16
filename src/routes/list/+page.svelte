@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { buildGoogleCalendarUrl } from '$lib/googleCalendar.js';
-	import { formatDayHeading, formatTime } from '$lib/screenings.js';
+	import { formatDayHeading, formatTime, filmKey, groupScreeningsByFilm } from '$lib/screenings.js';
 	import { ReactionsState, type Reaction, type ReactionKind } from '$lib/reactions.svelte.js';
 
 	let { data } = $props();
@@ -76,6 +76,19 @@
 	);
 
 	const totalReacted = $derived(reactedDays.reduce((n, d) => n + d.items.length, 0));
+
+	const screeningsByFilm = $derived(groupScreeningsByFilm(data.screenings));
+
+	function myReactionElsewhere(s: (typeof data.screenings)[number]): Reaction | null {
+		if (reactions.myReaction(s.id)) return null;
+		const siblings = screeningsByFilm.get(filmKey(s)) ?? [];
+		for (const sibling of siblings) {
+			if (sibling.id === s.id) continue;
+			const r = reactions.myReaction(sibling.id);
+			if (r) return r;
+		}
+		return null;
+	}
 </script>
 
 <svelte:head>
@@ -214,7 +227,11 @@
 										class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
 										data-testid="list-item-title"
 									>
-										{s.title}
+										{#if s.filmId}
+											<a href={`/films/${s.filmId}`} class="hover:text-accent-dark">{s.title}</a>
+										{:else}
+											{s.title}
+										{/if}
 									</h3>
 									<p class="mt-1 text-sm text-neutral-600">{s.venue}</p>
 									<p class="mt-3 flex flex-wrap gap-1.5" data-testid="reaction-badges">
@@ -227,6 +244,12 @@
 											</span>
 										{/each}
 									</p>
+									{#if myReactionElsewhere(s)}
+										{@const other = myReactionElsewhere(s)}
+										<p class="mt-2 text-xs text-accent-dark" data-testid="reacted-elsewhere">
+											You already reacted {reactionBadge(other!)} to this film on another screening.
+										</p>
+									{/if}
 								</div>
 							</div>
 

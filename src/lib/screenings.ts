@@ -35,3 +35,34 @@ export function formatTime(iso: string): string {
 		timeZone: 'Europe/Sarajevo'
 	});
 }
+
+export function synopsis(description?: string): string {
+	if (!description) return '';
+	const lines = description.split('\n');
+	// api3.sff.ba format: "country · NN min · programme", synopsis…
+	return lines.slice(1).join(' ').replace(/\s+/g, ' ').trim();
+}
+
+export function runtime(description?: string): string {
+	if (!description) return '';
+	const m = description.match(/(\d+)\s*min/);
+	return m ? `${m[1]} min` : '';
+}
+
+// Screenings of the same film share a filmId (when matched to a film
+// record); screenings that didn't match one (shorts blocks, programme
+// collections) fall back to grouping by title.
+export function filmKey(s: Screening): string {
+	return s.filmId != null ? `id:${s.filmId}` : `title:${s.title}`;
+}
+
+export function groupScreeningsByFilm(screenings: Screening[]): Map<string, Screening[]> {
+	const map = new Map<string, Screening[]>();
+	for (const s of screenings) {
+		const key = filmKey(s);
+		const list = map.get(key);
+		if (list) list.push(s);
+		else map.set(key, [s]);
+	}
+	return map;
+}

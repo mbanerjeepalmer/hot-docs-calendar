@@ -59,6 +59,12 @@ type Screening = {
                             // Documentary Film, Submissions" (the "32nd SFF - " prefix is
                             // already stripped by cleanProgramme() in parse-sff.mjs); the
                             // schedule page splits this on ", " into individual filter tags
+  filmId?: number;         // sff.ba's numeric film id; screenings sharing a filmId are the
+                            // same film at different times/venues — see /films/[filmId] below.
+                            // Omitted for shorts blocks/programme collections that didn't
+                            // match a single film record.
+  year?: number;           // completion year
+  country?: string;        // production country/countries, comma-separated
 };
 ```
 
@@ -88,6 +94,16 @@ synopsis) and writes `src/lib/data/screenings.json`.
 All screening times are Sarajevo local time (CEST, UTC+2); the whole festival
 window falls inside the EU's summer-time period, so there's no DST transition
 to handle.
+
+### Film detail pages
+
+Every screening with a `filmId` links to `/films/[filmId]` — a prerendered
+page with the poster, year, country, runtime, programme, and *full*
+synopsis (the schedule list truncates it to two lines), plus every
+screening of that film with its own reaction control. If you've already
+reacted to a different screening of the same film, the schedule and
+`/list` pages both surface that ("You already reacted ★ to this film on
+another screening") instead of showing the row as unreacted-to.
 
 ## Reactions (Cloudflare D1)
 
@@ -167,9 +183,11 @@ src/
   routes/
     +layout.svelte
     +page.ts                 # loads screenings at build time (prerender)
-    +page.svelte             # list UI with search, venue filter, reactions
+    +page.svelte             # list UI with search, venue/programme filter, reactions
     list/+page.ts             # loads screenings for the aggregate view
     list/+page.svelte         # every screening anyone has reacted to
+    films/[filmId]/+page.ts   # prerenders one page per matched film (entries())
+    films/[filmId]/+page.svelte # year/country/full synopsis + all its screenings
     api/username/+server.ts  # claim/rename/log into a username
     api/reactions/+server.ts # list/set/clear reactions (shared, all users)
 migrations/
@@ -178,6 +196,7 @@ migrations/
 e2e/
   home.e2e.ts                # page-level tests
   googleCalendar.e2e.ts      # URL-builder tests
+  film.e2e.ts                # film detail page tests
 ```
 
 ## Build
