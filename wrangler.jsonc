@@ -11,10 +11,7 @@
 		{
 			"binding": "DB",
 			"database_name": "hot-docs-calendar",
-			// Placeholder — replace after running `wrangler d1 create hot-docs-calendar`.
-			// Local dev (`npm run dev`, `wrangler d1 migrations apply DB --local`) works
-			// fine with this placeholder since it only emulates D1 on disk.
-			"database_id": "00000000-0000-0000-0000-000000000000",
+			"database_id": "9d11ab85-48a9-4350-99f5-4c2e1c601aab",
 			"migrations_dir": "migrations"
 		}
 	]
