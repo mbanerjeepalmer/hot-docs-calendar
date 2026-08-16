@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { buildGoogleCalendarUrl } from '$lib/googleCalendar.js';
 	import { formatDayHeading, formatTime } from '$lib/screenings.js';
-	import { ReactionsState, type Reaction } from '$lib/reactions.svelte.js';
+	import { ReactionsState, type Reaction, type ReactionKind } from '$lib/reactions.svelte.js';
 
 	let { data } = $props();
 
@@ -12,24 +12,52 @@
 
 	let usernameInput = $state('');
 	let usernameFormOpen = $state(false);
+	let usernameInputEl: HTMLInputElement | undefined = $state();
+	$effect(() => {
+		if (usernameFormOpen) usernameInputEl?.focus();
+	});
+
+	// A reaction picked before a username is set is remembered here and
+	// applied automatically once the username form is submitted, so a new
+	// visitor's first star isn't silently dropped.
+	let pendingReaction: { screeningId: string; kind: ReactionKind; ticketCount?: number } | null = $state(null);
+
 	async function saveUsername() {
 		const name = usernameInput.trim();
 		if (!name) return;
 		if (await reactions.setUsername(name)) {
 			usernameInput = '';
 			usernameFormOpen = false;
+			if (pendingReaction) {
+				const { screeningId, kind, ticketCount } = pendingReaction;
+				pendingReaction = null;
+				reactions.set(screeningId, kind, ticketCount);
+			}
 		}
 	}
 
+	function applyReaction(screeningId: string, kind: ReactionKind, ticketCount?: number) {
+		if (!reactions.username) {
+			pendingReaction = { screeningId, kind, ticketCount };
+			usernameInput = '';
+			usernameFormOpen = true;
+			return;
+		}
+		reactions.set(screeningId, kind, ticketCount);
+	}
+
 	function onReactionChange(screeningId: string, value: string) {
-		if (value === '') reactions.clear(screeningId);
-		else if (value === 'tickets') reactions.set(screeningId, 'tickets', reactions.myReaction(screeningId)?.ticketCount ?? 1);
-		else reactions.set(screeningId, value as 'mini_star' | 'mega_star');
+		if (value === '') {
+			if (reactions.username) reactions.clear(screeningId);
+			return;
+		}
+		if (value === 'tickets') applyReaction(screeningId, 'tickets', reactions.myReaction(screeningId)?.ticketCount ?? 1);
+		else applyReaction(screeningId, value as ReactionKind);
 	}
 
 	function onTicketCountChange(screeningId: string, value: string) {
 		const n = Math.max(1, Math.min(20, Math.round(Number(value)) || 1));
-		reactions.set(screeningId, 'tickets', n);
+		applyReaction(screeningId, 'tickets', n);
 	}
 
 	function reactionBadge(r: Reaction): string {
@@ -59,7 +87,7 @@
 </svelte:head>
 
 <div class="min-h-screen bg-white">
-	<header class="border-b border-black/10">
+	<header class="sticky top-0 z-30 border-b border-black/10 bg-white">
 		<div
 			class="mx-auto flex max-w-6xl flex-wrap items-baseline justify-between gap-x-4 gap-y-2 px-6 py-4 text-[11px] font-medium uppercase tracking-[0.25em]"
 		>
@@ -87,6 +115,9 @@
 								saveUsername();
 							}}
 						>
+							{#if pendingReaction}
+								<span class="text-accent-dark">Pick a username to save that:</span>
+							{/if}
 							<label class="sr-only" for="username">Username</label>
 							<input
 								id="username"
@@ -94,10 +125,18 @@
 								placeholder="pick a username"
 								maxlength="32"
 								bind:value={usernameInput}
+								bind:this={usernameInputEl}
 								class="rounded border border-black/15 px-2 py-1 text-xs normal-case tracking-normal focus:border-black focus:ring-1 focus:ring-accent focus:outline-none"
 							/>
 							<button type="submit" class="rounded bg-black px-2 py-1 text-white">Save</button>
-							<button type="button" class="text-neutral-400" onclick={() => (usernameFormOpen = false)}>
+							<button
+								type="button"
+								class="text-neutral-400"
+								onclick={() => {
+									usernameFormOpen = false;
+									pendingReaction = null;
+								}}
+							>
 								cancel
 							</button>
 						</form>

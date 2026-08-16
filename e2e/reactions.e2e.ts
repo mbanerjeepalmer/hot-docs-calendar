@@ -31,6 +31,17 @@ test.describe('Reaction controls (schedule page)', () => {
 		await expect(link).toHaveAttribute('href', '/list');
 		await expect(link).toContainText('Reactions');
 	});
+
+	test('picking a reaction before setting a username opens a focused username prompt', async ({ page }) => {
+		await page.goto('/');
+		const select = page.getByTestId('reaction-select').first();
+		await select.selectOption('mega_star');
+
+		const usernameInput = page.locator('#username');
+		await expect(usernameInput).toBeVisible();
+		await expect(usernameInput).toBeFocused();
+		await expect(page.getByText('Pick a username to save that:')).toBeVisible();
+	});
 });
 
 test.describe('Reactions page (/list)', () => {
