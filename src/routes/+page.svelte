@@ -2,12 +2,14 @@
 	import { buildGoogleCalendarUrl } from '$lib/googleCalendar.js';
 	import { formatDayHeading, formatTime } from '$lib/screenings.js';
 	import { FavoritesState } from '$lib/favorites.svelte.js';
+	import { lists, listOf, addTo, removeFrom, LIST_NAMES, LIST_LABELS, type ListName } from '$lib/savedList.svelte.js';
 
 	let { data } = $props();
 
 	let query = $state('');
 	let venueFilter = $state('');
 	let favoritesOnly = $state(false);
+	let filterBarHeight = $state(0);
 
 	const favorites = new FavoritesState();
 	$effect(() => {
@@ -25,11 +27,18 @@
 		}
 	}
 
+	const savedCount = $derived(lists.tickets.length + lists.shortlist.length + lists.longlist.length);
+
+	function onSaveChange(id: string, value: string) {
+		if (value === '') removeFrom(id);
+		else addTo(id, value as ListName);
+	}
+
 	// The cid= and webcal:// links must point at the deployed origin so that
 	// Google (or any other calendar app) can fetch the ICS feed. During SSR/
 	// prerender the origin is a placeholder; we patch it client-side to the
 	// real window.location.origin on hydration.
-	let origin = $state('https://hot-docs-calendar.vercel.app');
+	let origin = $state('https://sarajevo-film-festival-calendar.vercel.app');
 	$effect(() => {
 		if (typeof window !== 'undefined') origin = window.location.origin;
 	});
@@ -90,14 +99,14 @@
 	const venueCount = $derived(new Set(data.screenings.map((s) => s.venue)).size);
 
 	function shortVenue(v: string): string {
-		return v.replace('TIFF Lightbox – Cinema ', 'TLB ').replace('Hot Docs Ted Rogers Cinema', 'Hot Docs Cinema');
+		return v.replace('Cineplexx Sarajevo ', 'Cineplexx ').replace('National Theatre - ', 'National Theatre · ');
 	}
 
 	function synopsis(description?: string): string {
 		if (!description) return '';
 		const lines = description.split('\n');
-		// PDF format: "D: ...", "country · NN min", synopsis…
-		return lines.slice(2).join(' ').replace(/\s+/g, ' ').trim();
+		// api3.sff.ba format: "country · NN min · programme", synopsis…
+		return lines.slice(1).join(' ').replace(/\s+/g, ' ').trim();
 	}
 
 	function runtime(description?: string): string {
@@ -108,10 +117,10 @@
 </script>
 
 <svelte:head>
-	<title>Hot Docs 2026 — Remote Calendar</title>
+	<title>Sarajevo Film Festival 2026 — Remote Calendar</title>
 	<meta
 		name="description"
-		content="Subscribe to all 211 Hot Docs 2026 screenings or add individual films to your Google Calendar."
+		content={`Subscribe to all ${data.screenings.length} Sarajevo Film Festival 2026 screenings or add individual films to your Google Calendar.`}
 	/>
 </svelte:head>
 
@@ -121,52 +130,57 @@
 		<div
 			class="mx-auto flex max-w-6xl flex-wrap items-baseline justify-between gap-x-4 gap-y-2 px-6 py-4 text-[11px] font-medium uppercase tracking-[0.25em]"
 		>
-			<span>Hot Docs · CIDF</span>
-			<span class="hidden sm:inline">Apr 23 – May 3, 2026</span>
-			<div class="flex items-baseline gap-2 normal-case tracking-normal text-neutral-600">
-				{#if favorites.username}
-					<span>Hi, {favorites.username}</span>
-					<button
-						type="button"
-						class="underline hover:text-lime-dark"
-						onclick={() => {
-							usernameInput = favorites.username ?? '';
-							usernameFormOpen = true;
-						}}
-					>
-						change
-					</button>
-				{:else if usernameFormOpen}
-					<form
-						class="flex items-center gap-2"
-						onsubmit={(e) => {
-							e.preventDefault();
-							saveUsername();
-						}}
-					>
-						<label class="sr-only" for="username">Username</label>
-						<input
-							id="username"
-							type="text"
-							placeholder="pick a username"
-							maxlength="32"
-							bind:value={usernameInput}
-							class="rounded border border-black/15 px-2 py-1 text-xs normal-case tracking-normal focus:border-black focus:ring-1 focus:ring-lime focus:outline-none"
-						/>
-						<button type="submit" class="rounded bg-black px-2 py-1 text-white">Save</button>
-						<button type="button" class="text-neutral-400" onclick={() => (usernameFormOpen = false)}>
-							cancel
+			<span>Sarajevo Film Festival · SFF</span>
+			<div class="flex flex-wrap items-baseline gap-x-6 gap-y-2">
+				<a href="/list" class="hover:text-accent-dark" data-testid="my-list-link">
+					My list{#if savedCount}&nbsp;({savedCount}){/if}
+				</a>
+				<span class="hidden sm:inline">Aug 14 – 21, 2026</span>
+				<div class="flex items-baseline gap-2 normal-case tracking-normal text-neutral-600">
+					{#if favorites.username}
+						<span>Hi, {favorites.username}</span>
+						<button
+							type="button"
+							class="underline hover:text-accent-dark"
+							onclick={() => {
+								usernameInput = favorites.username ?? '';
+								usernameFormOpen = true;
+							}}
+						>
+							change
 						</button>
-					</form>
-				{:else}
-					<button
-						type="button"
-						class="underline hover:text-lime-dark"
-						onclick={() => (usernameFormOpen = true)}
-					>
-						Set a username to save favorites
-					</button>
-				{/if}
+					{:else if usernameFormOpen}
+						<form
+							class="flex items-center gap-2"
+							onsubmit={(e) => {
+								e.preventDefault();
+								saveUsername();
+							}}
+						>
+							<label class="sr-only" for="username">Username</label>
+							<input
+								id="username"
+								type="text"
+								placeholder="pick a username"
+								maxlength="32"
+								bind:value={usernameInput}
+								class="rounded border border-black/15 px-2 py-1 text-xs normal-case tracking-normal focus:border-black focus:ring-1 focus:ring-accent focus:outline-none"
+							/>
+							<button type="submit" class="rounded bg-black px-2 py-1 text-white">Save</button>
+							<button type="button" class="text-neutral-400" onclick={() => (usernameFormOpen = false)}>
+								cancel
+							</button>
+						</form>
+					{:else}
+						<button
+							type="button"
+							class="underline hover:text-accent-dark"
+							onclick={() => (usernameFormOpen = true)}
+						>
+							Set a username to save favorites
+						</button>
+					{/if}
+				</div>
 			</div>
 		</div>
 		{#if favorites.error}
@@ -184,22 +198,22 @@
 		<h1
 			class="mt-5 font-display text-6xl font-bold leading-[0.92] tracking-tight sm:text-8xl lg:text-9xl"
 		>
-			Hot Docs
+			Sarajevo FF
 			<span
-				class="ml-1 inline-block bg-lime px-3 leading-[0.92] text-black sm:ml-2 sm:px-4"
+				class="ml-1 inline-block bg-accent px-3 leading-[0.92] text-white sm:ml-2 sm:px-4"
 			>2026</span>
 		</h1>
 		<p class="mt-8 max-w-xl text-lg leading-relaxed text-neutral-600 sm:text-xl">
-			{data.screenings.length} screenings across {venueCount} cinemas over 11 days
-			of documentary, plotted out as a remote calendar. Subscribe to the
-			whole festival, or save films one tap at a time.
+			{data.screenings.length} screenings across {venueCount} venues over {data.days.length} days
+			of film, plotted out as a remote calendar. Subscribe to the whole
+			festival, or save films one tap at a time.
 		</p>
 	</section>
 
 	<!-- Subscribe band -->
 	<section class="border-y border-black bg-black text-white">
 		<div class="mx-auto max-w-6xl px-6 py-12 sm:py-16">
-			<p class="text-[11px] font-medium uppercase tracking-[0.3em] text-lime">
+			<p class="text-[11px] font-medium uppercase tracking-[0.3em] text-accent">
 				Subscribe
 			</p>
 			<h2
@@ -211,7 +225,7 @@
 			</h2>
 			<div class="mt-8 flex flex-wrap gap-2">
 					<a
-						class="inline-flex min-h-11 items-center rounded-md bg-lime px-5 py-3 text-sm font-semibold tracking-tight text-black hover:bg-white"
+						class="inline-flex min-h-11 items-center rounded-md bg-accent px-5 py-3 text-sm font-semibold tracking-tight text-white hover:bg-white hover:text-black"
 						href={googleSubscribeUrl}
 						target="_blank"
 						rel="noopener noreferrer"
@@ -220,7 +234,7 @@
 						Subscribe in Google Calendar →
 					</a>
 					<a
-						class="inline-flex min-h-11 items-center rounded-md border border-white/30 px-5 py-3 text-sm font-medium hover:border-lime hover:text-lime"
+						class="inline-flex min-h-11 items-center rounded-md border border-white/30 px-5 py-3 text-sm font-medium hover:border-accent hover:text-accent"
 						href={webcalUrl}
 						aria-label="Subscribe in Apple Calendar or Outlook"
 						data-testid="subscribe-webcal"
@@ -228,7 +242,7 @@
 						Apple Calendar / Outlook
 					</a>
 					<a
-						class="inline-flex min-h-11 items-center rounded-md border border-white/30 px-5 py-3 text-sm font-medium hover:border-lime hover:text-lime"
+						class="inline-flex min-h-11 items-center rounded-md border border-white/30 px-5 py-3 text-sm font-medium hover:border-accent hover:text-accent"
 						href={icsUrl}
 						aria-label="Download .ics calendar file"
 						data-testid="subscribe-ics"
@@ -242,7 +256,7 @@
 				<button
 					type="button"
 					onclick={copyIcsUrl}
-					class="rounded border border-white/30 px-2 py-1 font-medium text-white hover:border-lime hover:text-lime"
+					class="rounded border border-white/30 px-2 py-1 font-medium text-white hover:border-accent hover:text-accent"
 				>
 					{copied ? 'Copied!' : 'Copy URL'}
 				</button>
@@ -253,7 +267,7 @@
 					<li>Copy the subscription URL above.</li>
 					<li>
 						Open <a
-							class="underline hover:text-lime"
+							class="underline hover:text-accent"
 							href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl"
 							target="_blank"
 							rel="noopener noreferrer">Google Calendar's "Add by URL" page</a
@@ -266,7 +280,10 @@
 	</section>
 
 	<!-- Filter bar (sticky) -->
-	<section class="sticky top-0 z-20 border-b border-black/10 bg-white/95 backdrop-blur">
+	<section
+		class="sticky top-0 z-20 border-b border-black/10 bg-white/95 backdrop-blur"
+		bind:clientHeight={filterBarHeight}
+	>
 		<form
 			class="mx-auto grid max-w-6xl items-center gap-3 px-6 py-4 sm:grid-cols-[1fr_auto_auto_auto]"
 			role="search"
@@ -278,7 +295,7 @@
 				placeholder="Search films or venues…"
 				aria-label="Search screenings"
 				bind:value={query}
-				class="w-full rounded-md border border-black/15 bg-white px-4 py-2.5 text-sm placeholder:text-neutral-400 focus:border-black focus:ring-2 focus:ring-lime focus:outline-none"
+				class="w-full rounded-md border border-black/15 bg-white px-4 py-2.5 text-sm placeholder:text-neutral-400 focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
 			/>
 
 			<label class="sr-only" for="venue">Filter by venue</label>
@@ -286,7 +303,7 @@
 				id="venue"
 				aria-label="Filter by venue"
 				bind:value={venueFilter}
-				class="rounded-md border border-black/15 bg-white px-3 py-2.5 text-sm focus:border-black focus:ring-2 focus:ring-lime focus:outline-none"
+				class="rounded-md border border-black/15 bg-white px-3 py-2.5 text-sm focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
 			>
 				<option value="">All venues</option>
 				{#each venues as v}
@@ -298,7 +315,7 @@
 				<input
 					type="checkbox"
 					bind:checked={favoritesOnly}
-					class="h-4 w-4 rounded border-black/25 text-lime-dark focus:ring-lime"
+					class="h-4 w-4 rounded border-black/25 text-accent-dark focus:ring-accent"
 				/>
 				★ Favorites
 			</label>
@@ -316,7 +333,10 @@
 	<main class="mx-auto max-w-6xl px-6">
 		{#each filteredDays as { day, items } (day)}
 			<section class="border-b border-black py-12 last:border-b-0 sm:py-16">
-				<header class="grid items-baseline gap-2 sm:grid-cols-[auto_1fr] sm:gap-12">
+				<header
+					class="sticky z-10 -mx-6 grid items-baseline gap-2 border-b border-black/10 bg-white px-6 py-3 sm:grid-cols-[auto_1fr] sm:gap-12"
+					style={`top: ${filterBarHeight}px`}
+				>
 					<h2
 						class="font-display text-3xl font-bold uppercase leading-none tracking-tight sm:text-5xl"
 						data-testid="day-heading"
@@ -331,7 +351,7 @@
 				<ul class="mt-8 divide-y divide-black/10">
 					{#each items as s (s.id)}
 						<li
-							class="group -mx-4 grid grid-cols-[auto_1fr] gap-x-4 gap-y-3 rounded-lg px-4 py-6 transition hover:bg-lime/15 sm:-mx-6 sm:grid-cols-[8rem_1fr_auto] sm:gap-x-8 sm:px-6"
+							class="group -mx-4 grid grid-cols-[auto_1fr] gap-x-4 gap-y-3 rounded-lg px-4 py-6 transition hover:bg-accent/15 sm:-mx-6 sm:grid-cols-[8rem_1fr_auto] sm:gap-x-8 sm:px-6"
 							data-testid="screening"
 						>
 							<time
@@ -342,56 +362,91 @@
 								{formatTime(s.start)}
 							</time>
 
-							<div class="min-w-0">
-								<div class="flex items-start justify-between gap-3">
-									<h3
-										class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
-										data-testid="screening-title"
-									>
-										{s.title}
-									</h3>
-									<button
-										type="button"
-										onclick={() => favorites.toggle(s.id)}
-										class="shrink-0 text-xl leading-none {favorites.isFavorite(s.id)
-											? 'text-lime-dark'
-											: 'text-neutral-300 hover:text-lime-dark'}"
-										aria-pressed={favorites.isFavorite(s.id)}
-										aria-label={favorites.isFavorite(s.id)
-											? `Remove ${s.title} from favorites`
-											: `Save ${s.title} to favorites`}
-										data-testid="favorite-toggle"
-									>
-										{favorites.isFavorite(s.id) ? '★' : '☆'}
-									</button>
-								</div>
-								<p class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-600">
-									<span data-testid="screening-venue">{shortVenue(s.venue)}</span>
-									{#if runtime(s.description)}
-										<span aria-hidden="true" class="text-neutral-300">·</span>
-										<span class="tabular-nums">{runtime(s.description)}</span>
-									{/if}
-									{#if s.end}
-										<span aria-hidden="true" class="text-neutral-300">·</span>
-										<span>ends {formatTime(s.end)}</span>
-									{/if}
-								</p>
-								{#if synopsis(s.description)}
-									<p class="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-500 line-clamp-2 group-hover:line-clamp-none">
-										{synopsis(s.description)}
-									</p>
+							<div class="flex min-w-0 gap-4">
+								{#if s.image}
+									<img
+										src={s.image}
+										alt=""
+										loading="lazy"
+										data-testid="screening-image"
+										class="h-20 w-14 shrink-0 rounded object-cover sm:h-28 sm:w-20"
+									/>
 								{/if}
+								<div class="min-w-0">
+									<div class="flex items-start justify-between gap-3">
+										<h3
+											class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
+											data-testid="screening-title"
+										>
+											{s.title}
+										</h3>
+										<button
+											type="button"
+											onclick={() => favorites.toggle(s.id)}
+											class="shrink-0 text-xl leading-none {favorites.isFavorite(s.id)
+												? 'text-accent-dark'
+												: 'text-neutral-300 hover:text-accent-dark'}"
+											aria-pressed={favorites.isFavorite(s.id)}
+											aria-label={favorites.isFavorite(s.id)
+												? `Remove ${s.title} from favorites`
+												: `Save ${s.title} to favorites`}
+											data-testid="favorite-toggle"
+										>
+											{favorites.isFavorite(s.id) ? '★' : '☆'}
+										</button>
+									</div>
+									<p class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-600">
+										<span data-testid="screening-venue">{shortVenue(s.venue)}</span>
+										{#if runtime(s.description)}
+											<span aria-hidden="true" class="text-neutral-300">·</span>
+											<span class="tabular-nums">{runtime(s.description)}</span>
+										{/if}
+										{#if s.end}
+											<span aria-hidden="true" class="text-neutral-300">·</span>
+											<span>ends {formatTime(s.end)}</span>
+										{/if}
+										{#if s.programme}
+											<span aria-hidden="true" class="hidden text-neutral-300 group-hover:inline">·</span>
+											<span
+												data-testid="screening-programme"
+												class="hidden rounded-full bg-black/5 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-neutral-500 group-hover:inline-block"
+											>
+												{s.programme}
+											</span>
+										{/if}
+									</p>
+									{#if synopsis(s.description)}
+										<p class="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-500 line-clamp-2 group-hover:line-clamp-none">
+											{synopsis(s.description)}
+										</p>
+									{/if}
+								</div>
 							</div>
 
-							<a
-								class="col-span-2 inline-flex min-h-11 shrink-0 items-center justify-center rounded-md bg-black px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white hover:bg-lime hover:text-black sm:col-span-1 sm:self-start"
-								href={buildGoogleCalendarUrl(s)}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label={`Add ${s.title} to Google Calendar`}
-							>
-								+ Google Calendar
-							</a>
+							<div class="col-span-2 flex gap-2 sm:col-span-1 sm:flex-col sm:self-start">
+								<a
+									class="inline-flex min-h-11 flex-1 shrink-0 items-center justify-center rounded-md bg-black px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white hover:bg-accent hover:text-white sm:flex-none"
+									href={buildGoogleCalendarUrl(s)}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label={`Add ${s.title} to Google Calendar`}
+								>
+									+ Google Calendar
+								</a>
+								<label class="sr-only" for={`save-${s.id}`}>Save {s.title} to a list</label>
+								<select
+									id={`save-${s.id}`}
+									data-testid="save-select"
+									class="min-h-11 rounded-md border border-black/15 bg-white px-2 text-[11px] font-medium uppercase tracking-[0.1em] focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
+									value={listOf(s.id) ?? ''}
+									onchange={(e) => onSaveChange(s.id, e.currentTarget.value)}
+								>
+									<option value="">Save to…</option>
+									{#each LIST_NAMES as name}
+										<option value={name}>{LIST_LABELS[name]}</option>
+									{/each}
+								</select>
+							</div>
 						</li>
 					{/each}
 				</ul>
@@ -404,19 +459,19 @@
 			<span>
 				Schedule data from
 				<a
-					class="underline hover:text-lime-dark"
-					href="https://s3.amazonaws.com/assets.hotdocs.ca/doc/HD26_Screening-Schedule.pdf"
+					class="underline hover:text-accent-dark"
+					href="https://www.sff.ba/en"
 					target="_blank"
-					rel="noopener noreferrer">HD26_Screening-Schedule.pdf</a
+					rel="noopener noreferrer">sff.ba</a
 				>.
 			</span>
 			<span>
 				Tickets at
 				<a
-					class="underline hover:text-lime-dark"
-					href="https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+					class="underline hover:text-accent-dark"
+					href="https://tickets.sff.ba"
 					target="_blank"
-					rel="noopener noreferrer">boxoffice.hotdocs.ca</a
+					rel="noopener noreferrer">tickets.sff.ba</a
 				>.
 			</span>
 		</footer>

@@ -13,7 +13,7 @@
 		"test:e2e": "playwright test",
 		"test": "npm run test:e2e",
 		"fetch:sources": "node scripts/fetch-sources.mjs",
-		"parse:pdf": "pdftotext -raw scripts/data/HD26_Screening-Schedule.pdf scripts/data/HD26_Screening-Schedule.raw.txt && node scripts/parse-pdf.mjs",
+		"parse:schedule": "node scripts/parse-sff.mjs",
 		"db:migrate:local": "wrangler d1 migrations apply DB --local",
 		"db:migrate:remote": "wrangler d1 migrations apply DB --remote",
 		"deploy": "npm run build && wrangler deploy"

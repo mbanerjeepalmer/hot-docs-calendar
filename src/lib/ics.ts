@@ -2,7 +2,7 @@ import type { Screening } from './types.js';
 
 const CRLF = '\r\n';
 const DEFAULT_DURATION_MINUTES = 120;
-const PRODID = '-//hot-docs-calendar//Hot Docs 2026//EN';
+const PRODID = '-//hot-docs-calendar//Sarajevo Film Festival 2026//EN';
 
 function pad(n: number, w = 2): string {
 	return String(n).padStart(w, '0');
@@ -77,7 +77,7 @@ export function buildIcs(
 	options: { name?: string; now?: Date } = {}
 ): string {
 	const dtstamp = utcStamp((options.now ?? new Date()).toISOString());
-	const name = options.name ?? 'Hot Docs 2026';
+	const name = options.name ?? 'Sarajevo Film Festival 2026';
 	const lines: string[] = [
 		'BEGIN:VCALENDAR',
 		'VERSION:2.0',
@@ -86,7 +86,7 @@ export function buildIcs(
 		'CALSCALE:GREGORIAN',
 		fold(`NAME:${escapeText(name)}`),
 		fold(`X-WR-CALNAME:${escapeText(name)}`),
-		'X-WR-TIMEZONE:America/Toronto'
+		'X-WR-TIMEZONE:Europe/Sarajevo'
 	];
 	for (const s of screenings) lines.push(...event(s, dtstamp));
 	lines.push('END:VCALENDAR');

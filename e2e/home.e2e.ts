@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 test.describe('Home page', () => {
 	test('shows festival title and dates', async ({ page }) => {
 		await page.goto('/');
-		await expect(page.getByRole('heading', { level: 1 })).toContainText(/hot docs/i);
+		await expect(page.getByRole('heading', { level: 1 })).toContainText(/sarajevo/i);
 		await expect(page.getByRole('heading', { level: 1 })).toContainText('2026');
 	});
 
@@ -41,6 +41,14 @@ test.describe('Home page', () => {
 		const totalAfter = await page.getByTestId('screening').count();
 		expect(totalAfter).toBeLessThanOrEqual(totalBefore);
 		expect(totalAfter).toBeGreaterThan(0);
+	});
+
+	test('screenings matched to a film show a poster thumbnail', async ({ page }) => {
+		await page.goto('/');
+		const images = page.getByTestId('screening-image');
+		expect(await images.count()).toBeGreaterThan(0);
+		const src = await images.first().getAttribute('src');
+		expect(src).toMatch(/^https:\/\//);
 	});
 });
 

@@ -31,7 +31,7 @@ test('buildIcs wraps events in a VCALENDAR envelope with required properties', (
 	expect(ics).toContain('METHOD:PUBLISH');
 	expect(ics).toContain('CALSCALE:GREGORIAN');
 	expect(ics).toContain('X-WR-CALNAME:');
-	expect(ics).toContain('X-WR-TIMEZONE:America/Toronto');
+	expect(ics).toContain('X-WR-TIMEZONE:Europe/Sarajevo');
 });
 
 test('buildIcs emits one VEVENT per screening with UTC DTSTART/DTEND', () => {

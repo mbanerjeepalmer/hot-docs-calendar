@@ -7,4 +7,6 @@ export type Screening = {
 	address?: string;
 	description?: string;
 	ticketUrl?: string;
+	image?: string;
+	programme?: string;
 };
