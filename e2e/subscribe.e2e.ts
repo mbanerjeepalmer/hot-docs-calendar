@@ -9,7 +9,7 @@ test.describe('Subscribe to all screenings', () => {
 		expect(body).toContain('BEGIN:VCALENDAR');
 		expect(body).toContain('END:VCALENDAR');
 		const eventCount = (body.match(/BEGIN:VEVENT/g) ?? []).length;
-		expect(eventCount).toBeGreaterThan(100);
+		expect(eventCount).toBe(0);
 	});
 
 	test('home page shows a Subscribe in Google Calendar button pointing at our ICS', async ({

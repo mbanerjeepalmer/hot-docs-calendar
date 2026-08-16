@@ -18,22 +18,20 @@ export function groupByDay(screenings: Screening[]): { day: string; items: Scree
 }
 
 export function formatDayHeading(day: string): string {
-	const d = new Date(`${day}T12:00:00-04:00`);
-	return d.toLocaleDateString('en-CA', {
+	const d = new Date(`${day}T12:00:00+02:00`);
+	return d.toLocaleDateString('en-GB', {
 		weekday: 'long',
 		month: 'long',
 		day: 'numeric',
-		timeZone: 'America/Toronto'
+		timeZone: 'Europe/Sarajevo'
 	});
 }
 
 export function formatTime(iso: string): string {
-	// en-US gives "7:00 PM" (uppercase, no periods); en-CA gives "7:00 p.m."
-	// which wraps mid-token in narrow time columns. We keep the readable AM/PM
-	// form rather than 24h since most North American calendar UIs use it.
-	return new Date(iso).toLocaleTimeString('en-US', {
-		hour: 'numeric',
+	return new Date(iso).toLocaleTimeString('en-GB', {
+		hour: '2-digit',
 		minute: '2-digit',
-		timeZone: 'America/Toronto'
+		hour12: false,
+		timeZone: 'Europe/Sarajevo'
 	});
 }

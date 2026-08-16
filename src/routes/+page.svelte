@@ -11,7 +11,7 @@
 	// Google (or any other calendar app) can fetch the ICS feed. During SSR/
 	// prerender the origin is a placeholder; we patch it client-side to the
 	// real window.location.origin on hydration.
-	let origin = $state('https://hot-docs-calendar.vercel.app');
+	let origin = $state('https://sff-calendar.vercel.app');
 	$effect(() => {
 		if (typeof window !== 'undefined') origin = window.location.origin;
 	});
@@ -71,7 +71,7 @@
 	const venueCount = $derived(new Set(data.screenings.map((s) => s.venue)).size);
 
 	function shortVenue(v: string): string {
-		return v.replace('TIFF Lightbox – Cinema ', 'TLB ').replace('Hot Docs Ted Rogers Cinema', 'Hot Docs Cinema');
+		return v;
 	}
 
 	function synopsis(description?: string): string {
@@ -89,10 +89,10 @@
 </script>
 
 <svelte:head>
-	<title>Hot Docs 2026 — Remote Calendar</title>
+	<title>Sarajevo Film Festival 2026 — Calendar</title>
 	<meta
 		name="description"
-		content="Subscribe to all 211 Hot Docs 2026 screenings or add individual films to your Google Calendar."
+		content="Explore the 32nd Sarajevo Film Festival and save screenings to your calendar."
 	/>
 </svelte:head>
 
@@ -102,28 +102,27 @@
 		<div
 			class="mx-auto flex max-w-6xl items-baseline justify-between px-6 py-4 text-[11px] font-medium uppercase tracking-[0.25em]"
 		>
-			<span>Hot Docs · CIDF</span>
-			<span class="hidden sm:inline">Apr 23 – May 3, 2026</span>
+			<span>Sarajevo Film Festival · 32nd edition</span>
+			<span class="hidden sm:inline">14 – 21 August 2026</span>
 		</div>
 	</header>
 
 	<!-- Hero -->
 	<section class="mx-auto max-w-6xl px-6 pb-16 pt-16 sm:pb-24 sm:pt-24">
 		<p class="text-[11px] font-medium uppercase tracking-[0.3em] text-neutral-500">
-			Remote Calendar
+			The city is our screen
 		</p>
 		<h1
 			class="mt-5 font-display text-6xl font-bold leading-[0.92] tracking-tight sm:text-8xl lg:text-9xl"
 		>
-			Hot Docs
+			Sarajevo
 			<span
 				class="ml-1 inline-block bg-lime px-3 leading-[0.92] text-black sm:ml-2 sm:px-4"
 			>2026</span>
 		</h1>
 		<p class="mt-8 max-w-xl text-lg leading-relaxed text-neutral-600 sm:text-xl">
-			{data.screenings.length} screenings across {venueCount} cinemas over 11 days
-			of documentary, plotted out as a remote calendar. Subscribe to the
-			whole festival, or save films one tap at a time.
+			Eight days of cinema, conversation and late-summer nights in Sarajevo—one
+			clear schedule. The 2026 programme will appear here as soon as it is announced.
 		</p>
 	</section>
 
@@ -131,15 +130,17 @@
 	<section class="border-y border-black bg-black text-white">
 		<div class="mx-auto max-w-6xl px-6 py-12 sm:py-16">
 			<p class="text-[11px] font-medium uppercase tracking-[0.3em] text-lime">
-				Subscribe
+				Stay ready
 			</p>
 			<h2
 				class="mt-3 max-w-3xl font-display text-4xl font-semibold leading-[1.05] tracking-tight text-balance sm:text-5xl"
 			>
-				All {data.screenings.length} screenings, <span class="text-neutral-500"
-					>in your calendar app.</span
-				>
+				The 2026 programme, <span class="text-neutral-500">coming soon.</span>
 			</h2>
+			<p class="mt-5 max-w-2xl text-sm leading-relaxed text-neutral-400">
+				Subscribe now and new screenings will arrive automatically when the official
+				programme is published.
+			</p>
 			<div class="mt-8 flex flex-wrap gap-2">
 					<a
 						class="inline-flex min-h-11 items-center rounded-md bg-lime px-5 py-3 text-sm font-semibold tracking-tight text-black hover:bg-white"
@@ -196,6 +197,7 @@
 		</div>
 	</section>
 
+	{#if data.screenings.length}
 	<!-- Filter bar (sticky) -->
 	<section class="sticky top-0 z-20 border-b border-black/10 bg-white/95 backdrop-blur">
 		<form
@@ -308,23 +310,37 @@
 
 		<footer class="flex flex-wrap gap-x-6 gap-y-2 border-t border-black/10 py-12 text-xs text-neutral-500">
 			<span>
-				Schedule data from
+				Official programme at
 				<a
 					class="underline hover:text-lime-dark"
-					href="https://s3.amazonaws.com/assets.hotdocs.ca/doc/HD26_Screening-Schedule.pdf"
+					href="https://www.sff.ba/en/page/programme"
 					target="_blank"
-					rel="noopener noreferrer">HD26_Screening-Schedule.pdf</a
+					rel="noopener noreferrer">sff.ba</a
 				>.
 			</span>
 			<span>
-				Tickets at
+				Festival website at
 				<a
 					class="underline hover:text-lime-dark"
-					href="https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+					href="https://www.sff.ba/en"
 					target="_blank"
-					rel="noopener noreferrer">boxoffice.hotdocs.ca</a
+					rel="noopener noreferrer">sff.ba</a
 				>.
 			</span>
 		</footer>
 	</main>
+	{:else}
+	<section class="mx-auto max-w-6xl px-6 py-24 sm:py-32">
+		<p class="text-[11px] font-semibold uppercase tracking-[0.3em] text-lime-dark">Programme</p>
+		<h2 class="mt-4 max-w-3xl font-display text-4xl font-bold tracking-tight sm:text-6xl">
+			See you in Sarajevo.
+		</h2>
+		<p class="mt-6 max-w-xl text-lg leading-relaxed text-neutral-600">
+			Screening times and venues have not been published yet. Visit the official
+			festival site for announcements, films and ticket information.
+		</p>
+		<a class="mt-8 inline-flex min-h-11 items-center rounded-md bg-black px-5 py-3 text-sm font-semibold text-white hover:bg-lime"
+			href="https://www.sff.ba/en" target="_blank" rel="noopener noreferrer">Visit sff.ba →</a>
+	</section>
+	{/if}
 </div>

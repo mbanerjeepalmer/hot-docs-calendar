@@ -5,9 +5,9 @@
 @theme {
 	--font-display: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
 	--font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-	--color-lime: #c7ff3b;
-	--color-lime-dark: #a8e028;
-	--color-ink: #0a0a0a;
+	--color-lime: #ef233c;
+	--color-lime-dark: #c1122b;
+	--color-ink: #121212;
 }
 
 html {

@@ -12,6 +12,8 @@ import screenings from '../src/lib/data/screenings.json' with { type: 'json' };
 // in any logged-in browser; that path is exercised by the unit tests in
 // googleCalendar.e2e.ts which assert spec compliance.
 
+test.skip(screenings.length === 0, 'The official 2026 programme has not been published');
+
 test('every screening produces a calendar.google.com URL accepted by Google (no 4xx)', async ({
 	browser
 }) => {

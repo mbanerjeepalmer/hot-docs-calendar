@@ -8,7 +8,7 @@ export function GET() {
 	return new Response(ics, {
 		headers: {
 			'content-type': 'text/calendar; charset=utf-8',
-			'content-disposition': 'inline; filename="hot-docs-2026.ics"',
+			'content-disposition': 'inline; filename="sarajevo-film-festival-2026.ics"',
 			'cache-control': 'public, max-age=3600'
 		}
 	});
