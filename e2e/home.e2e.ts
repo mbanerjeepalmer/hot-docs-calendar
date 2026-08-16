@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 test.describe('Home page', () => {
 	test('shows festival title and dates', async ({ page }) => {
 		await page.goto('/');
-		await expect(page.getByRole('heading', { level: 1 })).toContainText(/hot docs/i);
+		await expect(page.getByRole('heading', { level: 1 })).toContainText(/sarajevo/i);
 		await expect(page.getByRole('heading', { level: 1 })).toContainText('2026');
 	});
 

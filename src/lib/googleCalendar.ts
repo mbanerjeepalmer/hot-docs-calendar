@@ -1,7 +1,7 @@
 import type { Screening } from './types.js';
 
 const DEFAULT_DURATION_MINUTES = 120;
-const TZ = 'America/Toronto';
+const TZ = 'Europe/Sarajevo';
 
 function toGCalStamp(iso: string): string {
 	const d = new Date(iso);

@@ -1,10 +1,11 @@
-# Hot Docs 2026 — Remote Calendar
+# Sarajevo Film Festival 2026 — Remote Calendar
 
-A SvelteKit app that lists every Hot Docs 2026 screening and lets you add any of
-them to your Google Calendar with one click.
+A SvelteKit app that lists every Sarajevo Film Festival 2026 (32nd edition,
+14–21 August 2026) screening and lets you add any of them to your Google
+Calendar with one click.
 
-- **Source screening list:** [Hot Docs 2026 box office](https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b)
-- **Screening schedule PDF:** [HD26_Screening-Schedule.pdf](https://s3.amazonaws.com/assets.hotdocs.ca/doc/HD26_Screening-Schedule.pdf)
+- **Source:** [sff.ba](https://www.sff.ba/en) and its box office API at
+  [api3.sff.ba](https://api3.sff.ba), which powers [tickets.sff.ba](https://tickets.sff.ba)
 
 ## Stack
 
@@ -45,34 +46,41 @@ as an array of `Screening` objects:
 type Screening = {
   id: string;             // unique id
   title: string;          // film title
-  start: string;          // ISO datetime WITH timezone offset, e.g. 2026-04-30T19:00:00-04:00
-  end?: string;           // ISO datetime; defaults to start + 2h if omitted
-  venue: string;          // e.g. "Hot Docs Ted Rogers Cinema"
-  address?: string;       // full street address appended to the Google Calendar "location"
-  description?: string;   // short synopsis; appended to the Google Calendar "details"
-  ticketUrl?: string;     // box office URL; appended to the Google Calendar "details"
+  start: string;          // ISO datetime WITH timezone offset, e.g. 2026-08-21T19:00:00+02:00
+  end?: string;            // ISO datetime; defaults to start + 2h if omitted
+  venue: string;           // e.g. "Cineplexx Sarajevo 4"
+  address?: string;        // full street address appended to the Google Calendar "location"
+  description?: string;    // short synopsis; appended to the Google Calendar "details"
+  ticketUrl?: string;      // box office URL; appended to the Google Calendar "details"
 };
 ```
 
 ### Refreshing the schedule
 
-`src/lib/data/screenings.json` is generated from the official Hot Docs PDF
-schedule. To refresh:
+`src/lib/data/screenings.json` is generated from the public JSON API that
+[tickets.sff.ba](https://tickets.sff.ba) (the festival's React ticketing SPA)
+calls under the hood at `api3.sff.ba`. No PDF or browser rendering is needed —
+it's a plain, unauthenticated JSON API. To refresh:
 
 ```sh
-npm install
-npm run fetch:sources    # downloads the PDF + captures the box office page
-npm run parse:pdf        # pdftotext + parser → src/lib/data/screenings.json
+npm run fetch:sources     # downloads screenings.json, films.json, edition.json
+npm run parse:schedule    # combine → src/lib/data/screenings.json
 ```
 
-`fetch:sources` writes:
-- `scripts/data/HD26_Screening-Schedule.pdf` — the raw schedule PDF
-- `scripts/data/list.html` — fully-rendered box office listing (post-JS)
-- `scripts/data/list.png` — full-page screenshot
-- `scripts/data/xhr/*.json` — every JSON payload the listing page fetched
-- `scripts/data/xhr-log.json` — index of XHR/fetch responses
+`fetch:sources` writes to `scripts/data/`:
+- `edition.json` — current edition basics (name, festival start/end dates)
+- `screenings.json` — every scheduled screening (`GET /screenings/online?RetrieveAll=true`)
+- `films.json` — full film catalogue with synopsis/country/runtime
+  (`GET /films?RetrieveAll=true&Includes=...`)
 
-`parse:pdf` requires `pdftotext` (poppler-utils) on the path.
+`parse:schedule` matches each screening's title against the film catalogue
+(shorts blocks and programme collections that don't correspond 1:1 to a single
+film — e.g. "BH Film - Documentaries 1" — are kept as-is, just without a
+synopsis) and writes `src/lib/data/screenings.json`.
+
+All screening times are Sarajevo local time (CEST, UTC+2); the whole festival
+window falls inside the EU's summer-time period, so there's no DST transition
+to handle.
 
 ## Project structure
 

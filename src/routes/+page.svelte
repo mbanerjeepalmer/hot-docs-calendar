@@ -11,7 +11,7 @@
 	// Google (or any other calendar app) can fetch the ICS feed. During SSR/
 	// prerender the origin is a placeholder; we patch it client-side to the
 	// real window.location.origin on hydration.
-	let origin = $state('https://hot-docs-calendar.vercel.app');
+	let origin = $state('https://sarajevo-film-festival-calendar.vercel.app');
 	$effect(() => {
 		if (typeof window !== 'undefined') origin = window.location.origin;
 	});
@@ -71,14 +71,14 @@
 	const venueCount = $derived(new Set(data.screenings.map((s) => s.venue)).size);
 
 	function shortVenue(v: string): string {
-		return v.replace('TIFF Lightbox – Cinema ', 'TLB ').replace('Hot Docs Ted Rogers Cinema', 'Hot Docs Cinema');
+		return v.replace('Cineplexx Sarajevo ', 'Cineplexx ').replace('National Theatre - ', 'National Theatre · ');
 	}
 
 	function synopsis(description?: string): string {
 		if (!description) return '';
 		const lines = description.split('\n');
-		// PDF format: "D: ...", "country · NN min", synopsis…
-		return lines.slice(2).join(' ').replace(/\s+/g, ' ').trim();
+		// api3.sff.ba format: "country · NN min · programme", synopsis…
+		return lines.slice(1).join(' ').replace(/\s+/g, ' ').trim();
 	}
 
 	function runtime(description?: string): string {
@@ -89,10 +89,10 @@
 </script>
 
 <svelte:head>
-	<title>Hot Docs 2026 — Remote Calendar</title>
+	<title>Sarajevo Film Festival 2026 — Remote Calendar</title>
 	<meta
 		name="description"
-		content="Subscribe to all 211 Hot Docs 2026 screenings or add individual films to your Google Calendar."
+		content={`Subscribe to all ${data.screenings.length} Sarajevo Film Festival 2026 screenings or add individual films to your Google Calendar.`}
 	/>
 </svelte:head>
 
@@ -102,8 +102,8 @@
 		<div
 			class="mx-auto flex max-w-6xl items-baseline justify-between px-6 py-4 text-[11px] font-medium uppercase tracking-[0.25em]"
 		>
-			<span>Hot Docs · CIDF</span>
-			<span class="hidden sm:inline">Apr 23 – May 3, 2026</span>
+			<span>Sarajevo Film Festival · SFF</span>
+			<span class="hidden sm:inline">Aug 14 – 21, 2026</span>
 		</div>
 	</header>
 
@@ -115,22 +115,22 @@
 		<h1
 			class="mt-5 font-display text-6xl font-bold leading-[0.92] tracking-tight sm:text-8xl lg:text-9xl"
 		>
-			Hot Docs
+			Sarajevo FF
 			<span
-				class="ml-1 inline-block bg-lime px-3 leading-[0.92] text-black sm:ml-2 sm:px-4"
+				class="ml-1 inline-block bg-accent px-3 leading-[0.92] text-white sm:ml-2 sm:px-4"
 			>2026</span>
 		</h1>
 		<p class="mt-8 max-w-xl text-lg leading-relaxed text-neutral-600 sm:text-xl">
-			{data.screenings.length} screenings across {venueCount} cinemas over 11 days
-			of documentary, plotted out as a remote calendar. Subscribe to the
-			whole festival, or save films one tap at a time.
+			{data.screenings.length} screenings across {venueCount} venues over {data.days.length} days
+			of film, plotted out as a remote calendar. Subscribe to the whole
+			festival, or save films one tap at a time.
 		</p>
 	</section>
 
 	<!-- Subscribe band -->
 	<section class="border-y border-black bg-black text-white">
 		<div class="mx-auto max-w-6xl px-6 py-12 sm:py-16">
-			<p class="text-[11px] font-medium uppercase tracking-[0.3em] text-lime">
+			<p class="text-[11px] font-medium uppercase tracking-[0.3em] text-accent">
 				Subscribe
 			</p>
 			<h2
@@ -142,7 +142,7 @@
 			</h2>
 			<div class="mt-8 flex flex-wrap gap-2">
 					<a
-						class="inline-flex min-h-11 items-center rounded-md bg-lime px-5 py-3 text-sm font-semibold tracking-tight text-black hover:bg-white"
+						class="inline-flex min-h-11 items-center rounded-md bg-accent px-5 py-3 text-sm font-semibold tracking-tight text-white hover:bg-white hover:text-black"
 						href={googleSubscribeUrl}
 						target="_blank"
 						rel="noopener noreferrer"
@@ -151,7 +151,7 @@
 						Subscribe in Google Calendar →
 					</a>
 					<a
-						class="inline-flex min-h-11 items-center rounded-md border border-white/30 px-5 py-3 text-sm font-medium hover:border-lime hover:text-lime"
+						class="inline-flex min-h-11 items-center rounded-md border border-white/30 px-5 py-3 text-sm font-medium hover:border-accent hover:text-accent"
 						href={webcalUrl}
 						aria-label="Subscribe in Apple Calendar or Outlook"
 						data-testid="subscribe-webcal"
@@ -159,7 +159,7 @@
 						Apple Calendar / Outlook
 					</a>
 					<a
-						class="inline-flex min-h-11 items-center rounded-md border border-white/30 px-5 py-3 text-sm font-medium hover:border-lime hover:text-lime"
+						class="inline-flex min-h-11 items-center rounded-md border border-white/30 px-5 py-3 text-sm font-medium hover:border-accent hover:text-accent"
 						href={icsUrl}
 						aria-label="Download .ics calendar file"
 						data-testid="subscribe-ics"
@@ -173,7 +173,7 @@
 				<button
 					type="button"
 					onclick={copyIcsUrl}
-					class="rounded border border-white/30 px-2 py-1 font-medium text-white hover:border-lime hover:text-lime"
+					class="rounded border border-white/30 px-2 py-1 font-medium text-white hover:border-accent hover:text-accent"
 				>
 					{copied ? 'Copied!' : 'Copy URL'}
 				</button>
@@ -184,7 +184,7 @@
 					<li>Copy the subscription URL above.</li>
 					<li>
 						Open <a
-							class="underline hover:text-lime"
+							class="underline hover:text-accent"
 							href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl"
 							target="_blank"
 							rel="noopener noreferrer">Google Calendar's "Add by URL" page</a
@@ -209,7 +209,7 @@
 				placeholder="Search films or venues…"
 				aria-label="Search screenings"
 				bind:value={query}
-				class="w-full rounded-md border border-black/15 bg-white px-4 py-2.5 text-sm placeholder:text-neutral-400 focus:border-black focus:ring-2 focus:ring-lime focus:outline-none"
+				class="w-full rounded-md border border-black/15 bg-white px-4 py-2.5 text-sm placeholder:text-neutral-400 focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
 			/>
 
 			<label class="sr-only" for="venue">Filter by venue</label>
@@ -217,7 +217,7 @@
 				id="venue"
 				aria-label="Filter by venue"
 				bind:value={venueFilter}
-				class="rounded-md border border-black/15 bg-white px-3 py-2.5 text-sm focus:border-black focus:ring-2 focus:ring-lime focus:outline-none"
+				class="rounded-md border border-black/15 bg-white px-3 py-2.5 text-sm focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
 			>
 				<option value="">All venues</option>
 				{#each venues as v}
@@ -253,7 +253,7 @@
 				<ul class="mt-8 divide-y divide-black/10">
 					{#each items as s (s.id)}
 						<li
-							class="group -mx-4 grid grid-cols-[auto_1fr] gap-x-4 gap-y-3 rounded-lg px-4 py-6 transition hover:bg-lime/15 sm:-mx-6 sm:grid-cols-[8rem_1fr_auto] sm:gap-x-8 sm:px-6"
+							class="group -mx-4 grid grid-cols-[auto_1fr] gap-x-4 gap-y-3 rounded-lg px-4 py-6 transition hover:bg-accent/15 sm:-mx-6 sm:grid-cols-[8rem_1fr_auto] sm:gap-x-8 sm:px-6"
 							data-testid="screening"
 						>
 							<time
@@ -290,7 +290,7 @@
 							</div>
 
 							<a
-								class="col-span-2 inline-flex min-h-11 shrink-0 items-center justify-center rounded-md bg-black px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white hover:bg-lime hover:text-black sm:col-span-1 sm:self-start"
+								class="col-span-2 inline-flex min-h-11 shrink-0 items-center justify-center rounded-md bg-black px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white hover:bg-accent hover:text-white sm:col-span-1 sm:self-start"
 								href={buildGoogleCalendarUrl(s)}
 								target="_blank"
 								rel="noopener noreferrer"
@@ -310,19 +310,19 @@
 			<span>
 				Schedule data from
 				<a
-					class="underline hover:text-lime-dark"
-					href="https://s3.amazonaws.com/assets.hotdocs.ca/doc/HD26_Screening-Schedule.pdf"
+					class="underline hover:text-accent-dark"
+					href="https://www.sff.ba/en"
 					target="_blank"
-					rel="noopener noreferrer">HD26_Screening-Schedule.pdf</a
+					rel="noopener noreferrer">sff.ba</a
 				>.
 			</span>
 			<span>
 				Tickets at
 				<a
-					class="underline hover:text-lime-dark"
-					href="https://boxoffice.hotdocs.ca/websales/pages/list.aspx?epguid=f3bf8433-2ddd-4eb0-a2b5-e241bcf1021b"
+					class="underline hover:text-accent-dark"
+					href="https://tickets.sff.ba"
 					target="_blank"
-					rel="noopener noreferrer">boxoffice.hotdocs.ca</a
+					rel="noopener noreferrer">tickets.sff.ba</a
 				>.
 			</span>
 		</footer>
