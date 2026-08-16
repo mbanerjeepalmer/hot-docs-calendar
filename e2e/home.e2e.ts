@@ -42,6 +42,14 @@ test.describe('Home page', () => {
 		expect(totalAfter).toBeLessThanOrEqual(totalBefore);
 		expect(totalAfter).toBeGreaterThan(0);
 	});
+
+	test('screenings matched to a film show a poster thumbnail', async ({ page }) => {
+		await page.goto('/');
+		const images = page.getByTestId('screening-image');
+		expect(await images.count()).toBeGreaterThan(0);
+		const src = await images.first().getAttribute('src');
+		expect(src).toMatch(/^https:\/\//);
+	});
 });
 
 test.describe('Google Calendar export', () => {

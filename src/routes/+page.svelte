@@ -1,11 +1,20 @@
 <script lang="ts">
 	import { buildGoogleCalendarUrl } from '$lib/googleCalendar.js';
 	import { formatDayHeading, formatTime } from '$lib/screenings.js';
+	import { lists, listOf, addTo, removeFrom, LIST_NAMES, LIST_LABELS, type ListName } from '$lib/savedList.svelte.js';
 
 	let { data } = $props();
 
 	let query = $state('');
 	let venueFilter = $state('');
+	let filterBarHeight = $state(0);
+
+	const savedCount = $derived(lists.tickets.length + lists.shortlist.length + lists.longlist.length);
+
+	function onSaveChange(id: string, value: string) {
+		if (value === '') removeFrom(id);
+		else addTo(id, value as ListName);
+	}
 
 	// The cid= and webcal:// links must point at the deployed origin so that
 	// Google (or any other calendar app) can fetch the ICS feed. During SSR/
@@ -103,7 +112,12 @@
 			class="mx-auto flex max-w-6xl items-baseline justify-between px-6 py-4 text-[11px] font-medium uppercase tracking-[0.25em]"
 		>
 			<span>Sarajevo Film Festival · SFF</span>
-			<span class="hidden sm:inline">Aug 14 – 21, 2026</span>
+			<div class="flex items-baseline gap-6">
+				<a href="/list" class="hover:text-accent-dark" data-testid="my-list-link">
+					My list{#if savedCount}&nbsp;({savedCount}){/if}
+				</a>
+				<span class="hidden sm:inline">Aug 14 – 21, 2026</span>
+			</div>
 		</div>
 	</header>
 
@@ -197,7 +211,10 @@
 	</section>
 
 	<!-- Filter bar (sticky) -->
-	<section class="sticky top-0 z-20 border-b border-black/10 bg-white/95 backdrop-blur">
+	<section
+		class="sticky top-0 z-20 border-b border-black/10 bg-white/95 backdrop-blur"
+		bind:clientHeight={filterBarHeight}
+	>
 		<form
 			class="mx-auto grid max-w-6xl items-center gap-3 px-6 py-4 sm:grid-cols-[1fr_auto_auto]"
 			role="search"
@@ -238,7 +255,10 @@
 	<main class="mx-auto max-w-6xl px-6">
 		{#each filteredDays as { day, items } (day)}
 			<section class="border-b border-black py-12 last:border-b-0 sm:py-16">
-				<header class="grid items-baseline gap-2 sm:grid-cols-[auto_1fr] sm:gap-12">
+				<header
+					class="sticky z-10 -mx-6 grid items-baseline gap-2 border-b border-black/10 bg-white px-6 py-3 sm:grid-cols-[auto_1fr] sm:gap-12"
+					style={`top: ${filterBarHeight}px`}
+				>
 					<h2
 						class="font-display text-3xl font-bold uppercase leading-none tracking-tight sm:text-5xl"
 						data-testid="day-heading"
@@ -264,40 +284,75 @@
 								{formatTime(s.start)}
 							</time>
 
-							<div class="min-w-0">
-								<h3
-									class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
-									data-testid="screening-title"
-								>
-									{s.title}
-								</h3>
-								<p class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-600">
-									<span data-testid="screening-venue">{shortVenue(s.venue)}</span>
-									{#if runtime(s.description)}
-										<span aria-hidden="true" class="text-neutral-300">·</span>
-										<span class="tabular-nums">{runtime(s.description)}</span>
-									{/if}
-									{#if s.end}
-										<span aria-hidden="true" class="text-neutral-300">·</span>
-										<span>ends {formatTime(s.end)}</span>
-									{/if}
-								</p>
-								{#if synopsis(s.description)}
-									<p class="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-500 line-clamp-2 group-hover:line-clamp-none">
-										{synopsis(s.description)}
-									</p>
+							<div class="flex min-w-0 gap-4">
+								{#if s.image}
+									<img
+										src={s.image}
+										alt=""
+										loading="lazy"
+										data-testid="screening-image"
+										class="h-20 w-14 shrink-0 rounded object-cover sm:h-28 sm:w-20"
+									/>
 								{/if}
+								<div class="min-w-0">
+									<h3
+										class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
+										data-testid="screening-title"
+									>
+										{s.title}
+									</h3>
+									<p class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-600">
+										<span data-testid="screening-venue">{shortVenue(s.venue)}</span>
+										{#if runtime(s.description)}
+											<span aria-hidden="true" class="text-neutral-300">·</span>
+											<span class="tabular-nums">{runtime(s.description)}</span>
+										{/if}
+										{#if s.end}
+											<span aria-hidden="true" class="text-neutral-300">·</span>
+											<span>ends {formatTime(s.end)}</span>
+										{/if}
+										{#if s.programme}
+											<span aria-hidden="true" class="hidden text-neutral-300 group-hover:inline">·</span>
+											<span
+												data-testid="screening-programme"
+												class="hidden rounded-full bg-black/5 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide text-neutral-500 group-hover:inline-block"
+											>
+												{s.programme}
+											</span>
+										{/if}
+									</p>
+									{#if synopsis(s.description)}
+										<p class="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-500 line-clamp-2 group-hover:line-clamp-none">
+											{synopsis(s.description)}
+										</p>
+									{/if}
+								</div>
 							</div>
 
-							<a
-								class="col-span-2 inline-flex min-h-11 shrink-0 items-center justify-center rounded-md bg-black px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white hover:bg-accent hover:text-white sm:col-span-1 sm:self-start"
-								href={buildGoogleCalendarUrl(s)}
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label={`Add ${s.title} to Google Calendar`}
-							>
-								+ Google Calendar
-							</a>
+							<div class="col-span-2 flex gap-2 sm:col-span-1 sm:flex-col sm:self-start">
+								<a
+									class="inline-flex min-h-11 flex-1 shrink-0 items-center justify-center rounded-md bg-black px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.15em] text-white hover:bg-accent hover:text-white sm:flex-none"
+									href={buildGoogleCalendarUrl(s)}
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label={`Add ${s.title} to Google Calendar`}
+								>
+									+ Google Calendar
+								</a>
+								<label class="sr-only" for={`save-${s.id}`}>Save {s.title} to a list</label>
+								<select
+									id={`save-${s.id}`}
+									data-testid="save-select"
+									class="min-h-11 rounded-md border border-black/15 bg-white px-2 text-[11px] font-medium uppercase tracking-[0.1em] focus:border-black focus:ring-2 focus:ring-accent focus:outline-none"
+									value={listOf(s.id) ?? ''}
+									onchange={(e) => onSaveChange(s.id, e.currentTarget.value)}
+								>
+									<option value="">Save to…</option>
+									{#each LIST_NAMES as name}
+										<option value={name}>{LIST_LABELS[name]}</option>
+									{/each}
+								</select>
+							</div>
 						</li>
 					{/each}
 				</ul>

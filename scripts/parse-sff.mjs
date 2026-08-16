@@ -90,19 +90,24 @@ function cleanProgramme(name) {
 	return name.replace(/^32nd SFF\s*-\s*/, '').trim();
 }
 
+function programmeOf(film) {
+	if (!film?.filmProgrammes?.length) return undefined;
+	return film.filmProgrammes.map(cleanProgramme).join(', ');
+}
+
 function buildDescription(film) {
 	if (!film) return '';
 	// Fixed one-line header (country · runtime · programme) followed by the
 	// synopsis, so the UI can split header from synopsis with a single slice.
-	const header = [
-		film.countriesCsv,
-		film.runtimeSeconds > 0 ? film.runtimeHumanReadable : '',
-		film.filmProgrammes?.length ? film.filmProgrammes.map(cleanProgramme).join(', ') : ''
-	]
+	const header = [film.countriesCsv, film.runtimeSeconds > 0 ? film.runtimeHumanReadable : '', programmeOf(film)]
 		.filter(Boolean)
 		.join(' · ');
 	const synopsis = film.filmSynopsis?.longSynopsis || film.filmSynopsis?.shortSynopsis || '';
 	return [header, synopsis].filter(Boolean).join('\n');
+}
+
+function imageOf(film) {
+	return film?.poster || film?.stillImages?.[0] || undefined;
 }
 
 function parse() {
@@ -130,7 +135,9 @@ function parse() {
 			venue,
 			address: addressFor(venue),
 			description: buildDescription(film),
-			ticketUrl: film ? `${TICKET_BASE_URL}/films/${film.id}` : `${TICKET_BASE_URL}/screenings`
+			ticketUrl: film ? `${TICKET_BASE_URL}/films/${film.id}` : `${TICKET_BASE_URL}/screenings`,
+			image: imageOf(film),
+			programme: programmeOf(film)
 		};
 	});
 
