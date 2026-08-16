@@ -7,6 +7,24 @@
 	let query = $state('');
 	let venueFilter = $state('');
 
+	// Hide the sticky filter bar when scrolling down, reveal it when scrolling
+	// up, and leave it alone while the page is static (no scroll delta).
+	let hideFilterBar = $state(false);
+	$effect(() => {
+		if (typeof window === 'undefined') return;
+		let lastY = window.scrollY;
+		function onScroll() {
+			const y = window.scrollY;
+			const delta = y - lastY;
+			if (Math.abs(delta) > 0) {
+				hideFilterBar = delta > 0 && y > 0;
+			}
+			lastY = y;
+		}
+		window.addEventListener('scroll', onScroll, { passive: true });
+		return () => window.removeEventListener('scroll', onScroll);
+	});
+
 	// The cid= and webcal:// links must point at the deployed origin so that
 	// Google (or any other calendar app) can fetch the ICS feed. During SSR/
 	// prerender the origin is a placeholder; we patch it client-side to the
@@ -96,7 +114,7 @@
 	/>
 </svelte:head>
 
-<div class="min-h-screen overflow-x-hidden bg-white">
+<div class="min-h-screen overflow-x-clip bg-white">
 	<!-- Top utility bar -->
 	<header class="border-b border-black/10">
 		<div
@@ -196,8 +214,11 @@
 		</div>
 	</section>
 
-	<!-- Filter bar (sticky) -->
-	<section class="sticky top-0 z-20 border-b border-black/10 bg-white/95 backdrop-blur">
+	<!-- Filter bar (sticky; hides on scroll down, reappears on scroll up) -->
+	<section
+		class="sticky top-0 z-20 border-b border-black/10 bg-white/95 backdrop-blur transition-transform duration-200 ease-out"
+		class:-translate-y-full={hideFilterBar}
+	>
 		<form
 			class="mx-auto grid max-w-6xl items-center gap-3 px-6 py-4 sm:grid-cols-[1fr_auto_auto]"
 			role="search"
