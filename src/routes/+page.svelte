@@ -1,11 +1,29 @@
 <script lang="ts">
 	import { buildGoogleCalendarUrl } from '$lib/googleCalendar.js';
 	import { formatDayHeading, formatTime } from '$lib/screenings.js';
+	import { FavoritesState } from '$lib/favorites.svelte.js';
 
 	let { data } = $props();
 
 	let query = $state('');
 	let venueFilter = $state('');
+	let favoritesOnly = $state(false);
+
+	const favorites = new FavoritesState();
+	$effect(() => {
+		if (typeof window !== 'undefined') favorites.init();
+	});
+
+	let usernameInput = $state('');
+	let usernameFormOpen = $state(false);
+	async function saveUsername() {
+		const name = usernameInput.trim();
+		if (!name) return;
+		if (await favorites.setUsername(name)) {
+			usernameInput = '';
+			usernameFormOpen = false;
+		}
+	}
 
 	// The cid= and webcal:// links must point at the deployed origin so that
 	// Google (or any other calendar app) can fetch the ICS feed. During SSR/
@@ -58,7 +76,8 @@
 						s.title.toLowerCase().includes(q) ||
 						s.venue.toLowerCase().includes(q);
 					const matchesVenue = !venueFilter || s.venue === venueFilter;
-					return matchesQuery && matchesVenue;
+					const matchesFavorites = !favoritesOnly || favorites.isFavorite(s.id);
+					return matchesQuery && matchesVenue && matchesFavorites;
 				})
 			}))
 			.filter(({ items }) => items.length > 0)
@@ -100,11 +119,61 @@
 	<!-- Top utility bar -->
 	<header class="border-b border-black/10">
 		<div
-			class="mx-auto flex max-w-6xl items-baseline justify-between px-6 py-4 text-[11px] font-medium uppercase tracking-[0.25em]"
+			class="mx-auto flex max-w-6xl flex-wrap items-baseline justify-between gap-x-4 gap-y-2 px-6 py-4 text-[11px] font-medium uppercase tracking-[0.25em]"
 		>
 			<span>Hot Docs · CIDF</span>
 			<span class="hidden sm:inline">Apr 23 – May 3, 2026</span>
+			<div class="flex items-baseline gap-2 normal-case tracking-normal text-neutral-600">
+				{#if favorites.username}
+					<span>Hi, {favorites.username}</span>
+					<button
+						type="button"
+						class="underline hover:text-lime-dark"
+						onclick={() => {
+							usernameInput = favorites.username ?? '';
+							usernameFormOpen = true;
+						}}
+					>
+						change
+					</button>
+				{:else if usernameFormOpen}
+					<form
+						class="flex items-center gap-2"
+						onsubmit={(e) => {
+							e.preventDefault();
+							saveUsername();
+						}}
+					>
+						<label class="sr-only" for="username">Username</label>
+						<input
+							id="username"
+							type="text"
+							placeholder="pick a username"
+							maxlength="32"
+							bind:value={usernameInput}
+							class="rounded border border-black/15 px-2 py-1 text-xs normal-case tracking-normal focus:border-black focus:ring-1 focus:ring-lime focus:outline-none"
+						/>
+						<button type="submit" class="rounded bg-black px-2 py-1 text-white">Save</button>
+						<button type="button" class="text-neutral-400" onclick={() => (usernameFormOpen = false)}>
+							cancel
+						</button>
+					</form>
+				{:else}
+					<button
+						type="button"
+						class="underline hover:text-lime-dark"
+						onclick={() => (usernameFormOpen = true)}
+					>
+						Set a username to save favorites
+					</button>
+				{/if}
+			</div>
 		</div>
+		{#if favorites.error}
+			<p class="mx-auto max-w-6xl px-6 pb-2 text-xs normal-case tracking-normal text-red-600">
+				{favorites.error}
+			</p>
+		{/if}
 	</header>
 
 	<!-- Hero -->
@@ -199,7 +268,7 @@
 	<!-- Filter bar (sticky) -->
 	<section class="sticky top-0 z-20 border-b border-black/10 bg-white/95 backdrop-blur">
 		<form
-			class="mx-auto grid max-w-6xl items-center gap-3 px-6 py-4 sm:grid-cols-[1fr_auto_auto]"
+			class="mx-auto grid max-w-6xl items-center gap-3 px-6 py-4 sm:grid-cols-[1fr_auto_auto_auto]"
 			role="search"
 		>
 			<label class="sr-only" for="search">Search screenings</label>
@@ -224,6 +293,15 @@
 					<option value={v}>{shortVenue(v)}</option>
 				{/each}
 			</select>
+
+			<label class="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.15em] text-neutral-600">
+				<input
+					type="checkbox"
+					bind:checked={favoritesOnly}
+					class="h-4 w-4 rounded border-black/25 text-lime-dark focus:ring-lime"
+				/>
+				★ Favorites
+			</label>
 
 			<p
 				class="text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-500"
@@ -265,12 +343,28 @@
 							</time>
 
 							<div class="min-w-0">
-								<h3
-									class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
-									data-testid="screening-title"
-								>
-									{s.title}
-								</h3>
+								<div class="flex items-start justify-between gap-3">
+									<h3
+										class="font-display text-xl font-semibold leading-snug tracking-tight sm:text-2xl"
+										data-testid="screening-title"
+									>
+										{s.title}
+									</h3>
+									<button
+										type="button"
+										onclick={() => favorites.toggle(s.id)}
+										class="shrink-0 text-xl leading-none {favorites.isFavorite(s.id)
+											? 'text-lime-dark'
+											: 'text-neutral-300 hover:text-lime-dark'}"
+										aria-pressed={favorites.isFavorite(s.id)}
+										aria-label={favorites.isFavorite(s.id)
+											? `Remove ${s.title} from favorites`
+											: `Save ${s.title} to favorites`}
+										data-testid="favorite-toggle"
+									>
+										{favorites.isFavorite(s.id) ? '★' : '☆'}
+									</button>
+								</div>
 								<p class="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-neutral-600">
 									<span data-testid="screening-venue">{shortVenue(s.venue)}</span>
 									{#if runtime(s.description)}

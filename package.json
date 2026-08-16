@@ -13,11 +13,15 @@
 		"test:e2e": "playwright test",
 		"test": "npm run test:e2e",
 		"fetch:sources": "node scripts/fetch-sources.mjs",
-		"parse:pdf": "pdftotext -raw scripts/data/HD26_Screening-Schedule.pdf scripts/data/HD26_Screening-Schedule.raw.txt && node scripts/parse-pdf.mjs"
+		"parse:pdf": "pdftotext -raw scripts/data/HD26_Screening-Schedule.pdf scripts/data/HD26_Screening-Schedule.raw.txt && node scripts/parse-pdf.mjs",
+		"db:migrate:local": "wrangler d1 migrations apply DB --local",
+		"db:migrate:remote": "wrangler d1 migrations apply DB --remote",
+		"deploy": "npm run build && wrangler deploy"
 	},
 	"devDependencies": {
+		"@cloudflare/workers-types": "^5.20260816.1",
 		"@playwright/test": "1.56.0",
-		"@sveltejs/adapter-auto": "^7.0.1",
+		"@sveltejs/adapter-cloudflare": "^7.2.9",
 		"@sveltejs/kit": "^2.57.0",
 		"@sveltejs/vite-plugin-svelte": "^7.0.0",
 		"@tailwindcss/forms": "^0.5.11",
@@ -27,6 +31,7 @@
 		"svelte-check": "^4.4.6",
 		"tailwindcss": "^4.2.2",
 		"typescript": "^6.0.2",
-		"vite": "^8.0.7"
+		"vite": "^8.0.7",
+		"wrangler": "^4.123.0"
 	}
 }

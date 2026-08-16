@@ -1,0 +1,21 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "hot-docs-calendar",
+	"compatibility_date": "2026-08-16",
+	"main": ".svelte-kit/cloudflare/_worker.js",
+	"assets": {
+		"directory": ".svelte-kit/cloudflare",
+		"binding": "ASSETS"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "hot-docs-calendar",
+			// Placeholder — replace after running `wrangler d1 create hot-docs-calendar`.
+			// Local dev (`npm run dev`, `wrangler d1 migrations apply DB --local`) works
+			// fine with this placeholder since it only emulates D1 on disk.
+			"database_id": "00000000-0000-0000-0000-000000000000",
+			"migrations_dir": "migrations"
+		}
+	]
+}
