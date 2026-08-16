@@ -83,6 +83,9 @@ username and star screenings — those favorites are stored in a Cloudflare D1
 database, keyed by a random id cookie tied to the username you chose. There's
 no password yet ("phase 1" — see `migrations/0001_init.sql` for the schema);
 a real login can replace this later without changing the favorites table.
+Since there's no password, typing an *existing* username just switches your
+browser's cookie to that identity ("logs you in" as them) — that's how you
+pick your favorites back up on a different device.
 
 ### Local development
 
@@ -118,8 +121,9 @@ favorites(user_id, screening_id, created_at, PRIMARY KEY (user_id, screening_id)
 ### API
 
 - `GET /api/username` → `{ username: string | null }`
-- `POST /api/username` `{ username }` → claims a username (first call) or
-  renames the current user (subsequent calls); 409 if taken.
+- `POST /api/username` `{ username }` → claims a new username, renames the
+  current user, or — if that username already exists — logs into it (sets
+  the cookie to that user's id, no password check).
 - `GET /api/favorites` → `{ screeningIds: string[] }`
 - `POST /api/favorites` `{ screeningId }` → star a screening (401 without a
   username set).

@@ -23,24 +23,30 @@ export const POST: RequestHandler = async (event) => {
 	}
 
 	const db = getDB(event);
-	const existingUid = await getCurrentUserId(event);
 
-	if (existingUid) {
-		const taken = await db
-			.prepare('SELECT id FROM users WHERE username = ? COLLATE NOCASE AND id != ?')
-			.bind(username, existingUid)
-			.first();
-		if (taken) throw error(409, 'That username is taken.');
+	// No passwords (by design, see README) — typing an existing username just
+	// switches this browser's cookie to that identity, so people can pick their
+	// favorites back up on a new device by typing the same name.
+	const existing = await db
+		.prepare('SELECT id, username FROM users WHERE username = ? COLLATE NOCASE')
+		.bind(username)
+		.first<{ id: string; username: string }>();
 
-		await db.prepare('UPDATE users SET username = ? WHERE id = ?').bind(username, existingUid).run();
-		return json({ username });
+	if (existing) {
+		event.cookies.set(UID_COOKIE, existing.id, {
+			path: '/',
+			httpOnly: true,
+			sameSite: 'lax',
+			maxAge: UID_COOKIE_MAX_AGE
+		});
+		return json({ username: existing.username });
 	}
 
-	const taken = await db
-		.prepare('SELECT id FROM users WHERE username = ? COLLATE NOCASE')
-		.bind(username)
-		.first();
-	if (taken) throw error(409, 'That username is taken.');
+	const currentUid = await getCurrentUserId(event);
+	if (currentUid) {
+		await db.prepare('UPDATE users SET username = ? WHERE id = ?').bind(username, currentUid).run();
+		return json({ username });
+	}
 
 	const id = crypto.randomUUID();
 	await db.prepare('INSERT INTO users (id, username) VALUES (?, ?)').bind(id, username).run();

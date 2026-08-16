@@ -31,11 +31,20 @@ export class FavoritesState {
 			body: JSON.stringify({ username: name })
 		});
 		if (!res.ok) {
-			this.error = res.status === 409 ? 'That username is taken.' : 'Could not save username.';
+			this.error = 'Could not save username.';
 			return false;
 		}
 		const body = (await res.json()) as { username: string };
 		this.username = body.username;
+
+		// Typing an existing username switches identity to that account, so
+		// re-fetch favorites — the old set no longer belongs to who we are now.
+		const favRes = await fetch('/api/favorites');
+		if (favRes.ok) {
+			const favBody = (await favRes.json()) as { screeningIds: string[] };
+			this.favoriteIds = new Set(favBody.screeningIds);
+		}
+
 		return true;
 	}
 
